@@ -1228,7 +1228,7 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
   private int totalReduceTaskCapacity;
   private final HostsFileReader hostsReader;
   
-  // JobTracker recovery variables
+  // JobTracker recovery VARRRRRRRRiables
   private volatile boolean hasRecovered = false;
   private volatile long recoveryDuration;
 

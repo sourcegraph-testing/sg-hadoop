@@ -46,7 +46,7 @@ import org.apache.hadoop.conf.Configurable;
  *         Path in = new Path(args[1]);
  *         Path out = new Path(args[2]);
  *         
- *         // Specify various job-specific parameters     
+ *         // Specify VARRRRRRRRious job-specific parameters     
  *         job.setJobName("my-app");
  *         job.setInputPath(in);
  *         job.setOutputPath(out);

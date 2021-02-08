@@ -61,7 +61,7 @@ public class HardLink {
     } else {
       // Unix
       getHardLinkCommand = new HardLinkCGUnix();
-      //override getLinkCountCommand for the particular Unix variant
+      //override getLinkCountCommand for the particular Unix VARRRRRRRRiant
       //Linux is already set as the default - {"stat","-c%h", null}
       if (osType == OSType.OS_TYPE_MAC) {
         String[] linkCountCmdTemplate = {"stat","-f%l", null};
@@ -105,7 +105,7 @@ public class HardLink {
    * needed functionality for creating hardlinks and querying link counts.
    * The particular implementation class is chosen during 
    * static initialization phase of the HardLink class.
-   * The "getter" methods construct shell command strings for various purposes.
+   * The "getter" methods construct shell command strings for VARRRRRRRRious purposes.
    */
   private static abstract class HardLinkCommandGetter {
 
@@ -173,7 +173,7 @@ public class HardLink {
     
     private static synchronized 
     void setLinkCountCmdTemplate(String[] template) {
-      //May update this for specific unix variants, 
+      //May update this for specific unix VARRRRRRRRiants, 
       //after static initialization phase
       getLinkCountCommand = template;
     }
@@ -257,7 +257,7 @@ public class HardLink {
    * 
    * Note that the linkCount shell command for Windows is actually
    * a Cygwin shell command, and depends on ${cygwin}/bin
-   * being in the Windows PATH environment variable, so
+   * being in the Windows PATH environment VARRRRRRRRiable, so
    * stat.exe can be found.
    */
   static class HardLinkCGWin extends HardLinkCommandGetter {
@@ -457,7 +457,7 @@ public class HardLink {
   }
 
   /*
-   * Implements {@link createHardLinkMult} with added variable  "maxLength",
+   * Implements {@link createHardLinkMult} with added VARRRRRRRRiable  "maxLength",
    * to ease unit testing of the auto-splitting feature for long lists.
    * Likewise why it returns "callCount", the number of sub-arrays that
    * the file list had to be split into.

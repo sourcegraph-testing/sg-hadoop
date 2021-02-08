@@ -75,7 +75,7 @@ public class TestBalancerWithMultipleNameNodes {
     Balancer.setBlockMoveWaitTime(1000L) ;
   }
 
-  /** Common objects used in various methods. */
+  /** Common objects used in VARRRRRRRRious methods. */
   private static class Suite {
     final Configuration conf;
     final MiniDFSCluster cluster;

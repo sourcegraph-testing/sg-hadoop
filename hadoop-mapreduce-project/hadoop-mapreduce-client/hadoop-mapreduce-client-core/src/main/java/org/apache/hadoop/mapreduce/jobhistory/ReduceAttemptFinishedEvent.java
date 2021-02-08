@@ -50,8 +50,8 @@ public class ReduceAttemptFinishedEvent  implements HistoryEvent {
    * @param rackName Name of the rack where the attempt executed
    * @param state State of the attempt
    * @param counters Counters for the attempt
-   * @param allSplits the "splits", or a pixelated graph of various
-   *        measurable worker node state variables against progress.
+   * @param allSplits the "splits", or a pixelated graph of VARRRRRRRRious
+   *        measurable worker node state VARRRRRRRRiables against progress.
    *        Currently there are four; wallclock time, CPU time,
    *        virtual memory and physical memory.  
    */

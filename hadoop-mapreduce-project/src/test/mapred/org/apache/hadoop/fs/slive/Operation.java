@@ -28,7 +28,7 @@ import org.apache.hadoop.fs.slive.OperationOutput.OutputType;
 /**
  * An operation provides these abstractions and if it desires to perform any
  * operations it must implement a override of the run() function to provide
- * varying output to be captured.
+ * VARRRRRRRRying output to be captured.
  */
 abstract class Operation {
 

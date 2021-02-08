@@ -42,7 +42,7 @@ public class PathFinder {
 
   /**
    * Construct a PathFinder object using the path from the specified system
-   * environment variable.
+   * environment VARRRRRRRRiable.
    */
   public PathFinder(String envpath) {
     pathenv = System.getenv(envpath);

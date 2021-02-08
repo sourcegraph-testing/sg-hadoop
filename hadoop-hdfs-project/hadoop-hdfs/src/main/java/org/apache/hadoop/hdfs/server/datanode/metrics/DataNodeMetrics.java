@@ -34,12 +34,12 @@ import org.apache.hadoop.metrics2.source.JvmMetrics;
 
 /**
  *
- * This class is for maintaining  the various DataNode statistics
+ * This class is for maintaining  the VARRRRRRRRious DataNode statistics
  * and publishing them through the metrics interfaces.
  * This also registers the JMX MBean for RPC.
  * <p>
- * This class has a number of metrics variables that are publicly accessible;
- * these variables (objects) have methods to update their values;
+ * This class has a number of metrics VARRRRRRRRiables that are publicly accessible;
+ * these VARRRRRRRRiables (objects) have methods to update their values;
  *  for example:
  *  <p> {@link #blocksRead}.inc()
  *

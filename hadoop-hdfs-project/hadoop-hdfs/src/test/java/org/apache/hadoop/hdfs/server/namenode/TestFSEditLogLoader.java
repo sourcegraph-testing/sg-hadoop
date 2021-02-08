@@ -196,7 +196,7 @@ public class TestFSEditLogLoader {
     File logFileBak = new File(testDir, logFile.getName() + ".bak");
     Files.copy(logFile, logFileBak);
 
-    // Corrupt the log file in various ways for each txn
+    // Corrupt the log file in VARRRRRRRRious ways for each txn
     for (Map.Entry<Long, Long> entry : offsetToTxId.entrySet()) {
       long txOffset = entry.getKey();
       long txid = entry.getValue();

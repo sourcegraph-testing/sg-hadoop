@@ -32,7 +32,7 @@ import static org.apache.hadoop.hdfs.server.common.HdfsServerConstants.NodeType.
 
 /**
 * This test ensures the appropriate response (successful or failure) from
-* the system when the system is started under various storage state and
+* the system when the system is started under VARRRRRRRRious storage state and
 * version conditions.
 */
 public class TestDFSStorageStateRecovery extends TestCase {

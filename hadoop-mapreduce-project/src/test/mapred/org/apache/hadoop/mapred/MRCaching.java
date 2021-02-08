@@ -309,7 +309,7 @@ public class MRCaching {
 
     // Check to ensure the filesizes of files in DC were correctly saved.
     // Note, the underlying job clones the original conf before determine
-    // various stats (timestamps etc.), so we have to getConfiguration here.
+    // VARRRRRRRRious stats (timestamps etc.), so we have to getConfiguration here.
     validateCacheFileSizes(job.getConfiguration(), fileSizes,
                            MRJobConfig.CACHE_FILES_SIZES);
     validateCacheFileSizes(job.getConfiguration(), archiveSizes,

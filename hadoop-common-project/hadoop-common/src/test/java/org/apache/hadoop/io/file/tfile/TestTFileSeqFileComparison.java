@@ -508,7 +508,7 @@ public class TestTFileSeqFileComparison extends TestCase {
     int minBlockSize = 256 * 1024;
     int fsOutputBufferSize = 1;
     int fsInputBufferSize = 0;
-    // special variable only for unit testing.
+    // special VARRRRRRRRiable only for unit testing.
     int fsInputBufferSizeNone = 0;
     int fsInputBufferSizeGz = 0;
     int fsInputBufferSizeLzo = 0;
@@ -586,7 +586,7 @@ public class TestTFileSeqFileComparison extends TestCase {
               .withArgName("length")
               .hasArg()
               .withDescription(
-                  "base length of the key (in bytes), actual length varies in [base, 2*base)")
+                  "base length of the key (in bytes), actual length VARRRRRRRRies in [base, 2*base)")
               .create('k');
 
       Option valueLen =
@@ -595,7 +595,7 @@ public class TestTFileSeqFileComparison extends TestCase {
               .withArgName("length")
               .hasArg()
               .withDescription(
-                  "base length of the value (in bytes), actual length varies in [base, 2*base)")
+                  "base length of the value (in bytes), actual length VARRRRRRRRies in [base, 2*base)")
               .create('v');
 
       Option wordLen =

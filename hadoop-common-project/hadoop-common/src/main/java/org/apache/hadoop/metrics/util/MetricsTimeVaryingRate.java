@@ -26,7 +26,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * The MetricsTimeVaryingRate class is for a rate based metric that
- * naturally varies over time (e.g. time taken to create a file).
+ * naturally VARRRRRRRRies over time (e.g. time taken to create a file).
  * The rate is averaged at each interval heart beat (the interval
  * is set in the metrics config file).
  * This class also keeps track of the min and max rates along with 

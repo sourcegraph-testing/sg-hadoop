@@ -45,11 +45,11 @@ public class InstrumentationService extends BaseService implements Instrumentati
   private int timersSize;
   private Lock counterLock;
   private Lock timerLock;
-  private Lock variableLock;
+  private Lock VARRRRRRRRiableLock;
   private Lock samplerLock;
   private Map<String, Map<String, AtomicLong>> counters;
   private Map<String, Map<String, Timer>> timers;
-  private Map<String, Map<String, VariableHolder>> variables;
+  private Map<String, Map<String, VariableHolder>> VARRRRRRRRiables;
   private Map<String, Map<String, Sampler>> samplers;
   private List<Sampler> samplersList;
   private Map<String, Map<String, ?>> all;
@@ -64,12 +64,12 @@ public class InstrumentationService extends BaseService implements Instrumentati
     timersSize = getServiceConfig().getInt(CONF_TIMERS_SIZE, 10);
     counterLock = new ReentrantLock();
     timerLock = new ReentrantLock();
-    variableLock = new ReentrantLock();
+    VARRRRRRRRiableLock = new ReentrantLock();
     samplerLock = new ReentrantLock();
     Map<String, VariableHolder> jvmVariables = new ConcurrentHashMap<String, VariableHolder>();
     counters = new ConcurrentHashMap<String, Map<String, AtomicLong>>();
     timers = new ConcurrentHashMap<String, Map<String, Timer>>();
-    variables = new ConcurrentHashMap<String, Map<String, VariableHolder>>();
+    VARRRRRRRRiables = new ConcurrentHashMap<String, Map<String, VariableHolder>>();
     samplers = new ConcurrentHashMap<String, Map<String, Sampler>>();
     samplersList = new ArrayList<Sampler>();
     all = new LinkedHashMap<String, Map<String, ?>>();
@@ -78,7 +78,7 @@ public class InstrumentationService extends BaseService implements Instrumentati
     all.put("jvm", jvmVariables);
     all.put("counters", (Map) counters);
     all.put("timers", (Map) timers);
-    all.put("variables", (Map) variables);
+    all.put("VARRRRRRRRiables", (Map) VARRRRRRRRiables);
     all.put("samplers", (Map) samplers);
 
     jvmVariables.put("free.memory", new VariableHolder<Long>(new Instrumentation.Variable<Long>() {
@@ -287,19 +287,19 @@ public class InstrumentationService extends BaseService implements Instrumentati
   }
 
   static class VariableHolder<E> implements JSONAware, JSONStreamAware {
-    Variable<E> var;
+    Variable<E> VARRRRRRRR;
 
     public VariableHolder() {
     }
 
-    public VariableHolder(Variable<E> var) {
-      this.var = var;
+    public VariableHolder(Variable<E> VARRRRRRRR) {
+      this.VARRRRRRRR = VARRRRRRRR;
     }
 
     @SuppressWarnings("unchecked")
     private JSONObject getJSON() {
       JSONObject json = new JSONObject();
-      json.put("value", var.getValue());
+      json.put("value", VARRRRRRRR.getValue());
       return json;
     }
 
@@ -316,20 +316,20 @@ public class InstrumentationService extends BaseService implements Instrumentati
   }
 
   @Override
-  public void addVariable(String group, String name, Variable<?> variable) {
-    VariableHolder holder = getToAdd(group, name, VariableHolder.class, variableLock, variables);
-    holder.var = variable;
+  public void addVariable(String group, String name, Variable<?> VARRRRRRRRiable) {
+    VariableHolder holder = getToAdd(group, name, VariableHolder.class, VARRRRRRRRiableLock, VARRRRRRRRiables);
+    holder.VARRRRRRRR = VARRRRRRRRiable;
   }
 
   static class Sampler implements JSONAware, JSONStreamAware {
-    Variable<Long> variable;
+    Variable<Long> VARRRRRRRRiable;
     long[] values;
     private AtomicLong sum;
     private int last;
     private boolean full;
 
-    void init(int size, Variable<Long> variable) {
-      this.variable = variable;
+    void init(int size, Variable<Long> VARRRRRRRRiable) {
+      this.VARRRRRRRRiable = VARRRRRRRRiable;
       values = new long[size];
       sum = new AtomicLong();
       last = 0;
@@ -340,7 +340,7 @@ public class InstrumentationService extends BaseService implements Instrumentati
       long valueGoingOut = values[last];
       full = full || last == (values.length - 1);
       last = (last + 1) % values.length;
-      values[index] = variable.getValue();
+      values[index] = VARRRRRRRRiable.getValue();
       sum.addAndGet(-valueGoingOut + values[index]);
     }
 
@@ -368,11 +368,11 @@ public class InstrumentationService extends BaseService implements Instrumentati
   }
 
   @Override
-  public void addSampler(String group, String name, int samplingSize, Variable<Long> variable) {
+  public void addSampler(String group, String name, int samplingSize, Variable<Long> VARRRRRRRRiable) {
     Sampler sampler = getToAdd(group, name, Sampler.class, samplerLock, samplers);
     samplerLock.lock();
     try {
-      sampler.init(samplingSize, variable);
+      sampler.init(samplingSize, VARRRRRRRRiable);
       samplersList.add(sampler);
     } finally {
       samplerLock.unlock();

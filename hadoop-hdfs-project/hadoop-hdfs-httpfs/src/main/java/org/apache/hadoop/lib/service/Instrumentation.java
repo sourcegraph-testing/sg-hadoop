@@ -40,10 +40,10 @@ public interface Instrumentation {
 
   public void addCron(String group, String name, Cron cron);
 
-  public void addVariable(String group, String name, Variable<?> variable);
+  public void addVariable(String group, String name, Variable<?> VARRRRRRRRiable);
 
   //sampling happens once a second
-  public void addSampler(String group, String name, int samplingSize, Variable<Long> variable);
+  public void addSampler(String group, String name, int samplingSize, Variable<Long> VARRRRRRRRiable);
 
   public Map<String, Map<String, ?>> getSnapshot();
 

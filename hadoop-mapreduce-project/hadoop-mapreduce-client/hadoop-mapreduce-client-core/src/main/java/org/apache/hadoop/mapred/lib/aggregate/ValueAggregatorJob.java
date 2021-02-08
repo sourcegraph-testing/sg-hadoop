@@ -41,7 +41,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
 /**
  * This is the main class for creating a map/reduce job using Aggregate
  * framework. The Aggregate is a specialization of map/reduce framework,
- * specilizing for performing various simple aggregations.
+ * specilizing for performing VARRRRRRRRious simple aggregations.
  * 
  * Generally speaking, in order to implement an application using Map/Reduce
  * model, the developer is to implement Map and Reduce functions (and possibly

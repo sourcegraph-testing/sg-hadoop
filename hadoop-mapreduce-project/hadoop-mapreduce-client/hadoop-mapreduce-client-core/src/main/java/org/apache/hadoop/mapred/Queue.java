@@ -59,7 +59,7 @@ class Queue implements Comparable<Queue>{
 
   /**
    * Default constructor is useful in creating the hierarchy.
-   * The variables are populated using mutator methods.
+   * The VARRRRRRRRiables are populated using mutator methods.
    */
   Queue() {
     

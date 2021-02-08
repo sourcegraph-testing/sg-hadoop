@@ -126,11 +126,11 @@ abstract class TaskRunner extends Thread {
   }
   
   /**
-   * Get the environment variables for the child map/reduce tasks.
+   * Get the environment VARRRRRRRRiables for the child map/reduce tasks.
    * @param jobConf job configuration
-   * @return the environment variables for the child map/reduce tasks or
+   * @return the environment VARRRRRRRRiables for the child map/reduce tasks or
    *         <code>null</code> if unspecified
-   * @deprecated Use environment variables specific to the map or reduce tasks
+   * @deprecated Use environment VARRRRRRRRiables specific to the map or reduce tasks
    *             set via {@link JobConf#MAPRED_MAP_TASK_ENV} or
    *             {@link JobConf#MAPRED_REDUCE_TASK_ENV}
    */
@@ -183,7 +183,7 @@ abstract class TaskRunner extends Thread {
       long logSize = TaskLog.getTaskLogLength(conf);
 
       //  Build exec child JVM args.
-      Vector<String> vargs =
+      Vector<String> VARRRRRRRRgs =
           getVMArgs(taskid, workDir, classPaths, logSize);
 
       tracker.addToMemoryManager(t.getTaskID(), t.isMapTask(), conf);
@@ -202,7 +202,7 @@ abstract class TaskRunner extends Thread {
       errorInfo = getVMEnvironment(errorInfo, workDir, conf, env,
                                    taskid, logSize);
 
-      launchJvmAndWait(setup, vargs, stdout, stderr, logSize, workDir, env);
+      launchJvmAndWait(setup, VARRRRRRRRgs, stdout, stderr, logSize, workDir, env);
       tracker.getTaskTrackerInstrumentation().reportTaskEnd(t.getTaskID());
       if (exitCodeSet) {
         if (!killed && exitCode != 0) {
@@ -247,10 +247,10 @@ abstract class TaskRunner extends Thread {
     }
   }
 
-  void launchJvmAndWait(List<String> setup, Vector<String> vargs, File stdout,
+  void launchJvmAndWait(List<String> setup, Vector<String> VARRRRRRRRgs, File stdout,
       File stderr, long logSize, File workDir, Map<String, String> env)
       throws InterruptedException {
-    jvmManager.launchJvm(this, jvmManager.constructJvmEnv(setup, vargs, stdout,
+    jvmManager.launchJvm(this, jvmManager.constructJvmEnv(setup, VARRRRRRRRgs, stdout,
         stderr, logSize, workDir, env, conf));
     synchronized (lock) {
       while (!done) {
@@ -355,11 +355,11 @@ abstract class TaskRunner extends Thread {
   private Vector<String> getVMArgs(TaskAttemptID taskid, File workDir,
       List<String> classPaths, long logSize)
       throws IOException {
-    Vector<String> vargs = new Vector<String>(8);
+    Vector<String> VARRRRRRRRgs = new Vector<String>(8);
     File jvm =                                  // use same jvm as parent
       new File(new File(System.getProperty("java.home"), "bin"), "java");
 
-    vargs.add(jvm.toString());
+    VARRRRRRRRgs.add(jvm.toString());
 
     // Add child (task) java-vm options.
     //
@@ -417,53 +417,53 @@ abstract class TaskRunner extends Thread {
       }
     }
     if(!hasUserLDPath) {
-      vargs.add("-Djava.library.path=" + libraryPath);
+      VARRRRRRRRgs.add("-Djava.library.path=" + libraryPath);
     }
     for (int i = 0; i < javaOptsSplit.length; i++) {
-      vargs.add(javaOptsSplit[i]);
+      VARRRRRRRRgs.add(javaOptsSplit[i]);
     }
 
     Path childTmpDir = createChildTmpDir(workDir, conf);
-    vargs.add("-Djava.io.tmpdir=" + childTmpDir);
+    VARRRRRRRRgs.add("-Djava.io.tmpdir=" + childTmpDir);
 
     // Add classpath.
-    vargs.add("-classpath");
+    VARRRRRRRRgs.add("-classpath");
     String classPath = StringUtils.join(SYSTEM_PATH_SEPARATOR, classPaths);
-    vargs.add(classPath);
+    VARRRRRRRRgs.add(classPath);
 
     // Setup the log4j prop
-    setupLog4jProperties(vargs, taskid, logSize);
+    setupLog4jProperties(VARRRRRRRRgs, taskid, logSize);
 
     if (conf.getProfileEnabled()) {
       if (conf.getProfileTaskRange(t.isMapTask()
                                    ).isIncluded(t.getPartition())) {
         File prof = TaskLog.getTaskLogFile(taskid, t.isTaskCleanupTask(),
             TaskLog.LogName.PROFILE);
-        vargs.add(String.format(conf.getProfileParams(), prof.toString()));
+        VARRRRRRRRgs.add(String.format(conf.getProfileParams(), prof.toString()));
       }
     }
 
     // Add main class and its arguments 
-    vargs.add(Child.class.getName());  // main of Child
+    VARRRRRRRRgs.add(Child.class.getName());  // main of Child
     // pass umbilical address
     InetSocketAddress address = tracker.getTaskTrackerReportAddress();
-    vargs.add(address.getAddress().getHostAddress()); 
-    vargs.add(Integer.toString(address.getPort())); 
-    vargs.add(taskid.toString());                      // pass task identifier
+    VARRRRRRRRgs.add(address.getAddress().getHostAddress()); 
+    VARRRRRRRRgs.add(Integer.toString(address.getPort())); 
+    VARRRRRRRRgs.add(taskid.toString());                      // pass task identifier
     // pass task log location
-    vargs.add(TaskLog.getAttemptDir(taskid, t.isTaskCleanupTask()).toString());
-    return vargs;
+    VARRRRRRRRgs.add(TaskLog.getAttemptDir(taskid, t.isTaskCleanupTask()).toString());
+    return VARRRRRRRRgs;
   }
 
-  private void setupLog4jProperties(Vector<String> vargs, TaskAttemptID taskid,
+  private void setupLog4jProperties(Vector<String> VARRRRRRRRgs, TaskAttemptID taskid,
       long logSize) {
-    vargs.add("-Dhadoop.log.dir=" + 
+    VARRRRRRRRgs.add("-Dhadoop.log.dir=" + 
         new File(System.getProperty("hadoop.log.dir")).getAbsolutePath());
-    vargs.add("-Dhadoop.root.logger=" + getLogLevel(conf).toString() + ",TLA");
-    vargs.add("-D" + TaskLogAppender.TASKID_PROPERTY +  "=" + taskid);
-    vargs.add("-D" + TaskLogAppender.ISCLEANUP_PROPERTY +
+    VARRRRRRRRgs.add("-Dhadoop.root.logger=" + getLogLevel(conf).toString() + ",TLA");
+    VARRRRRRRRgs.add("-D" + TaskLogAppender.TASKID_PROPERTY +  "=" + taskid);
+    VARRRRRRRRgs.add("-D" + TaskLogAppender.ISCLEANUP_PROPERTY +
               "=" + t.isTaskCleanupTask());
-    vargs.add("-D" + TaskLogAppender.LOGSIZE_PROPERTY + "=" + logSize);
+    VARRRRRRRRgs.add("-D" + TaskLogAppender.LOGSIZE_PROPERTY + "=" + logSize);
   }
 
   /**
@@ -514,7 +514,7 @@ abstract class TaskRunner extends Thread {
   }
 
   /**
-   * sets the environment variables needed for task jvm and its children.
+   * sets the environment VARRRRRRRRiables needed for task jvm and its children.
    * @param errorInfo
    * @param workDir
    * @param env
@@ -552,7 +552,7 @@ abstract class TaskRunner extends Thread {
                        + " -Dhadoop.tasklog.totalLogFileSize=" + logSize;
     env.put("HADOOP_CLIENT_OPTS", hadoopClientOpts);
 
-    // add the env variables passed by the user
+    // add the env VARRRRRRRRiables passed by the user
     String mapredChildEnv = getChildEnv(conf);
     if (mapredChildEnv != null && mapredChildEnv.length() > 0) {
       String childEnvs[] = mapredChildEnv.split(",");

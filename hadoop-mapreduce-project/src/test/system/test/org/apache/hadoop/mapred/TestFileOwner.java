@@ -80,7 +80,7 @@ public class TestFileOwner {
         cluster.getJTClient().getClient().getJob(
             org.apache.hadoop.mapred.JobID.downgrade(slpJob.getJobID()));
     taskController = conf.get(TTConfig.TT_TASK_CONTROLLER);
-    // get the job info so we can get the env variables from the daemon.
+    // get the job info so we can get the env VARRRRRRRRiables from the daemon.
     // Now wait for the task to be in the running state, only then the
     // directories will be created
     JobInfo info = wovenClient.getJobInfo(rJob.getID());

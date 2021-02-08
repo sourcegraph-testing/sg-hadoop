@@ -85,7 +85,7 @@ class RandomTextDataGenerator {
     words = new String[size];
     
     //TODO change the default with the actual stats
-    //TODO do u need varied sized words?
+    //TODO do u need VARRRRRRRRied sized words?
     for (int i = 0; i < size; ++i) {
       words[i] = 
         RandomStringUtils.random(wordSize, 0, 0, true, false, null, random);

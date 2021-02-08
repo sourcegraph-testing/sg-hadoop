@@ -77,9 +77,9 @@ public class Submitter extends Configured implements Tool {
   public static final String INTERPRETOR = 
     "mapreduce.pipes.executable.interpretor";
   public static final String IS_JAVA_MAP = "mapreduce.pipes.isjavamapper";
-  public static final String IS_JAVA_RR = "mapreduce.pipes.isjavarecordreader";
-  public static final String IS_JAVA_RW = "mapreduce.pipes.isjavarecordwriter";
-  public static final String IS_JAVA_REDUCE = "mapreduce.pipes.isjavareducer";
+  public static final String IS_JAVA_RR = "mapreduce.pipes.isjaVARRRRRRRRecordreader";
+  public static final String IS_JAVA_RW = "mapreduce.pipes.isjaVARRRRRRRRecordwriter";
+  public static final String IS_JAVA_REDUCE = "mapreduce.pipes.isjaVARRRRRRRReducer";
   public static final String PARTITIONER = "mapreduce.pipes.partitioner";
   public static final String INPUT_FORMAT = "mapreduce.pipes.inputformat";
   public static final String PORT = "mapreduce.pipes.command.port";
@@ -223,7 +223,7 @@ public class Submitter extends Configured implements Tool {
    * program under the debugger. You probably also want to set 
    * JobConf.setKeepFailedTaskFiles(true) to keep the entire directory from
    * being deleted.
-   * To run using the data file, set the environment variable 
+   * To run using the data file, set the environment VARRRRRRRRiable 
    * "mapreduce.pipes.commandfile" to point to the file.
    * @param conf the configuration to check
    * @return will the framework save the command file?
@@ -402,7 +402,7 @@ public class Submitter extends Configured implements Tool {
     cli.addOption("jar", false, "job jar file", "path");
     cli.addOption("inputformat", false, "java classname of InputFormat", 
                   "class");
-    //cli.addArgument("javareader", false, "is the RecordReader in Java");
+    //cli.addArgument("jaVARRRRRRRReader", false, "is the RecordReader in Java");
     cli.addOption("map", false, "java classname of Mapper", "class");
     cli.addOption("partitioner", false, "java classname of Partitioner", 
                   "class");
@@ -438,7 +438,7 @@ public class Submitter extends Configured implements Tool {
         job.setInputFormat(getClass(results, "inputformat", job,
                                      InputFormat.class));
       }
-      if (results.hasOption("javareader")) {
+      if (results.hasOption("jaVARRRRRRRReader")) {
         setIsJavaRecordReader(job, true);
       }
       if (results.hasOption("map")) {

@@ -429,7 +429,7 @@ public class Gridmix extends Configured implements Tool {
         // scan input dir contents
         submitter.refreshFilePool();
 
-        // set up the needed things for emulation of various loads
+        // set up the needed things for emulation of VARRRRRRRRious loads
         int exitCode = setupEmulation(conf, traceIn, scratchDir, ioPath,
                                       generate);
         if (exitCode != 0) {
@@ -479,7 +479,7 @@ public class Gridmix extends Configured implements Tool {
 
   /**
    * Create gridmix output directory. Setup things for emulation of
-   * various loads, if needed.
+   * VARRRRRRRRious loads, if needed.
    * @param conf gridmix configuration
    * @param traceIn trace file path(if it is '-', then trace comes from the
    *                stream stdin)

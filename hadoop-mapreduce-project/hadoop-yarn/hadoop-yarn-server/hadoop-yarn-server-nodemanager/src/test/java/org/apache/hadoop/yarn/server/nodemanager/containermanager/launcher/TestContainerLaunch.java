@@ -154,7 +154,7 @@ public class TestContainerLaunch extends BaseContainerManagerTest {
   }
 
   /**
-   * See if environment variable is forwarded using sanitizeEnv.
+   * See if environment VARRRRRRRRiable is forwarded using sanitizeEnv.
    * @throws Exception
    */
   @Test
@@ -170,7 +170,7 @@ public class TestContainerLaunch extends BaseContainerManagerTest {
     File scriptFile = new File(tmpDir, "scriptFile.sh");
     PrintWriter fileWriter = new PrintWriter(scriptFile);
     File processStartFile =
-        new File(tmpDir, "env_vars.txt").getAbsoluteFile();
+        new File(tmpDir, "env_VARRRRRRRRs.txt").getAbsoluteFile();
     fileWriter.write("\numask 0"); // So that start file is readable by the test
     fileWriter.write("\necho $" + Environment.MALLOC_ARENA_MAX.name() + " > " + processStartFile);
     fileWriter.write("\necho $$ >> " + processStartFile);

@@ -59,7 +59,7 @@ public abstract class TaskController implements Configurable {
     return conf;
   }
 
-  // The list of directory paths specified in the variable Configs.LOCAL_DIR
+  // The list of directory paths specified in the VARRRRRRRRiable Configs.LOCAL_DIR
   // This is used to determine which among the list of directories is picked up
   // for storing data for a particular task.
   protected String[] mapredLocalDirs;

@@ -121,7 +121,7 @@ import org.xml.sax.SAXException;
  *
  * <h4 id="VariableExpansion">Variable Expansion</h4>
  *
- * <p>Value strings are first processed for <i>variable expansion</i>. The
+ * <p>Value strings are first processed for <i>VARRRRRRRRiable expansion</i>. The
  * available properties are:<ol>
  * <li>Other properties defined in this Configuration; and, if a name is
  * undefined here,</li>
@@ -517,33 +517,33 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
     reloadConfiguration();
   }
   
-  private static Pattern varPat = Pattern.compile("\\$\\{[^\\}\\$\u0020]+\\}");
+  private static Pattern VARRRRRRRRPat = Pattern.compile("\\$\\{[^\\}\\$\u0020]+\\}");
   private static int MAX_SUBST = 20;
 
   private String substituteVars(String expr) {
     if (expr == null) {
       return null;
     }
-    Matcher match = varPat.matcher("");
+    Matcher match = VARRRRRRRRPat.matcher("");
     String eval = expr;
     for(int s=0; s<MAX_SUBST; s++) {
       match.reset(eval);
       if (!match.find()) {
         return eval;
       }
-      String var = match.group();
-      var = var.substring(2, var.length()-1); // remove ${ .. }
+      String VARRRRRRRR = match.group();
+      VARRRRRRRR = VARRRRRRRR.substring(2, VARRRRRRRR.length()-1); // remove ${ .. }
       String val = null;
       try {
-        val = System.getProperty(var);
+        val = System.getProperty(VARRRRRRRR);
       } catch(SecurityException se) {
         LOG.warn("Unexpected SecurityException in Configuration", se);
       }
       if (val == null) {
-        val = getRaw(var);
+        val = getRaw(VARRRRRRRR);
       }
       if (val == null) {
-        return eval; // return literal ${var}: var is unbound
+        return eval; // return literal ${VARRRRRRRR}: VARRRRRRRR is unbound
       }
       // substitute
       eval = eval.substring(0, match.start())+val+eval.substring(match.end());
@@ -557,7 +557,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * no such property exists. If the key is deprecated, it returns the value of
    * the first key which replaces the deprecated key and is not null
    * 
-   * Values are processed for <a href="#VariableExpansion">variable expansion</a> 
+   * Values are processed for <a href="#VariableExpansion">VARRRRRRRRiable expansion</a> 
    * before being returned. 
    * 
    * @param name the property name.
@@ -575,7 +575,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * If the key is deprecated, it returns the value of
    * the first key which replaces the deprecated key and is not null
    * 
-   * Values are processed for <a href="#VariableExpansion">variable expansion</a> 
+   * Values are processed for <a href="#VariableExpansion">VARRRRRRRRiable expansion</a> 
    * before being returned. 
    * 
    * @param name the property name.
@@ -594,7 +594,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
 
   /**
    * Get the value of the <code>name</code> property, without doing
-   * <a href="#VariableExpansion">variable expansion</a>.If the key is 
+   * <a href="#VariableExpansion">VARRRRRRRRiable expansion</a>.If the key is 
    * deprecated, it returns the value of the first key which replaces 
    * the deprecated key and is not null.
    * 
@@ -1718,7 +1718,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
   }
   
   /**
-   * Set the class loader that will be used to load the various objects.
+   * Set the class loader that will be used to load the VARRRRRRRRious objects.
    * 
    * @param classLoader the new class loader.
    */

@@ -98,10 +98,10 @@ class ReportWriter {
   /**
    * Provides a more detailed report for a given operation. This will output the
    * keys and values for all input and then sort based on measurement type and
-   * attempt to show rates for various metrics which have expected types to be
+   * attempt to show rates for VARRRRRRRRious metrics which have expected types to be
    * able to measure there rate. Currently this will show rates for bytes
    * written, success count, files created, directory entries, op count and
-   * bytes read if the variable for time taken is available for each measurement
+   * bytes read if the VARRRRRRRRiable for time taken is available for each measurement
    * type.
    * 
    * @param operation

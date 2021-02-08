@@ -1258,8 +1258,8 @@ public class TestCheckpoint extends TestCase {
       }
     }
     
-    // Validate invariant that files named the same are the same.
-    assertParallelFilesInvariant(cluster, ImmutableList.of(secondary1, secondary2));
+    // Validate inVARRRRRRRRiant that files named the same are the same.
+    assertParallelFilesInVARRRRRRRRiant(cluster, ImmutableList.of(secondary1, secondary2));
 
     // NN should have removed the checkpoint at txid 2 at this point, but has
     // one at txid 6
@@ -1371,8 +1371,8 @@ public class TestCheckpoint extends TestCase {
       }
     }
     
-    // Validate invariant that files named the same are the same.
-    assertParallelFilesInvariant(cluster, ImmutableList.of(secondary1, secondary2));
+    // Validate inVARRRRRRRRiant that files named the same are the same.
+    assertParallelFilesInVARRRRRRRRiant(cluster, ImmutableList.of(secondary1, secondary2));
     // Validate that the NN received checkpoints at expected txids
     // (i.e that both checkpoints went through)
     assertNNHasCheckpoints(cluster, ImmutableList.of(6,8));
@@ -1544,7 +1544,7 @@ public class TestCheckpoint extends TestCase {
       secondary.doCheckpoint();
       
       assertNNHasCheckpoints(cluster, ImmutableList.of(8));
-      assertParallelFilesInvariant(cluster, ImmutableList.of(secondary));
+      assertParallelFilesInVARRRRRRRRiant(cluster, ImmutableList.of(secondary));
     } finally {
       if (currentDir != null) {
         currentDir.setExecutable(true);
@@ -1621,7 +1621,7 @@ public class TestCheckpoint extends TestCase {
       secondary.doCheckpoint();
       
       assertNNHasCheckpoints(cluster, ImmutableList.of(8));
-      assertParallelFilesInvariant(cluster, ImmutableList.of(secondary));
+      assertParallelFilesInVARRRRRRRRiant(cluster, ImmutableList.of(secondary));
     } finally {
       if (currentDir != null) {
         currentDir.setExecutable(true);
@@ -1782,7 +1782,7 @@ public class TestCheckpoint extends TestCase {
    * and NN, they should have the same content too.
    */
   @SuppressWarnings("deprecation")
-  private void assertParallelFilesInvariant(MiniDFSCluster cluster,
+  private void assertParallelFilesInVARRRRRRRRiant(MiniDFSCluster cluster,
       ImmutableList<SecondaryNameNode> secondaries) throws Exception {
     List<File> allCurrentDirs = Lists.newArrayList();
     allCurrentDirs.addAll(getNameNodeCurrentDirs(cluster));

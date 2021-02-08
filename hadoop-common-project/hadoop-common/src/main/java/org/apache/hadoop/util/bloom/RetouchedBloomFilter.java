@@ -133,7 +133,7 @@ implements RemoveScheme {
   /**
    * Adds a false positive information to <i>this</i> retouched Bloom filter.
    * <p>
-   * <b>Invariant</b>: if the false positive is <code>null</code>, nothing happens.
+   * <b>InVARRRRRRRRiant</b>: if the false positive is <code>null</code>, nothing happens.
    * @param key The false positive key to add.
    */
   public void addFalsePositive(Key key) {
@@ -387,7 +387,7 @@ implements RemoveScheme {
   }
   
   /**
-   * Creates and initialises the various vectors.
+   * Creates and initialises the VARRRRRRRRious vectors.
    */
   @SuppressWarnings("unchecked")
   private void createVector() {

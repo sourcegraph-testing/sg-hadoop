@@ -80,7 +80,7 @@ import org.apache.hadoop.util.ToolRunner;
  *   </li>
  * </ol></p>
  *  
- * Normally the user creates the application, describes various facets of the
+ * Normally the user creates the application, describes VARRRRRRRRious facets of the
  * job via {@link JobConf} and then uses the <code>JobClient</code> to submit 
  * the job and monitor its progress.
  * 
@@ -89,7 +89,7 @@ import org.apache.hadoop.util.ToolRunner;
  *     // Create a new JobConf
  *     JobConf job = new JobConf(new Configuration(), MyJob.class);
  *     
- *     // Specify various job-specific parameters     
+ *     // Specify VARRRRRRRRious job-specific parameters     
  *     job.setJobName("myjob");
  *     
  *     job.setInputPath(new Path("in"));
@@ -111,7 +111,7 @@ import org.apache.hadoop.util.ToolRunner;
  * 
  * <p>However, this also means that the onus on ensuring jobs are complete 
  * (success/failure) lies squarely on the clients. In such situations the 
- * various job-control options are:
+ * VARRRRRRRRious job-control options are:
  * <ol>
  *   <li>
  *   {@link #runJob(JobConf)} : submits the job and returns only after 
@@ -425,7 +425,7 @@ public class JobClient extends CLI {
   Cluster cluster;
   /**
    * Ugi of the client. We store this ugi when the client is created and 
-   * then make sure that the same ugi is used to run the various protocols.
+   * then make sure that the same ugi is used to run the VARRRRRRRRious protocols.
    */
   UserGroupInformation clientUgi;
   

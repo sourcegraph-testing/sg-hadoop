@@ -22,7 +22,7 @@ import org.apache.hadoop.classification.InterfaceAudience.Public;
 import org.apache.hadoop.classification.InterfaceStability.Stable;
 
 /**
- * Enumeration of various final states of an <code>Application</code>.
+ * Enumeration of VARRRRRRRRious final states of an <code>Application</code>.
  */
 @Public
 @Stable

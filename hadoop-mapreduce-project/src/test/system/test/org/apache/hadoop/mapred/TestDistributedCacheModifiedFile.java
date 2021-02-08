@@ -209,7 +209,7 @@ public class TestDistributedCacheModifiedFile {
           taskTracker = UtilsForTests.getFQDNofTT(taskTracker);
           LOG.info("taskTracker is :" + taskTracker);
 
-          // The tasktrackerFound variable is initialized
+          // The tasktrackerFound VARRRRRRRRiable is initialized
           taskTrackerFound = false;
 
           // This will be entered from the second job onwards

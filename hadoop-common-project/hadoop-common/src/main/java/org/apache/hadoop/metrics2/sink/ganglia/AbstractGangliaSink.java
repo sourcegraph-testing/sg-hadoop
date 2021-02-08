@@ -96,7 +96,7 @@ public abstract class AbstractGangliaSink implements MetricsSink {
   };
 
   /**
-   * define enum for various type of conf
+   * define enum for VARRRRRRRRious type of conf
    */
   public enum GangliaConfType {
     slope, units, dmax, tmax

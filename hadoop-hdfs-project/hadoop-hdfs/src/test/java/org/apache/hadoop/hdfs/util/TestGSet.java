@@ -169,7 +169,7 @@ public class TestGSet {
   /**
    * A long test,
    * which may take ~5 hours,
-   * with various data sets and parameters.
+   * with VARRRRRRRRious data sets and parameters.
    * If you are changing the implementation,
    * please un-comment the following line in order to run the test.
    */

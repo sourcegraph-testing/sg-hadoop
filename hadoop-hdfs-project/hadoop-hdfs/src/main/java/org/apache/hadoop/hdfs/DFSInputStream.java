@@ -51,7 +51,7 @@ import org.apache.hadoop.security.token.Token;
 
 /****************************************************************
  * DFSInputStream provides bytes from a named file.  It handles 
- * negotiation of the namenode and various datanodes as necessary.
+ * negotiation of the namenode and VARRRRRRRRious datanodes as necessary.
  ****************************************************************/
 @InterfaceAudience.Private
 public class DFSInputStream extends FSInputStream {
@@ -72,7 +72,7 @@ public class DFSInputStream extends FSInputStream {
   private long blockEnd = -1;
 
   /**
-   * This variable tracks the number of failures since the start of the
+   * This VARRRRRRRRiable tracks the number of failures since the start of the
    * most recent user-facing operation. That is to say, it should be reset
    * whenever the user makes a call on this stream, and if at any point
    * during the retry logic, the failure count exceeds a threshold,

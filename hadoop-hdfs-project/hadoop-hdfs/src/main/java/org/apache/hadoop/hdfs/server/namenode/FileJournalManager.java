@@ -306,7 +306,7 @@ class FileJournalManager implements JournalManager {
 
   /** 
    * Find the maximum transaction in the journal.
-   * This gets stored in a member variable, as corrupt edit logs
+   * This gets stored in a member VARRRRRRRRiable, as corrupt edit logs
    * will be moved aside, but we still need to remember their first
    * tranaction id in the case that it was the maximum transaction in
    * the journal.

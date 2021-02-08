@@ -1064,7 +1064,7 @@ class MapTask extends Task {
         valSerializer.serialize(value);
         // It's possible for records to have zero length, i.e. the serializer
         // will perform no writes. To ensure that the boundary conditions are
-        // checked and that the kvindex invariant is maintained, perform a
+        // checked and that the kvindex inVARRRRRRRRiant is maintained, perform a
         // zero-length write into the buffer. The logic monitoring this could be
         // moved into collect, but this is cleaner and inexpensive. For now, it
         // is acceptable.
@@ -1269,7 +1269,7 @@ class MapTask extends Task {
       @Override
       public void write(byte b[], int off, int len)
           throws IOException {
-        // must always verify the invariant that at least METASIZE bytes are
+        // must always verify the inVARRRRRRRRiant that at least METASIZE bytes are
         // available beyond kvindex, even when len == 0
         bufferRemaining -= len;
         if (bufferRemaining <= 0) {

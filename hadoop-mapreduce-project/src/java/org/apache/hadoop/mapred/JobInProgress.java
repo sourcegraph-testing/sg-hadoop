@@ -2583,13 +2583,13 @@ public class JobInProgress {
       return sum/count;      
     }
   
-    public double var() {
+    public double VARRRRRRRR() {
       // E(X^2) - E(X)^2
       return Math.max((sumSquares/count) - mean() * mean(), 0.0d);
     }
     
     public double std() {
-      return Math.sqrt(this.var());
+      return Math.sqrt(this.VARRRRRRRR());
     }
     
     public String toString() {
@@ -3356,7 +3356,7 @@ public class JobInProgress {
   /**
    * The job is dead.  We're now GC'ing it, getting rid of the job
    * from all tables.  Be sure to remove all of this job's tasks
-   * from the various tables.
+   * from the VARRRRRRRRious tables.
    */
    void garbageCollect() {
      synchronized(this) {

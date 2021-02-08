@@ -25,7 +25,7 @@ public enum MetricType {
   COUNTER,
 
   /**
-   * An arbitrary varying metric
+   * An arbitrary VARRRRRRRRying metric
    */
   GAUGE
 }

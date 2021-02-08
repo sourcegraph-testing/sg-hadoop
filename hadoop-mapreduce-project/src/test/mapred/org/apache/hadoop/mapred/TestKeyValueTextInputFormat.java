@@ -62,7 +62,7 @@ public class TestKeyValueTextInputFormat extends TestCase {
     localFs.delete(workDir, true);
     FileInputFormat.setInputPaths(job, workDir);
 
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length+= random.nextInt(MAX_LENGTH/10)+1) {
 
@@ -81,7 +81,7 @@ public class TestKeyValueTextInputFormat extends TestCase {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       KeyValueTextInputFormat format = new KeyValueTextInputFormat();
       format.configure(job);
       for (int i = 0; i < 3; i++) {

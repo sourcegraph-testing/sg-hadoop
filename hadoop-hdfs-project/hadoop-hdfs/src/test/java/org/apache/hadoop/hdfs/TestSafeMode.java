@@ -131,7 +131,7 @@ public class TestSafeMode {
   }
 
   /**
-   * Run various fs operations while the NN is in safe mode,
+   * Run VARRRRRRRRious fs operations while the NN is in safe mode,
    * assert that they are either allowed or fail as expected.
    */
   @Test

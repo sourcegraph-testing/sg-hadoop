@@ -447,7 +447,7 @@ public class TaskLog {
    * @return the modified command that should be run
    * 
    * @deprecated     pidFiles are no more used. Instead pid is exported to
-   *                 env variable JVM_PID.
+   *                 env VARRRRRRRRiable JVM_PID.
    */
   @Deprecated
   public static List<String> captureOutAndError(List<String> setup,
@@ -512,7 +512,7 @@ public class TaskLog {
     String stderr = FileUtil.makeShellPath(stderrFilename);    
     StringBuffer mergedCmd = new StringBuffer();
     
-    // Export the pid of taskJvm to env variable JVM_PID.
+    // Export the pid of taskJvm to env VARRRRRRRRiable JVM_PID.
     // Currently pid is not used on Windows
     if (!Shell.WINDOWS) {
       mergedCmd.append(" export JVM_PID=`echo $$` ; ");

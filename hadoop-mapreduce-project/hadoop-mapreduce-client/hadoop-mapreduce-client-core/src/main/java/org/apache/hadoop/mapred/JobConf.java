@@ -89,7 +89,7 @@ import org.apache.log4j.Level;
  *     // Create a new JobConf
  *     JobConf job = new JobConf(new Configuration(), MyJob.class);
  *     
- *     // Specify various job-specific parameters     
+ *     // Specify VARRRRRRRRious job-specific parameters     
  *     job.setJobName("myjob");
  *     
  *     FileInputFormat.setInputPaths(job, new Path("in"));
@@ -188,11 +188,11 @@ public class JobConf extends Configuration {
    * /tmp and to set the heap maximum to be a gigabyte, pass a 'value' of:
    *          -Xmx1024m -verbose:gc -Xloggc:/tmp/@taskid@.gc
    * 
-   * The configuration variable {@link #MAPRED_TASK_ULIMIT} can be used to 
+   * The configuration VARRRRRRRRiable {@link #MAPRED_TASK_ULIMIT} can be used to 
    * control the maximum virtual memory of the child processes.
    * 
-   * The configuration variable {@link #MAPRED_TASK_ENV} can be used to pass 
-   * other environment variables to the child processes.
+   * The configuration VARRRRRRRRiable {@link #MAPRED_TASK_ENV} can be used to pass 
+   * other environment VARRRRRRRRiables to the child processes.
    * 
    * @deprecated Use {@link #MAPRED_MAP_TASK_JAVA_OPTS} or 
    *                 {@link #MAPRED_REDUCE_TASK_JAVA_OPTS}
@@ -211,11 +211,11 @@ public class JobConf extends Configuration {
    * /tmp and to set the heap maximum to be a gigabyte, pass a 'value' of:
    *          -Xmx1024m -verbose:gc -Xloggc:/tmp/@taskid@.gc
    * 
-   * The configuration variable {@link #MAPRED_MAP_TASK_ULIMIT} can be used to 
+   * The configuration VARRRRRRRRiable {@link #MAPRED_MAP_TASK_ULIMIT} can be used to 
    * control the maximum virtual memory of the map processes.
    * 
-   * The configuration variable {@link #MAPRED_MAP_TASK_ENV} can be used to pass 
-   * other environment variables to the map processes.
+   * The configuration VARRRRRRRRiable {@link #MAPRED_MAP_TASK_ENV} can be used to pass 
+   * other environment VARRRRRRRRiables to the map processes.
    */
   public static final String MAPRED_MAP_TASK_JAVA_OPTS = 
     JobContext.MAP_JAVA_OPTS;
@@ -231,11 +231,11 @@ public class JobConf extends Configuration {
    * /tmp and to set the heap maximum to be a gigabyte, pass a 'value' of:
    *          -Xmx1024m -verbose:gc -Xloggc:/tmp/@taskid@.gc
    * 
-   * The configuration variable {@link #MAPRED_REDUCE_TASK_ULIMIT} can be used  
+   * The configuration VARRRRRRRRiable {@link #MAPRED_REDUCE_TASK_ULIMIT} can be used  
    * to control the maximum virtual memory of the reduce processes.
    * 
-   * The configuration variable {@link #MAPRED_REDUCE_TASK_ENV} can be used to 
-   * pass process environment variables to the reduce processes.
+   * The configuration VARRRRRRRRiable {@link #MAPRED_REDUCE_TASK_ENV} can be used to 
+   * pass process environment VARRRRRRRRiables to the reduce processes.
    */
   public static final String MAPRED_REDUCE_TASK_JAVA_OPTS = 
     JobContext.REDUCE_JAVA_OPTS;
@@ -279,12 +279,12 @@ public class JobConf extends Configuration {
    * Configuration key to set the environment of the child map/reduce tasks.
    * 
    * The format of the value is <code>k1=v1,k2=v2</code>. Further it can 
-   * reference existing environment variables via <code>$key</code>.
+   * reference existing environment VARRRRRRRRiables via <code>$key</code>.
    * 
    * Example:
    * <ul>
-   *   <li> A=foo - This will set the env variable A to foo. </li>
-   *   <li> B=$X:c This is inherit tasktracker's X env variable. </li>
+   *   <li> A=foo - This will set the env VARRRRRRRRiable A to foo. </li>
+   *   <li> B=$X:c This is inherit tasktracker's X env VARRRRRRRRiable. </li>
    * </ul>
    * 
    * @deprecated Use {@link #MAPRED_MAP_TASK_ENV} or 
@@ -298,12 +298,12 @@ public class JobConf extends Configuration {
    * map tasks.
    * 
    * The format of the value is <code>k1=v1,k2=v2</code>. Further it can 
-   * reference existing environment variables via <code>$key</code>.
+   * reference existing environment VARRRRRRRRiables via <code>$key</code>.
    * 
    * Example:
    * <ul>
-   *   <li> A=foo - This will set the env variable A to foo. </li>
-   *   <li> B=$X:c This is inherit tasktracker's X env variable. </li>
+   *   <li> A=foo - This will set the env VARRRRRRRRiable A to foo. </li>
+   *   <li> B=$X:c This is inherit tasktracker's X env VARRRRRRRRiable. </li>
    * </ul>
    */
   public static final String MAPRED_MAP_TASK_ENV = JobContext.MAP_ENV;
@@ -313,12 +313,12 @@ public class JobConf extends Configuration {
    * reduce tasks.
    * 
    * The format of the value is <code>k1=v1,k2=v2</code>. Further it can 
-   * reference existing environment variables via <code>$key</code>.
+   * reference existing environment VARRRRRRRRiables via <code>$key</code>.
    * 
    * Example:
    * <ul>
-   *   <li> A=foo - This will set the env variable A to foo. </li>
-   *   <li> B=$X:c This is inherit tasktracker's X env variable. </li>
+   *   <li> A=foo - This will set the env VARRRRRRRRiable A to foo. </li>
+   *   <li> B=$X:c This is inherit tasktracker's X env VARRRRRRRRiable. </li>
    * </ul>
    */
   public static final String MAPRED_REDUCE_TASK_ENV = JobContext.REDUCE_ENV;
@@ -1937,7 +1937,7 @@ public class JobConf extends Configuration {
   }
 
   /**
-   * @deprecated this variable is deprecated and nolonger in use.
+   * @deprecated this VARRRRRRRRiable is deprecated and nolonger in use.
    */
   @Deprecated
   public long getMaxPhysicalMemoryForTask() {
@@ -1958,7 +1958,7 @@ public class JobConf extends Configuration {
   }
 
   static String deprecatedString(String key) {
-    return "The variable " + key + " is no longer used.";
+    return "The VARRRRRRRRiable " + key + " is no longer used.";
   }
 
   private void checkAndWarnDeprecation() {

@@ -33,7 +33,7 @@ import static org.apache.hadoop.test.MetricsAsserts.*;
 public class TestMetricsRegistry {
 
   /**
-   * Test various factory methods
+   * Test VARRRRRRRRious factory methods
    */
   @Test public void testNewMetrics() {
     final MetricsRegistry r = new MetricsRegistry("test");

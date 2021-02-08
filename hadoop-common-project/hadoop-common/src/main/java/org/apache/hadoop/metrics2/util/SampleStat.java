@@ -110,9 +110,9 @@ public class SampleStat {
   }
 
   /**
-   * @return  the variance of the samples
+   * @return  the VARRRRRRRRiance of the samples
    */
-  public double variance() {
+  public double VARRRRRRRRiance() {
     return numSamples > 1 ? s1 / (numSamples - 1) : 0.0;
   }
 
@@ -120,7 +120,7 @@ public class SampleStat {
    * @return  the standard deviation of the samples
    */
   public double stddev() {
-    return Math.sqrt(variance());
+    return Math.sqrt(VARRRRRRRRiance());
   }
 
   /**

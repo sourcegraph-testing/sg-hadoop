@@ -30,7 +30,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * This class tests various upgrade cases from earlier versions to current
+ * This class tests VARRRRRRRRious upgrade cases from earlier versions to current
  * version with and without clusterid.
  */
 public class TestStartupOptionUpgrade {

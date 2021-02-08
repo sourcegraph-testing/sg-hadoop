@@ -178,7 +178,7 @@ public class UserGroupInformation {
 
   /** Metrics to track UGI activity */
   static UgiMetrics metrics = UgiMetrics.create();
-  /** Are the static variables that depend on configuration initialized? */
+  /** Are the static VARRRRRRRRiables that depend on configuration initialized? */
   private static boolean isInitialized = false;
   /** Should we use Kerberos configuration? */
   private static boolean useKerberos;
@@ -191,7 +191,7 @@ public class UserGroupInformation {
   /** Leave 10 minutes between relogin attempts. */
   private static final long MIN_TIME_BEFORE_RELOGIN = 10 * 60 * 1000L;
   
-  /**Environment variable pointing to the token cache file*/
+  /**Environment VARRRRRRRRiable pointing to the token cache file*/
   public static final String HADOOP_TOKEN_FILE_LOCATION = 
     "HADOOP_TOKEN_FILE_LOCATION";
   

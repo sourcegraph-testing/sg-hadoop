@@ -53,7 +53,7 @@ import org.apache.hadoop.yarn.factory.providers.RecordFactoryProvider;
 import org.apache.hadoop.yarn.security.ContainerTokenIdentifier;
 
 /**
- * Builder utilities to construct various objects.
+ * Builder utilities to construct VARRRRRRRRious objects.
  *
  */
 public class BuilderUtils {

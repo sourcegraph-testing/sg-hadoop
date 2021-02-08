@@ -104,7 +104,7 @@ public class HsView extends TwoColumnLayout {
    *  been initialized. This code adds in per field filtering.
    */
   private String jobsPostTableInit() {
-    return "var asInitVals = new Array();\n" +
+    return "VARRRRRRRR asInitVals = new Array();\n" +
     		   "$('tfoot input').keyup( function () \n{"+
            "  jobsDataTable.fnFilter( this.value, $('tfoot input').index(this) );\n"+
            "} );\n"+

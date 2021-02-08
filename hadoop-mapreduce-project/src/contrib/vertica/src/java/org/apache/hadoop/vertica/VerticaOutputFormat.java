@@ -74,7 +74,7 @@ public class VerticaOutputFormat extends OutputFormat<Text, VerticaRecord> {
    * @param tableName
    * @param dropTable
    * @param tableDef
-   *          list of column definitions such as "foo int", "bar varchar(10)"
+   *          list of column definitions such as "foo int", "bar VARRRRRRRRchar(10)"
    */
   public static void setOutput(Job job, String tableName, boolean dropTable,
       String... tableDef) {

@@ -162,7 +162,7 @@ abstract public class Command extends Configured {
   /**
    * The exit code to be returned if any errors occur during execution.
    * This method is needed to account for the inconsistency in the exit
-   * codes returned by various commands.
+   * codes returned by VARRRRRRRRious commands.
    * @return a non-zero exit code
    */
   protected int exitCodeForError() { return 1; }

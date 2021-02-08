@@ -446,7 +446,7 @@ public interface MRJobConfig {
 
   public static final String HADOOP_WORK_DIR = "HADOOP_WORK_DIR";
 
-  // Environment variables used by Pipes. (TODO: these
+  // Environment VARRRRRRRRiables used by Pipes. (TODO: these
   // do not appear to be used by current pipes source code!)
   public static final String STDOUT_LOGFILE_ENV = "STDOUT_LOGFILE_ENV";
   public static final String STDERR_LOGFILE_ENV = "STDERR_LOGFILE_ENV";

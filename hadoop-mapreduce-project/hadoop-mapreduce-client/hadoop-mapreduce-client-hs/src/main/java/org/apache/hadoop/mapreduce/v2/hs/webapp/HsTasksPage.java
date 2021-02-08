@@ -84,7 +84,7 @@ public class HsTasksPage extends HsView {
   }
   
   private String jobsPostTableInit() {
-    return "var asInitVals = new Array();\n" +
+    return "VARRRRRRRR asInitVals = new Array();\n" +
            "$('tfoot input').keyup( function () \n{"+
            "  tasksDataTable.fnFilter( this.value, $('tfoot input').index(this) );\n"+
            "} );\n"+

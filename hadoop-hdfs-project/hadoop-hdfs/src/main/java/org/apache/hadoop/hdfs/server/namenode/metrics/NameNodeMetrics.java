@@ -32,7 +32,7 @@ import org.apache.hadoop.metrics2.lib.MutableRate;
 import org.apache.hadoop.metrics2.source.JvmMetrics;
 
 /**
- * This class is for maintaining  the various NameNode activity statistics
+ * This class is for maintaining  the VARRRRRRRRious NameNode activity statistics
  * and publishing them through the metrics interfaces.
  */
 @Metrics(name="NameNodeActivity", about="NameNode metrics", context="dfs")

@@ -352,12 +352,12 @@ public class TestVertica extends VerticaTestCase {
     }
 
     // TODO: test create schema
-    // TODO: test writable variants of data types
+    // TODO: test writable VARRRRRRRRiants of data types
     VerticaOutputFormat output = new VerticaOutputFormat();
     Job job = getVerticaJob();
     VerticaOutputFormat.setOutput(job, "mrtarget", true, "a int", "b boolean",
-        "c char(1)", "d date", "f float", "t timestamp", "v varchar",
-        "z varbinary");
+        "c char(1)", "d date", "f float", "t timestamp", "v VARRRRRRRRchar",
+        "z VARRRRRRRRbinary");
     output.checkOutputSpecs(job, true);
     TaskAttemptContext context = new TaskAttemptContextImpl(job.getConfiguration(),
         new TaskAttemptID());

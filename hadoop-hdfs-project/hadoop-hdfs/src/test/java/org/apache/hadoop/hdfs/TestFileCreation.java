@@ -54,7 +54,7 @@ import org.apache.log4j.Level;
 
 
 /**
- * This class tests various cases during file creation.
+ * This class tests VARRRRRRRRious cases during file creation.
  */
 public class TestFileCreation extends junit.framework.TestCase {
   static final String DIR = "/" + TestFileCreation.class.getSimpleName() + "/";

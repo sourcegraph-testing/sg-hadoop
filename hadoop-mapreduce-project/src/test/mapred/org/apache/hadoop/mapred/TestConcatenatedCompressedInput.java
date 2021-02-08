@@ -374,7 +374,7 @@ public class TestConcatenatedCompressedInput {
     int bufferSize;
 
     // ideally would add some offsets/shifts in here (e.g., via extra fields
-    // of various sizes), but...significant work to hand-generate each header
+    // of VARRRRRRRRious sizes), but...significant work to hand-generate each header
     for (bufferSize = 1; bufferSize < 34; ++bufferSize) {
       jConf.setInt("io.file.buffer.size", bufferSize);
       doSingleGzipBufferSize(jConf);

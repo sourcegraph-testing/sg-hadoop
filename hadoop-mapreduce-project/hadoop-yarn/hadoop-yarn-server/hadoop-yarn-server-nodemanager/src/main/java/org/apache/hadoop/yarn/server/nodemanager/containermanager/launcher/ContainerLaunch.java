@@ -134,7 +134,7 @@ public class ContainerLaunch implements Callable<Integer> {
       launchContext.setCommands(newCmds);
 
       Map<String, String> environment = launchContext.getEnvironment();
-      // Make a copy of env to iterate & do variable expansion
+      // Make a copy of env to iterate & do VARRRRRRRRiable expansion
       for (Entry<String, String> entry : environment.entrySet()) {
         String value = entry.getValue();
         entry.setValue(
@@ -143,7 +143,7 @@ public class ContainerLaunch implements Callable<Integer> {
                 containerLogDir.toUri().getPath())
             );
       }
-      // /////////////////////////// End of variable expansion
+      // /////////////////////////// End of VARRRRRRRRiable expansion
 
       FileContext lfs = FileContext.getLocalFSFileContext();
 
@@ -464,23 +464,23 @@ public class ContainerLaunch implements Callable<Integer> {
   }
 
   private static void putEnvIfNotNull(
-      Map<String, String> environment, String variable, String value) {
+      Map<String, String> environment, String VARRRRRRRRiable, String value) {
     if (value != null) {
-      environment.put(variable, value);
+      environment.put(VARRRRRRRRiable, value);
     }
   }
   
   private static void putEnvIfAbsent(
-      Map<String, String> environment, String variable) {
-    if (environment.get(variable) == null) {
-      putEnvIfNotNull(environment, variable, System.getenv(variable));
+      Map<String, String> environment, String VARRRRRRRRiable) {
+    if (environment.get(VARRRRRRRRiable) == null) {
+      putEnvIfNotNull(environment, VARRRRRRRRiable, System.getenv(VARRRRRRRRiable));
     }
   }
   
   public void sanitizeEnv(Map<String, String> environment, 
       Path pwd, List<Path> appDirs) {
     /**
-     * Non-modifiable environment variables
+     * Non-modifiable environment VARRRRRRRRiables
      */
 
     putEnvIfNotNull(environment, Environment.USER.name(), container.getUser());
@@ -513,17 +513,17 @@ public class ContainerLaunch implements Callable<Integer> {
     }
 
     /**
-     * Modifiable environment variables
+     * Modifiable environment VARRRRRRRRiables
      */
     
-    // allow containers to override these variables
+    // allow containers to override these VARRRRRRRRiables
     String[] whitelist = conf.get(YarnConfiguration.NM_ENV_WHITELIST, YarnConfiguration.DEFAULT_NM_ENV_WHITELIST).split(",");
     
     for(String whitelistEnvVariable : whitelist) {
       putEnvIfAbsent(environment, whitelistEnvVariable.trim());
     }
 
-    // variables here will be forced in, even if the container has specified them.
+    // VARRRRRRRRiables here will be forced in, even if the container has specified them.
     Apps.setEnvFromInputString(
       environment,
       conf.get(

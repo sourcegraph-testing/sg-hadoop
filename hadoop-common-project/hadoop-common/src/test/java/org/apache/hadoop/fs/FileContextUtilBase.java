@@ -39,7 +39,7 @@ import org.junit.Test;
  * <p>
  * To test a given {@link FileSystem} implementation create a subclass of this
  * test and override {@link #setUp()} to initialize the <code>fc</code> 
- * {@link FileContext} instance variable.
+ * {@link FileContext} instance VARRRRRRRRiable.
  * 
  * </p>
  */

@@ -901,25 +901,25 @@ public class HamletSpec {
     Phrase kbd(String selector, String cdata);
 
     /**
-     * Add a VAR (variable) element.
+     * Add a VAR (VARRRRRRRRiable) element.
      * @return a new VAR element builder
      */
-    VAR var();
+    VAR VARRRRRRRR();
 
     /**
-     * Add a VAR (variable) element.
+     * Add a VAR (VARRRRRRRRiable) element.
      * @param cdata the content
      * @return the current element builder
      */
-    Phrase var(String cdata);
+    Phrase VARRRRRRRR(String cdata);
 
     /**
-     * Add a VAR (variable) element.
+     * Add a VAR (VARRRRRRRRiable) element.
      * @param selector the css selector in the form of (#id)*(.class)*
      * @param cdata the content
      * @return the current element builder
      */
-    Phrase var(String selector, String cdata);
+    Phrase VARRRRRRRR(String selector, String cdata);
 
     /**
      * Add a CITE element.
@@ -2518,7 +2518,7 @@ public class HamletSpec {
    *
    */
   public interface TEXTAREA extends Attrs, PCData, _Child {
-    /** variable name for the text
+    /** VARRRRRRRRiable name for the text
      * @param cdata
      * @return the current element builder
      */

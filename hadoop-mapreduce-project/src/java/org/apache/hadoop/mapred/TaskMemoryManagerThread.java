@@ -75,7 +75,7 @@ class TaskMemoryManagerThread extends Thread {
     }
   }
 
-  // mainly for test purposes. note that the tasktracker variable is
+  // mainly for test purposes. note that the tasktracker VARRRRRRRRiable is
   // not set here.
   TaskMemoryManagerThread(long maxMemoryAllowedForAllTasks,
                             long monitoringInterval) {

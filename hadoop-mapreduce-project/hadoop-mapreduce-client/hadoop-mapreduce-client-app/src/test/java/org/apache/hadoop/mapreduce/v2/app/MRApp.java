@@ -447,7 +447,7 @@ public class MRApp extends MRAppMaster {
           newApiCommitter, user, System.currentTimeMillis(), getAllAMInfos());
 
       // This "this leak" is okay because the retained pointer is in an
-      //  instance variable.
+      //  instance VARRRRRRRRiable.
       localStateMachine = localFactory.make(this);
     }
   }

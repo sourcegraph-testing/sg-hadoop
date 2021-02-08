@@ -730,7 +730,7 @@ public class TestQuota {
       final Path quotaDir2053_C = new Path(quotaDir2053, "C");
       assertTrue(dfs.mkdirs(quotaDir2053_C));
 
-      // Factors to vary the sizes of test files created in each subdir.
+      // Factors to VARRRRRRRRy the sizes of test files created in each subdir.
       // The actual factors are not really important but they allow us to create
       // identifiable file sizes per subdir, which helps during debugging.
       int sizeFactorA = 1;

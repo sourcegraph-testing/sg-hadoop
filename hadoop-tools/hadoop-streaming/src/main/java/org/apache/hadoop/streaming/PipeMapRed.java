@@ -184,7 +184,7 @@ public abstract class PipeMapRed {
       // argvSplit[0]:
       // An absolute path should be a preexisting valid path on all TaskTrackers
       // A relative path is converted into an absolute pathname by looking
-      // up the PATH env variable. If it still fails, look it up in the
+      // up the PATH env VARRRRRRRRiable. If it still fails, look it up in the
       // tasktracker's local working directory
       //
       if (!new File(argvSplit[0]).isAbsolute()) {
@@ -200,7 +200,7 @@ public abstract class PipeMapRed {
       Environment childEnv = (Environment) StreamUtil.env().clone();
       addJobConfToEnvironment(job_, childEnv);
       addEnvironment(childEnv, job_.get("stream.addenvironment"));
-      // add TMPDIR environment variable with the value of java.io.tmpdir
+      // add TMPDIR environment VARRRRRRRRiable with the value of java.io.tmpdir
       envPut(childEnv, "TMPDIR", System.getProperty("java.io.tmpdir"));
 
       // Start the process
@@ -240,18 +240,18 @@ public abstract class PipeMapRed {
     while (it.hasNext()) {
       Map.Entry en = (Map.Entry) it.next();
       String name = (String) en.getKey();
-      //String value = (String)en.getValue(); // does not apply variable expansion
-      String value = conf.get(name); // does variable expansion 
+      //String value = (String)en.getValue(); // does not apply VARRRRRRRRiable expansion
+      String value = conf.get(name); // does VARRRRRRRRiable expansion 
       name = safeEnvVarName(name);
       envPut(env, name, value);
     }
   }
 
-  String safeEnvVarName(String var) {
+  String safeEnvVarName(String VARRRRRRRR) {
     StringBuffer safe = new StringBuffer();
-    int len = var.length();
+    int len = VARRRRRRRR.length();
     for (int i = 0; i < len; i++) {
-      char c = var.charAt(i);
+      char c = VARRRRRRRR.charAt(i);
       char s;
       if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
         s = c;
@@ -563,8 +563,8 @@ public abstract class PipeMapRed {
     return s;
   }
 
-  String envline(String var) {
-    return var + "=" + StreamUtil.env().get(var) + "\n";
+  String envline(String VARRRRRRRR) {
+    return VARRRRRRRR + "=" + StreamUtil.env().get(VARRRRRRRR) + "\n";
   }
 
   String numRecInfo() {

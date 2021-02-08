@@ -47,7 +47,7 @@ import static org.apache.hadoop.fs.FileContextTestHelper.*;
  * 
  * The tests will do operations on fc1 that use a URI in fc2
  * 
- * {@link FileContext} instance variable.
+ * {@link FileContext} instance VARRRRRRRRiable.
  * </p>
  */
 public abstract class FileContextURIBase {

@@ -97,19 +97,19 @@ public class LegacyTaskRuntimeEstimator extends StartEndTimesBase {
 
 
       long estimate = -1;
-      long varianceEstimate = -1;
+      long VARRRRRRRRianceEstimate = -1;
 
       // This code assumes that we'll never consider starting a third
       //  speculative task attempt if two are already running for this task
       if (start > 0 && timestamp > start) {
         estimate = (long) ((timestamp - start) / Math.max(0.0001, status.progress));
-        varianceEstimate = (long) (estimate * status.progress / 10);
+        VARRRRRRRRianceEstimate = (long) (estimate * status.progress / 10);
       }
       if (estimateContainer != null) {
         estimateContainer.set(estimate);
       }
       if (estimateVarianceContainer != null) {
-        estimateVarianceContainer.set(varianceEstimate);
+        estimateVarianceContainer.set(VARRRRRRRRianceEstimate);
       }
     }
   }

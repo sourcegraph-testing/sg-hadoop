@@ -39,7 +39,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * This tests data transfer protocol handling in the Datanode. It sends
- * various forms of wrong data and verifies that Datanode handles it well.
+ * VARRRRRRRRious forms of wrong data and verifies that Datanode handles it well.
  * 
  * This test uses the following two file from src/test/.../dfs directory :
  *   1) hadoop-version-dfs-dir.tgz : contains DFS directories.

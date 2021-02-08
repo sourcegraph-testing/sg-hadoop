@@ -286,7 +286,7 @@ public class DatanodeJspHelper {
     final DFSClient dfs = getDFSClient(ugi, namenodeAddress, conf);
     List<LocatedBlock> blocks = dfs.getNamenode().getBlockLocations(filename, 0,
         Long.MAX_VALUE).getLocatedBlocks();
-    // Add the various links for looking at the file contents
+    // Add the VARRRRRRRRious links for looking at the file contents
     // URL for downloading the full file
     String downloadUrl = "http://" + req.getServerName() + ":"
         + req.getServerPort() + "/streamFile" + ServletUtil.encodePath(filename)

@@ -162,7 +162,7 @@ public interface DatanodeProtocol extends VersionedProtocol {
    * This is a very general way to send a command to the name-node during
    * distributed upgrade process.
    * 
-   * The generosity is because the variety of upgrade commands is unpredictable.
+   * The generosity is because the VARRRRRRRRiety of upgrade commands is unpredictable.
    * The reply from the name-node is also received in the form of an upgrade 
    * command. 
    * 

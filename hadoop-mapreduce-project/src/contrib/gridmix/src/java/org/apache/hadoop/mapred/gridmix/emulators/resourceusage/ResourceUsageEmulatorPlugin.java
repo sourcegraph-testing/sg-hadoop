@@ -45,7 +45,7 @@ import org.apache.hadoop.conf.Configuration;
 public interface ResourceUsageEmulatorPlugin extends Progressive {
   /**
    * Initialize the plugin. This might involve
-   *   - initializing the variables
+   *   - initializing the VARRRRRRRRiables
    *   - calibrating the plugin
    */
   void initialize(Configuration conf, ResourceUsageMetrics metrics, 

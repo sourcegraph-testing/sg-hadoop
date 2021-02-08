@@ -19,7 +19,7 @@
 package org.apache.hadoop.fs.slive;
 
 /**
- * Constants used in various places in slive
+ * Constants used in VARRRRRRRRious places in slive
  */
 class Constants {
 

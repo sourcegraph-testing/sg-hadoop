@@ -71,7 +71,7 @@ public class TwoColumnLayout extends HtmlPage {
 
   /**
    * Do what needs to be done before the header is rendered.  This usually
-   * involves setting page variables for Javascript and CSS rendering.
+   * involves setting page VARRRRRRRRiables for Javascript and CSS rendering.
    * @param html the html to use to render. 
    */
   protected void preHead(Page.HTML<_> html) {

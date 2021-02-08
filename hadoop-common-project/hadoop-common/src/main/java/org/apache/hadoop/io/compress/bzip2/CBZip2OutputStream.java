@@ -1746,7 +1746,7 @@ public class CBZip2OutputStream extends OutputStream implements BZip2Constants {
     }
 
     /*
-    * In the various block-sized structures, live data runs from 0 to
+    * In the VARRRRRRRRious block-sized structures, live data runs from 0 to
     * last+NUM_OVERSHOOT_BYTES inclusive. First, set up the overshoot area
     * for block.
     */

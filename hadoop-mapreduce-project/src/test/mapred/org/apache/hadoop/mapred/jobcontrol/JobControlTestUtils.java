@@ -40,7 +40,7 @@ import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
 /**
- * Utility methods used in various Job Control unit tests.
+ * Utility methods used in VARRRRRRRRious Job Control unit tests.
  */
 public class JobControlTestUtils {
 

@@ -36,7 +36,7 @@ public interface Decompressor {
    * Sets input data for decompression. 
    * This should be called if and only if {@link #needsInput()} returns 
    * <code>true</code> indicating that more input data is required.
-   * (Both native and non-native versions of various Decompressors require
+   * (Both native and non-native versions of VARRRRRRRRious Decompressors require
    * that the data passed in via <code>b[]</code> remain unmodified until
    * the caller is explicitly notified--via {@link #needsInput()}--that the
    * buffer may be safely modified.  With this requirement, an extra

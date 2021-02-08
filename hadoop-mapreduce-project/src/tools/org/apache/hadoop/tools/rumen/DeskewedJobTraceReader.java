@@ -33,12 +33,12 @@ public class DeskewedJobTraceReader implements Closeable {
   // underlying engine
   private final JobTraceReader reader;
 
-  // configuration variables
+  // configuration VARRRRRRRRiables
   private final int skewBufferLength;
 
   private final boolean abortOnUnfixableSkew;
 
-  // state variables
+  // state VARRRRRRRRiables
   private long skewMeasurementLatestSubmitTime = Long.MIN_VALUE;
 
   private long returnedLatestSubmitTime = Long.MIN_VALUE;

@@ -24,7 +24,7 @@ import org.apache.hadoop.yarn.api.AMRMProtocol;
 
 /**
  * <p><code>ResourceRequest</code> represents the request made by an
- * application to the <code>ResourceManager</code> to obtain various 
+ * application to the <code>ResourceManager</code> to obtain VARRRRRRRRious 
  * <code>Container</code> allocations.</p>
  * 
  * <p>It includes:

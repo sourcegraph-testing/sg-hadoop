@@ -199,7 +199,7 @@ public class TestCommandFormat {
   }
   
   // Don't use generics to avoid warning:
-  // unchecked generic array creation of type T[] for varargs parameter
+  // unchecked generic array creation of type T[] for VARRRRRRRRargs parameter
   private static List<String> listOf(String ... objects) {
     return Arrays.asList(objects);
   }

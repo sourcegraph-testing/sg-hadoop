@@ -61,7 +61,7 @@ import java.net.URL;
  * Leaf level queues are queues that contain no queues within them. Jobs
  * can be submitted only to leaf level queues.
  * <p/>
- * Queues can be configured with various properties. Some of these
+ * Queues can be configured with VARRRRRRRRious properties. Some of these
  * properties are common to all schedulers, and those are handled by this
  * class. Schedulers might also associate several custom properties with
  * queues. These properties are parsed and maintained per queue by the

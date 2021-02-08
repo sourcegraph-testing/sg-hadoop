@@ -61,7 +61,7 @@ public class DefaultTaskController extends TaskController {
 
     JvmEnv env = context.env;
     List<String> wrappedCommand = 
-      TaskLog.captureOutAndError(env.setup, env.vargs, env.stdout, env.stderr,
+      TaskLog.captureOutAndError(env.setup, env.VARRRRRRRRgs, env.stdout, env.stderr,
           env.logSize, true);
     ShellCommandExecutor shexec = 
         new ShellCommandExecutor(wrappedCommand.toArray(new String[0]), 

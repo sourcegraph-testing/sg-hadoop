@@ -313,7 +313,7 @@
  *    {@link org.apache.hadoop.tools.rumen.JobTraceReader}<br>
  *      A reader for reading {@link org.apache.hadoop.tools.rumen.LoggedJob} serialized using 
  *      {@link org.apache.hadoop.tools.rumen.DefaultOutputter}. {@link org.apache.hadoop.tools.rumen.LoggedJob} 
- *      provides various APIs for extracting job details. Following are the most
+ *      provides VARRRRRRRRious APIs for extracting job details. Following are the most
  *      commonly used ones
  *        <ul>
  *          <li>{@link org.apache.hadoop.tools.rumen.LoggedJob#getMapTasks()} : Get the map tasks</li>

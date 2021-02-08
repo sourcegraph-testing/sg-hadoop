@@ -2939,18 +2939,18 @@ public class TaskTracker
         }     
       }
       String [] debug = debugCommand.split(" ");
-      List<String> vargs = new ArrayList<String>();
+      List<String> VARRRRRRRRgs = new ArrayList<String>();
       for (String component : debug) {
-        vargs.add(component);
+        VARRRRRRRRgs.add(component);
       }
-      vargs.add(taskStdout);
-      vargs.add(taskStderr);
-      vargs.add(taskSyslog);
-      vargs.add(jobConf);
-      vargs.add(program);
+      VARRRRRRRRgs.add(taskStdout);
+      VARRRRRRRRgs.add(taskStderr);
+      VARRRRRRRRgs.add(taskSyslog);
+      VARRRRRRRRgs.add(jobConf);
+      VARRRRRRRRgs.add(program);
       DebugScriptContext context = 
         new TaskController.DebugScriptContext();
-      context.args = vargs;
+      context.args = VARRRRRRRRgs;
       context.stdout = stdout;
       context.workDir = workDir;
       context.task = task;

@@ -54,7 +54,7 @@ public class TestRecordWritable extends TestCase {
 
     FileInputFormat.setInputPaths(job, dir);
 
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length+= random.nextInt(MAX_LENGTH/10)+1) {
 
@@ -76,7 +76,7 @@ public class TestRecordWritable extends TestCase {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       InputFormat<RecInt, RecBuffer> format =
         new SequenceFileInputFormat<RecInt, RecBuffer>();
       RecInt key = new RecInt();

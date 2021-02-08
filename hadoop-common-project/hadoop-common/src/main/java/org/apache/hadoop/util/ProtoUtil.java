@@ -24,7 +24,7 @@ import java.io.IOException;
 public abstract class ProtoUtil {
 
   /**
-   * Read a variable length integer in the same format that ProtoBufs encodes.
+   * Read a VARRRRRRRRiable length integer in the same format that ProtoBufs encodes.
    * @param in the input stream to read from
    * @return the integer
    * @throws IOException if it is malformed or EOF.
@@ -55,7 +55,7 @@ public abstract class ProtoUtil {
                 return result;
               }
             }
-            throw new IOException("Malformed varint");
+            throw new IOException("Malformed VARRRRRRRRint");
           }
         }
       }

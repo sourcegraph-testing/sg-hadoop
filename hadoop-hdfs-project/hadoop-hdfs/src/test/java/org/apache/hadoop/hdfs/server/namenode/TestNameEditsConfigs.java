@@ -36,7 +36,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 
 /**
- * This class tests various combinations of dfs.namenode.name.dir 
+ * This class tests VARRRRRRRRious combinations of dfs.namenode.name.dir 
  * and dfs.namenode.edits.dir configurations.
  */
 public class TestNameEditsConfigs extends TestCase {
@@ -117,7 +117,7 @@ public class TestNameEditsConfigs extends TestCase {
   }
 
   /**
-   * Test various configuration options of dfs.namenode.name.dir and dfs.namenode.edits.dir
+   * Test VARRRRRRRRious configuration options of dfs.namenode.name.dir and dfs.namenode.edits.dir
    * The test creates files and restarts cluster with different configs.
    * 1. Starts cluster with shared name and edits dirs
    * 2. Restarts cluster by adding additional (different) name and edits dirs
@@ -310,7 +310,7 @@ public class TestNameEditsConfigs extends TestCase {
   }
 
   /**
-   * Test various configuration options of dfs.namenode.name.dir and dfs.namenode.edits.dir
+   * Test VARRRRRRRRious configuration options of dfs.namenode.name.dir and dfs.namenode.edits.dir
    * This test tries to simulate failure scenarios.
    * 1. Start cluster with shared name and edits dir
    * 2. Restart cluster by adding separate name and edits dirs

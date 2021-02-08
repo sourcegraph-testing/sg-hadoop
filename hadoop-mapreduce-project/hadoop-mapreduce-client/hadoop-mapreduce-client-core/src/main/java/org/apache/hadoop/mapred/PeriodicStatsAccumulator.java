@@ -36,13 +36,13 @@ package org.apache.hadoop.mapred;
 public abstract class PeriodicStatsAccumulator {
   // The range of progress from 0.0D through 1.0D is divided into
   //  count "progress segments".  This object accumulates an
-  //  estimate of the effective value of a time-varying value during
+  //  estimate of the effective value of a time-VARRRRRRRRying value during
   //  the zero-based i'th progress segment, ranging from i/count
   //  through (i+1)/count . 
   // This is an abstract class.  We have two implementations: one
-  //  for monotonically increasing time-dependent variables
+  //  for monotonically increasing time-dependent VARRRRRRRRiables
   //  [currently, CPU time in milliseconds and wallclock time in
-  //  milliseconds] and one for quantities that can vary arbitrarily
+  //  milliseconds] and one for quantities that can VARRRRRRRRy arbitrarily
   //  over time, currently virtual and physical memory used, in
   //  kilobytes. 
   // We carry int's here.  This saves a lot of JVM heap space in the
@@ -89,7 +89,7 @@ public abstract class PeriodicStatsAccumulator {
    *                      reading covers
    * @param newValue the value of the reading at {@code newProgress} 
    *
-   * The class has three instance variables, {@code oldProgress} and
+   * The class has three instance VARRRRRRRRiables, {@code oldProgress} and
    *  {@code oldValue} and {@code currentAccumulation}. 
    *
    * {@code extendInternal} can count on three things: 
@@ -108,7 +108,7 @@ public abstract class PeriodicStatsAccumulator {
 
   // What has to be done when you open a new interval
   /**
-   * initializes the state variables to be ready for a new interval
+   * initializes the state VARRRRRRRRiables to be ready for a new interval
    */
   protected void initializeInterval() {
     state.currentAccumulation = 0.0D;
@@ -126,7 +126,7 @@ public abstract class PeriodicStatsAccumulator {
    * 
    *  <p>For example, if the value was {@code 300} last time with
    *  {@code 0.3}  progress, and count is {@code 5}, and you get a
-   *  new reading with the variable at {@code 700} and progress at
+   *  new reading with the VARRRRRRRRiable at {@code 700} and progress at
    *  {@code 0.7}, you get three calls to {@code extendInternal}:
    *  one extending from progress {@code 0.3} to {@code 0.4} [the
    *  next boundary] with a value of {@code 400}, the next one

@@ -34,7 +34,7 @@ import org.apache.commons.logging.LogFactory;
 /**
  * A user-to-groups mapping service.
  * 
- * {@link Groups} allows for server to get the various group memberships
+ * {@link Groups} allows for server to get the VARRRRRRRRious group memberships
  * of a given user via the {@link #getGroups(String)} call, thus ensuring 
  * a consistent user-to-groups mapping and protects against vagaries of 
  * different mappings on servers and clients in a Hadoop cluster. 

@@ -23,7 +23,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapred.gridmix.GenerateData.DataStatistics;
 
 /**
- * Summarizes various aspects of a {@link Gridmix} run.
+ * Summarizes VARRRRRRRRious aspects of a {@link Gridmix} run.
  */
 class Summarizer {
   private ExecutionSummarizer executionSummarizer;

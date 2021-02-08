@@ -36,7 +36,7 @@ public interface ProcessInfo extends Writable {
   /**
    * Get the environment that was used to start the Daemon process.<br/>
    * 
-   * @return the environment variable list.
+   * @return the environment VARRRRRRRRiable list.
    */
   public Map<String,String> getEnv();
 

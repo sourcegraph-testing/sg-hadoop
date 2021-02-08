@@ -22,7 +22,7 @@ package org.apache.hadoop.mapred;
  *
  * This class is a concrete PeriodicStatsAccumulator that deals with
  *  measurements where the raw data are a measurement of a
- *  time-varying quantity.  The result in each bucket is the estimate
+ *  time-VARRRRRRRRying quantity.  The result in each bucket is the estimate
  *  of the progress-weighted mean value of that quantity over the
  *  progress range covered by the bucket.
  *

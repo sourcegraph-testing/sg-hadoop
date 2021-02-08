@@ -80,7 +80,7 @@ public class TestTextInputFormat {
     localFs.delete(workDir, true);
     FileInputFormat.setInputPaths(job, workDir);
 
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length+= random.nextInt(MAX_LENGTH/10)+1) {
 
@@ -97,7 +97,7 @@ public class TestTextInputFormat {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       TextInputFormat format = new TextInputFormat();
       format.configure(job);
       LongWritable key = new LongWritable();
@@ -170,7 +170,7 @@ public class TestTextInputFormat {
 
     final int MAX_LENGTH = 500000;
 
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = MAX_LENGTH / 2; length < MAX_LENGTH;
         length += random.nextInt(MAX_LENGTH / 4)+1) {
 
@@ -189,7 +189,7 @@ public class TestTextInputFormat {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       TextInputFormat format = new TextInputFormat();
       format.configure(conf);
       LongWritable key = new LongWritable();
@@ -263,7 +263,7 @@ public class TestTextInputFormat {
   }
 
   /**
-   * Test readLine for various kinds of line termination sequneces.
+   * Test readLine for VARRRRRRRRious kinds of line termination sequneces.
    * Varies buffer size to stress test.  Also check that returned
    * value matches the string length.
    *

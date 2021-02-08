@@ -255,7 +255,7 @@ public class TestGridmixSubmission {
 
             specInfo = spec.getTaskInfo(TaskType.REDUCE, i);
             // There is no reliable counter for reduce input bytes. The
-            // variable-length encoding of intermediate records and other noise
+            // VARRRRRRRRiable-length encoding of intermediate records and other noise
             // make this quantity difficult to estimate. The shuffle and spec
             // input bytes are included in debug output for reference, but are
             // not checked

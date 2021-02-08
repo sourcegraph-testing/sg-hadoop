@@ -31,7 +31,7 @@ import org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttempt;
 /**
  * The read interface to an Application in the ResourceManager. Take a
  * look at {@link RMAppImpl} for its implementation. This interface
- * exposes methods to access various updates in application status/report.
+ * exposes methods to access VARRRRRRRRious updates in application status/report.
  */
 public interface RMApp extends EventHandler<RMAppEvent> {
 

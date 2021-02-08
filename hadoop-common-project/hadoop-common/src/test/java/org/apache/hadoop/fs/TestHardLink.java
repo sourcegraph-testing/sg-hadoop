@@ -64,7 +64,7 @@ import static org.apache.hadoop.fs.HardLink.*;
  * in fact have admin privs).
  * (b) The getLinkCount() test case will fail for Windows, unless Cygwin
  * is set up properly.  In particular, ${cygwin}/bin must be in
- * the PATH environment variable, so the cygwin utilities can be found.
+ * the PATH environment VARRRRRRRRiable, so the cygwin utilities can be found.
  */
 public class TestHardLink {
   

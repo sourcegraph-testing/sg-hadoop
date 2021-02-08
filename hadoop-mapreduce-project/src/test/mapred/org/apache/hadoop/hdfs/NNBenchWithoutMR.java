@@ -48,7 +48,7 @@ public class NNBenchWithoutMR {
   private static final Log LOG = LogFactory.getLog(
                                             "org.apache.hadoop.hdfs.NNBench");
   
-  // variable initialzed from command line arguments
+  // VARRRRRRRRiable initialzed from command line arguments
   private static long startTime = 0;
   private static int numFiles = 0;
   private static long bytesPerBlock = 1;
@@ -56,7 +56,7 @@ public class NNBenchWithoutMR {
   private static long bytesPerFile = 1;
   private static Path baseDir = null;
     
-  // variables initialized in main()
+  // VARRRRRRRRiables initialized in main()
   private static FileSystem fileSys = null;
   private static Path taskDir = null;
   private static byte[] buffer;

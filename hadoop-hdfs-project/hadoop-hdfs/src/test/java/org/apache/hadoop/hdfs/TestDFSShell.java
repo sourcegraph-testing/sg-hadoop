@@ -918,7 +918,7 @@ public class TestDFSShell extends TestCase {
     cluster.shutdown();
   }
   /**
-   * Tests various options of DFSShell.
+   * Tests VARRRRRRRRious options of DFSShell.
    */
   public void testDFSShell() throws IOException {
     Configuration conf = new HdfsConfiguration();

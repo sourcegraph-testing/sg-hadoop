@@ -32,7 +32,7 @@ import org.apache.hadoop.mapreduce.server.jobtracker.JTConfig;
 import org.apache.hadoop.mapreduce.server.tasktracker.TTConfig;
 
 /**
- * Tests various failures in setup/cleanup of job, like 
+ * Tests VARRRRRRRRious failures in setup/cleanup of job, like 
  * throwing exception, command line kill and lost tracker 
  */
 public class TestSetupAndCleanupFailure extends TestCase {

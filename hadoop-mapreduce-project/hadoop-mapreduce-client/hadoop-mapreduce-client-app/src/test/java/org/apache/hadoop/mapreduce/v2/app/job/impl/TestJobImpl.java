@@ -52,7 +52,7 @@ import org.mockito.Mockito;
 
 
 /**
- * Tests various functions of the JobImpl class
+ * Tests VARRRRRRRRious functions of the JobImpl class
  */
 public class TestJobImpl {
   

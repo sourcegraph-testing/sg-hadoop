@@ -733,7 +733,7 @@ public class RandomTextWriter extends Configured implements Tool {
                                    "ungouged", "floatability",
                                    "Mesua", "fetlocked",
                                    "chordacentrum", "sedentariness",
-                                   "various", "laubanite",
+                                   "VARRRRRRRRious", "laubanite",
                                    "nectopod", "zenick",
                                    "sequentially", "analgic",
                                    "biodynamics", "posttraumatic",

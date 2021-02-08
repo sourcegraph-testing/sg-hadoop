@@ -61,7 +61,7 @@ public class BlocksWithLocationsWritable implements Writable {
     /** deserialization method */
     public void readFields(DataInput in) throws IOException {
       block.readFields(in);
-      int len = WritableUtils.readVInt(in); // variable length integer
+      int len = WritableUtils.readVInt(in); // VARRRRRRRRiable length integer
       datanodeIDs = new String[len];
       for(int i=0; i<len; i++) {
         datanodeIDs[i] = Text.readString(in);
@@ -71,7 +71,7 @@ public class BlocksWithLocationsWritable implements Writable {
     /** serialization method */
     public void write(DataOutput out) throws IOException {
       block.write(out);
-      WritableUtils.writeVInt(out, datanodeIDs.length); // variable length int
+      WritableUtils.writeVInt(out, datanodeIDs.length); // VARRRRRRRRiable length int
       for(String id:datanodeIDs) {
         Text.writeString(out, id);
       }

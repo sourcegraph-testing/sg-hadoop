@@ -29,7 +29,7 @@ import org.apache.hadoop.yarn.webapp.log.AggregatedLogsPage;
 import com.google.inject.Inject;
 
 /**
- * This class renders the various pages that the History Server WebApp supports
+ * This class renders the VARRRRRRRRious pages that the History Server WebApp supports
  */
 public class HsController extends AppController {
   

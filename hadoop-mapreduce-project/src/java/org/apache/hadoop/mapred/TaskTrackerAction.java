@@ -33,7 +33,7 @@ import org.apache.hadoop.io.WritableUtils;
 abstract class TaskTrackerAction implements Writable {
   
   /**
-   * Ennumeration of various 'actions' that the {@link JobTracker}
+   * Ennumeration of VARRRRRRRRious 'actions' that the {@link JobTracker}
    * directs the {@link TaskTracker} to perform periodically.
    * 
    */

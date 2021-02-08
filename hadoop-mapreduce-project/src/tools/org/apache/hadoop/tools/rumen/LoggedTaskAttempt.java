@@ -38,7 +38,7 @@ import org.apache.hadoop.mapreduce.jobhistory.JhCounters;
  * A {@link LoggedTaskAttempt} represents an attempt to run an hadoop task in a
  * hadoop job. Note that a task can have several attempts.
  * 
- * All of the public methods are simply accessors for the instance variables we
+ * All of the public methods are simply accessors for the instance VARRRRRRRRiables we
  * want to write out in the JSON files.
  * 
  */

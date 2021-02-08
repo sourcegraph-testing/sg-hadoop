@@ -57,7 +57,7 @@ public class TestNLineInputFormat extends TestCase {
     FileInputFormat.setInputPaths(job, workDir);
     int numLinesPerMap = 5;
     NLineInputFormat.setNumLinesPerSplit(job, numLinesPerMap);
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 10) + 1) {
       // create a file with length entries

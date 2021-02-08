@@ -366,7 +366,7 @@ public final class FileContext {
    * construction. Changes to the config after the call are ignore
    * by the FileContext layer. 
    * The conf is passed to lower layers like AbstractFileSystem and HDFS which
-   * pick up their own config variables.
+   * pick up their own config VARRRRRRRRiables.
    */
 
   /**

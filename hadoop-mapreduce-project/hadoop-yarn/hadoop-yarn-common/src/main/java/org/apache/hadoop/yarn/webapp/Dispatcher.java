@@ -41,7 +41,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * The servlet that dispatch request to various controllers
+ * The servlet that dispatch request to VARRRRRRRRious controllers
  * according to the user defined routes in the router.
  */
 @Singleton

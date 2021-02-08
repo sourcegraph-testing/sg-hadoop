@@ -1317,7 +1317,7 @@ class DFSOutputStream extends FSOutputSummer implements Syncable {
           dataQueue.wait();
         } catch (InterruptedException e) {
           // If we get interrupted while waiting to queue data, we still need to get rid
-          // of the current packet. This is because we have an invariant that if
+          // of the current packet. This is because we have an inVARRRRRRRRiant that if
           // currentPacket gets full, it will get queued before the next writeChunk.
           //
           // Rather than wait around for space in the queue, we should instead try to

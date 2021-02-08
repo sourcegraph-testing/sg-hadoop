@@ -43,7 +43,7 @@ import org.apache.hadoop.util.DiskChecker.DiskErrorException;
  * A daemon thread cleans up job info files older than the retain time
  * <p/>
  * The retain time can be set with the 'persist.jobstatus.hours'
- * configuration variable (it is in hours).
+ * configuration VARRRRRRRRiable (it is in hours).
  */
 class CompletedJobStatusStore implements Runnable {
   private boolean active;

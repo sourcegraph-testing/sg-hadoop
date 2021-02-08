@@ -32,7 +32,7 @@ import org.apache.hadoop.classification.InterfaceStability;
 public interface GroupMappingServiceProvider {
   
   /**
-   * Get all various group memberships of a given user.
+   * Get all VARRRRRRRRious group memberships of a given user.
    * Returns EMPTY list in case of non-existing user
    * @param user User's name
    * @return group memberships of user

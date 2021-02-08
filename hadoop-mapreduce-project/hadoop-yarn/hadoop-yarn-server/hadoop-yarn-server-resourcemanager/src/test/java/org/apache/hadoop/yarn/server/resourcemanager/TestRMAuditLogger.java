@@ -139,7 +139,7 @@ public class TestRMAuditLogger {
   }
 
   /**
-   * Test the AuditLog format for successful events with the various
+   * Test the AuditLog format for successful events with the VARRRRRRRRious
    * parameters.
    */
   private void testSuccessLogFormat(boolean checkIP) {
@@ -185,7 +185,7 @@ public class TestRMAuditLogger {
   }
 
   /**
-   * Test the AuditLog format for failure events with the various
+   * Test the AuditLog format for failure events with the VARRRRRRRRious
    * parameters.
    */
   private void testFailureLogFormat(boolean checkIP) {

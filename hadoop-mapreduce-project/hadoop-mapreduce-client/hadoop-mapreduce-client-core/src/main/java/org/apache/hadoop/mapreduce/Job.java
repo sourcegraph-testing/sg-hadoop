@@ -59,7 +59,7 @@ import org.apache.hadoop.util.StringUtils;
  * IllegalStateException. </p>
  * 
  * <p>
- * Normally the user creates the application, describes various facets of the
+ * Normally the user creates the application, describes VARRRRRRRRious facets of the
  * job via {@link Job} and then submits the job and monitor its progress.</p>
  * 
  * <p>Here is an example on how to submit a job:</p>
@@ -68,7 +68,7 @@ import org.apache.hadoop.util.StringUtils;
  *     Job job = new Job(new Configuration());
  *     job.setJarByClass(MyJob.class);
  *     
- *     // Specify various job-specific parameters     
+ *     // Specify VARRRRRRRRious job-specific parameters     
  *     job.setJobName("myjob");
  *     
  *     job.setInputPath(new Path("in"));

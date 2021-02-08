@@ -42,7 +42,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
 
 /**
- * Static utility functions for serializing various pieces of data in the correct
+ * Static utility functions for serializing VARRRRRRRRious pieces of data in the correct
  * format for the FSImage file.
  *
  * Some members are currently public for the benefit of the Offline Image Viewer

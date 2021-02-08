@@ -37,7 +37,7 @@ public class TestGetUriFromString extends TestCase {
   private static final String ABSOLUTE_PATH_WINDOWS =
     "C:\\Documents and Settings\\All Users";
   private static final String URI_FILE_SCHEMA = "file";
-  private static final String URI_PATH_UNIX = "/var/www";
+  private static final String URI_PATH_UNIX = "/VARRRRRRRR/www";
   private static final String URI_PATH_WINDOWS =
     "/C:/Documents%20and%20Settings/All%20Users";
   private static final String URI_UNIX = URI_FILE_SCHEMA + "://"

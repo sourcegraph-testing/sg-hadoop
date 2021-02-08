@@ -30,7 +30,7 @@ import org.apache.hadoop.metrics2.lib.MutableCounterLong;
 import org.apache.hadoop.metrics2.lib.MutableRate;
 
 /**
- * This class is for maintaining  the various RPC statistics
+ * This class is for maintaining  the VARRRRRRRRious RPC statistics
  * and publishing them through the metrics interfaces.
  */
 @InterfaceAudience.Private

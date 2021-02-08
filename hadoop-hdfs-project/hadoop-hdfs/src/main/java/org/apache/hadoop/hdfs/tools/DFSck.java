@@ -227,7 +227,7 @@ public class DFSck extends Configured implements Tool {
     // Derive the nameservice ID from the filesystem URI.
     // The URI may have been provided by a human, and the server name may be
     // aliased, so compare InetSocketAddresses instead of URI strings, and
-    // test against both possible variants of RPC address.
+    // test against both possible VARRRRRRRRiants of RPC address.
     InetSocketAddress namenode = 
       NameNode.getAddress(dfs.getUri().getAuthority());
     

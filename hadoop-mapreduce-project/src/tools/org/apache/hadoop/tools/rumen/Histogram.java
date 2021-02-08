@@ -128,7 +128,7 @@ class Histogram implements Iterable<Map.Entry<Long, Long>> {
     int bucketCursor = 0;
 
     
-    // Loop invariant: the item at buckets[bucketCursor] can still be reached
+    // Loop inVARRRRRRRRiant: the item at buckets[bucketCursor] can still be reached
     // from iter, and the number of logged elements no longer available from
     // iter is cumulativeCount.
     // 

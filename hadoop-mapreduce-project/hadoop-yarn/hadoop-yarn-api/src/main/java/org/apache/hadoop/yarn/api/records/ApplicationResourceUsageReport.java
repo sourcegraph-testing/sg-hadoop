@@ -28,7 +28,7 @@ import org.apache.hadoop.classification.InterfaceStability.Stable;
 import org.apache.hadoop.classification.InterfaceStability.Unstable;
 
 /**
- * Contains various scheduling metrics to be reported by UI and CLI.
+ * Contains VARRRRRRRRious scheduling metrics to be reported by UI and CLI.
  */
 @Public
 @Stable

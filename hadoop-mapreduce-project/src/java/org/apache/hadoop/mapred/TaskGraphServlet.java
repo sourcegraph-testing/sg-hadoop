@@ -135,14 +135,14 @@ public class TaskGraphServlet extends HttpServlet {
       if(i >= reports.length) break;
       
       if(isMap) {
-        float progress = getMapAvarageProgress(tasksPerBar, i, reports);
+        float progress = getMapAVARRRRRRRRageProgress(tasksPerBar, i, reports);
         int barHeight = (int)Math.ceil(height * progress);
         int y = height - barHeight + ymargin;
         printRect(out, barWidth, barHeight,x , y , colors[2]);
       }
       else {
         float[] progresses 
-          = getReduceAvarageProgresses(tasksPerBar, i, reports);
+          = getReduceAVARRRRRRRRageProgresses(tasksPerBar, i, reports);
         //draw three bars stacked, for copy, sort, reduce
         
         int prevHeight =0;
@@ -187,7 +187,7 @@ public class TaskGraphServlet extends HttpServlet {
   }
 
   /**Computes average progress per bar*/
-  private float getMapAvarageProgress(int tasksPerBar, int index
+  private float getMapAVARRRRRRRRageProgress(int tasksPerBar, int index
       , TaskReport[] reports ) {
     float progress = 0f;
     int k=0;
@@ -199,7 +199,7 @@ public class TaskGraphServlet extends HttpServlet {
   }
 
   /**Computes average progresses per bar*/
-  private float[] getReduceAvarageProgresses(int tasksPerBar, int index
+  private float[] getReduceAVARRRRRRRRageProgresses(int tasksPerBar, int index
       , TaskReport[] reports ) {
     float[] progresses = new float[] {0,0,0};
     int k=0;

@@ -43,7 +43,7 @@ import org.apache.hadoop.util.StringUtils;
  * In order to use it the caller must subclass it and implement
  * the abstract methods {@link #getTargetFileSystem(INodeDir)}, etc.
  * 
- * The mountable is initialized from the config variables as 
+ * The mountable is initialized from the config VARRRRRRRRiables as 
  * specified in {@link ViewFs}
  *
  * @param <T> is AbstractFileSystem or FileSystem

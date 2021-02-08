@@ -80,9 +80,9 @@ public class CBZip2InputStream extends InputStream implements BZip2Constants {
   public static final long EOS_DELIMITER = 0X177245385090L;// end of bzip2 stream
   private static final int DELIMITER_BIT_LENGTH = 48;
   READ_MODE readMode = READ_MODE.CONTINUOUS;
-  // The variable records the current advertised position of the stream.
+  // The VARRRRRRRRiable records the current advertised position of the stream.
   private long reportedBytesReadFromCompressedStream = 0L;
-  // The following variable keep record of compressed bytes read.
+  // The following VARRRRRRRRiable keep record of compressed bytes read.
   private long bytesReadFromCompressedStream = 0L;
   private boolean lazyInitialization = false;
   private byte array[] = new byte[1];

@@ -47,10 +47,10 @@ class JvmManager {
 
   private JvmManagerForType reduceJvmManager;
   
-  public JvmEnv constructJvmEnv(List<String> setup, Vector<String>vargs,
+  public JvmEnv constructJvmEnv(List<String> setup, Vector<String>VARRRRRRRRgs,
       File stdout,File stderr,long logSize, File workDir, 
       Map<String,String> env, JobConf conf) {
-    return new JvmEnv(setup,vargs,stdout,stderr,logSize,workDir,env,conf);
+    return new JvmEnv(setup,VARRRRRRRRgs,stdout,stderr,logSize,workDir,env,conf);
   }
   
   public JvmManager(TaskTracker tracker) {
@@ -464,7 +464,7 @@ class JvmManager {
 
       public void runChild(JvmEnv env) {
         try {
-          env.vargs.add(Integer.toString(jvmId.getId()));
+          env.VARRRRRRRRgs.add(Integer.toString(jvmId.getId()));
           //Launch the task controller to run task JVM
           initalContext.env = env;
           tracker.getTaskController().launchTaskJVM(initalContext);
@@ -572,7 +572,7 @@ class JvmManager {
     }
   }  
   static class JvmEnv { //Helper class
-    List<String> vargs;
+    List<String> VARRRRRRRRgs;
     List<String> setup;
     File stdout;
     File stderr;
@@ -581,11 +581,11 @@ class JvmManager {
     JobConf conf;
     Map<String, String> env;
 
-    public JvmEnv(List<String> setup, Vector<String> vargs, File stdout, 
+    public JvmEnv(List<String> setup, Vector<String> VARRRRRRRRgs, File stdout, 
         File stderr, long logSize, File workDir, Map<String,String> env,
         JobConf conf) {
       this.setup = setup;
-      this.vargs = vargs;
+      this.VARRRRRRRRgs = VARRRRRRRRgs;
       this.stdout = stdout;
       this.stderr = stderr;
       this.workDir = workDir;

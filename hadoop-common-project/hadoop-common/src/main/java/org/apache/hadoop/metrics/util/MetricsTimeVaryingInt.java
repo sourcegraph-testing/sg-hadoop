@@ -26,7 +26,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * The MetricsTimeVaryingInt class is for a metric that naturally
- * varies over time (e.g. number of files created). The metrics is accumulated
+ * VARRRRRRRRies over time (e.g. number of files created). The metrics is accumulated
  * over an interval (set in the metrics config file); the metrics is
  *  published at the end of each interval and then 
  * reset to zero. Hence the counter has the value in the current interval. 

@@ -42,7 +42,7 @@ public final class Utils {
   }
 
   /**
-   * Encoding an integer into a variable-length encoding format. Synonymous to
+   * Encoding an integer into a VARRRRRRRRiable-length encoding format. Synonymous to
    * <code>Utils#writeVLong(out, n)</code>.
    * 
    * @param out
@@ -57,7 +57,7 @@ public final class Utils {
   }
 
   /**
-   * Encoding a Long integer into a variable-length encoding format.
+   * Encoding a Long integer into a VARRRRRRRRiable-length encoding format.
    * <ul>
    * <li>if n in [-32, 127): encode in one byte with the actual value.
    * Otherwise,
@@ -158,7 +158,7 @@ public final class Utils {
   }
 
   /**
-   * Decoding the variable-length integer. Synonymous to
+   * Decoding the VARRRRRRRRiable-length integer. Synonymous to
    * <code>(int)Utils#readVLong(in)</code>.
    * 
    * @param in
@@ -178,7 +178,7 @@ public final class Utils {
   }
 
   /**
-   * Decoding the variable-length integer. Suppose the value of the first byte
+   * Decoding the VARRRRRRRRiable-length integer. Suppose the value of the first byte
    * is FB, and the following bytes are NB[*].
    * <ul>
    * <li>if (FB >= -32), return (long)FB;

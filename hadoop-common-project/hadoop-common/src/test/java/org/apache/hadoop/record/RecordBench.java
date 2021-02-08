@@ -29,7 +29,7 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 /**
- * Benchmark for various types of serializations
+ * Benchmark for VARRRRRRRRious types of serializations
  */
 public class RecordBench {
   

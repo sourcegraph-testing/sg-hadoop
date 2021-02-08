@@ -182,7 +182,7 @@ public class TestAccessControlList {
   }
 
   // Check if AccessControlList.toString() works as expected.
-  // Also validate if getAclString() for various cases.
+  // Also validate if getAclString() for VARRRRRRRRious cases.
   @Test
   public void testAclString() {
     AccessControlList acl;

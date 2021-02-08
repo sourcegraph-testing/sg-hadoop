@@ -242,7 +242,7 @@ public class MultithreadedMapRunner<K1, V1, K2, V2>
         }
       } catch (IOException ex) {
         // If there is an IOException during the call it is set in an instance
-        // variable of the MultithreadedMapRunner from where it will be
+        // VARRRRRRRRiable of the MultithreadedMapRunner from where it will be
         // rethrown.
         synchronized (MultithreadedMapRunner.this) {
           if (MultithreadedMapRunner.this.ioException == null) {
@@ -251,7 +251,7 @@ public class MultithreadedMapRunner<K1, V1, K2, V2>
         }
       } catch (RuntimeException ex) {
         // If there is a RuntimeException during the call it is set in an
-        // instance variable of the MultithreadedMapRunner from where it will be
+        // instance VARRRRRRRRiable of the MultithreadedMapRunner from where it will be
         // rethrown.
         synchronized (MultithreadedMapRunner.this) {
           if (MultithreadedMapRunner.this.runtimeException == null) {

@@ -46,7 +46,7 @@ public class DataStatistics {
     return count == 0 ? 0.0 : sum/count;
   }
 
-  public synchronized double var() {
+  public synchronized double VARRRRRRRR() {
     // E(X^2) - E(X)^2
     if (count <= 1) {
       return 0.0;
@@ -56,7 +56,7 @@ public class DataStatistics {
   }
 
   public synchronized double std() {
-    return Math.sqrt(this.var());
+    return Math.sqrt(this.VARRRRRRRR());
   }
 
   public synchronized double outlier(float sigma) {

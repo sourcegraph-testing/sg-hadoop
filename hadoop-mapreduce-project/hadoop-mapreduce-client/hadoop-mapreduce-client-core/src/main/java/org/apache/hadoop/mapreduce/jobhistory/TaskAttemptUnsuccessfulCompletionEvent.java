@@ -48,8 +48,8 @@ public class TaskAttemptUnsuccessfulCompletionEvent implements HistoryEvent {
    * @param hostname Name of the host where the attempt executed
    * @param port rpc port for for the tracker
    * @param error Error string
-   * @param allSplits the "splits", or a pixelated graph of various
-   *        measurable worker node state variables against progress.
+   * @param allSplits the "splits", or a pixelated graph of VARRRRRRRRious
+   *        measurable worker node state VARRRRRRRRiables against progress.
    *        Currently there are four; wallclock time, CPU time,
    *        virtual memory and physical memory.  
    */

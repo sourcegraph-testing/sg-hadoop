@@ -480,7 +480,7 @@ public abstract class TaskAttemptImpl implements
     RackResolver.init(conf);
 
     // This "this leak" is okay because the retained pointer is in an
-    //  instance variable.
+    //  instance VARRRRRRRRiable.
     stateMachine = stateMachineFactory.make(this);
   }
 

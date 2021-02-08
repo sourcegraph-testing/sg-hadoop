@@ -97,7 +97,7 @@ public class TestClientBlockVerification {
   }
 
   /**
-   * Test various unaligned reads to make sure that we properly
+   * Test VARRRRRRRRious unaligned reads to make sure that we properly
    * account even when we don't start or end on a checksum boundary
    */
   @Test

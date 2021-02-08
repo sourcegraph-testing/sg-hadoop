@@ -42,7 +42,7 @@ import org.junit.Assert;
 import java.io.IOException;
 
 /**
- * Verify the Gridmix data generation with various submission policies and 
+ * Verify the Gridmix data generation with VARRRRRRRRious submission policies and 
  * user resolver modes.
  */
 public class TestGridMixDataGeneration {

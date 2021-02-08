@@ -25,7 +25,7 @@ import org.apache.hadoop.mapreduce.TaskAttemptID;
 import org.apache.hadoop.mapreduce.TaskType;
 
 /**
- * Test various jobhistory events
+ * Test VARRRRRRRRious jobhistory events
  */
 public class TestJobHistoryEvents extends TestCase {
   static final int[][] NULL_SPLITS_ARRAY
@@ -38,7 +38,7 @@ public class TestJobHistoryEvents extends TestCase {
   }
  
   /**
-   * Test {@link TaskAttemptStartedEvent} for various task types.
+   * Test {@link TaskAttemptStartedEvent} for VARRRRRRRRious task types.
    */
   private static void testAttemptStartedEventForTypes(EventType expected, 
                                                       TaskAttemptID id,
@@ -74,7 +74,7 @@ public class TestJobHistoryEvents extends TestCase {
   }
   
   /**
-   * Test {@link TaskAttemptUnsuccessfulCompletionEvent} for various task types.
+   * Test {@link TaskAttemptUnsuccessfulCompletionEvent} for VARRRRRRRRious task types.
    */
   private static void testFailedKilledEventsForTypes(EventType expected, 
                                                      TaskAttemptID id,
@@ -124,7 +124,7 @@ public class TestJobHistoryEvents extends TestCase {
   }
   
   /**
-   * Test {@link TaskAttemptFinishedEvent} for various task types.
+   * Test {@link TaskAttemptFinishedEvent} for VARRRRRRRRious task types.
    */
   private static void testFinishedEventsForTypes(EventType expected, 
                                                  TaskAttemptID id,

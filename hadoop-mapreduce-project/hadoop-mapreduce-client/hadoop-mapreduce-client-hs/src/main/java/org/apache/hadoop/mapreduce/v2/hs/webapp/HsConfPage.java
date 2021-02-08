@@ -74,7 +74,7 @@ public class HsConfPage extends HsView {
    * by column.
    */
   private String confPostTableInit() {
-    return "var confInitVals = new Array();\n" +
+    return "VARRRRRRRR confInitVals = new Array();\n" +
     "$('tfoot input').keyup( function () \n{"+
     "  confDataTable.fnFilter( this.value, $('tfoot input').index(this) );\n"+
     "} );\n"+

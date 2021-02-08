@@ -148,7 +148,7 @@ public class CombineFileRecordReader<K, V> implements RecordReader<K, V> {
       curReader =  rrConstructor.newInstance(new Object [] 
                             {split, jc, reporter, Integer.valueOf(idx)});
 
-      // setup some helper config variables.
+      // setup some helper config VARRRRRRRRiables.
       jc.set(JobContext.MAP_INPUT_FILE, split.getPath(idx).toString());
       jc.setLong(JobContext.MAP_INPUT_START, split.getOffset(idx));
       jc.setLong(JobContext.MAP_INPUT_PATH, split.getLength(idx));

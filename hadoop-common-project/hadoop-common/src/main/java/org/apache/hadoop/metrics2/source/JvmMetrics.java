@@ -44,7 +44,7 @@ import static org.apache.hadoop.metrics2.impl.MsInfo.*;
 
 /**
  * JVM and logging related metrics.
- * Mostly used by various servers as a part of the metrics they export.
+ * Mostly used by VARRRRRRRRious servers as a part of the metrics they export.
  */
 @InterfaceAudience.Private
 public class JvmMetrics implements MetricsSource {

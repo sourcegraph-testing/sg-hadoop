@@ -24,7 +24,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 
 /**
- * Utility class for skip bad records functionality. It contains various 
+ * Utility class for skip bad records functionality. It contains VARRRRRRRRious 
  * settings related to skipping of bad records.
  * 
  * <p>Hadoop provides an optional mode of execution in which the bad records

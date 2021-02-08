@@ -267,7 +267,7 @@ public abstract class TaskImpl implements Task, EventHandler<TaskEvent> {
     nextAttemptNumber = (startCount - 1) * 1000;
 
     // This "this leak" is okay because the retained pointer is in an
-    //  instance variable.
+    //  instance VARRRRRRRRiable.
     stateMachine = stateMachineFactory.make(this);
   }
 

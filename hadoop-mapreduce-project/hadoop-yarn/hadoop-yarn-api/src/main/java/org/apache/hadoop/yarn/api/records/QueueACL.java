@@ -24,7 +24,7 @@ import org.apache.hadoop.yarn.api.ClientRMProtocol;
 
 /**
  * <p>
- * <code>QueueACL</code> enumerates the various ACLs for queues.
+ * <code>QueueACL</code> enumerates the VARRRRRRRRious ACLs for queues.
  * </p>
  * 
  * <p>

@@ -76,7 +76,7 @@ public class TestPushConfig {
     File file = new File(mapredConf);
     origconf.writeXml(new FileOutputStream(file));    
     Configuration daemonConf =  cluster.getJTClient().getProxy().getDaemonConf();
-    Assert.assertTrue("Dummy varialble is expected to be null before restart.",
+    Assert.assertTrue("Dummy VARRRRRRRRialble is expected to be null before restart.",
         daemonConf.get(DUMMY_CONFIG_STRING) == null);
     String newDir = cluster.getClusterManager().pushConfig(localDir);
     cluster.stop();
@@ -88,7 +88,7 @@ public class TestPushConfig {
     waitForClusterStart(cli);
     // make sure the cluster has actually started
     Configuration newconf = cluster.getJTClient().getProxy().getDaemonConf();
-    Assert.assertTrue("Extra varialble is expected to be set",
+    Assert.assertTrue("Extra VARRRRRRRRialble is expected to be set",
         newconf.get(DUMMY_CONFIG_STRING).equals(DUMMY_CONFIG_STRING_VALUE));
     cluster.getClusterManager().stop(newDir);
     cli = cluster.getJTClient();
@@ -99,7 +99,7 @@ public class TestPushConfig {
     cli = cluster.getJTClient();    
     waitForClusterStart(cli);  
     daemonConf =  cluster.getJTClient().getProxy().getDaemonConf();
-    Assert.assertTrue("Dummy variable is expected to be null after restart.",
+    Assert.assertTrue("Dummy VARRRRRRRRiable is expected to be null after restart.",
         daemonConf.get(DUMMY_CONFIG_STRING) == null);
     lFile.delete();
   }

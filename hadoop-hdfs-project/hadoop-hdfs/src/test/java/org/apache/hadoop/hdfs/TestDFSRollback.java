@@ -41,7 +41,7 @@ import com.google.common.collect.Lists;
 
 /**
 * This test ensures the appropriate response (successful or failure) from
-* the system when the system is rolled back under various storage state and
+* the system when the system is rolled back under VARRRRRRRRious storage state and
 * version conditions.
 */
 public class TestDFSRollback extends TestCase {

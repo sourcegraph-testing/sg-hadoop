@@ -125,7 +125,7 @@ public class TestMRSequenceFileInputFilter extends TestCase {
     // clean input dir
     fs.delete(inDir, true);
   
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 1; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 10) + 1) {
       LOG.info("******Number of records: " + length);
@@ -149,7 +149,7 @@ public class TestMRSequenceFileInputFilter extends TestCase {
     // clean input dir
     fs.delete(inDir, true);
     
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 10) + 1) {
       LOG.info("******Number of records: "+length);
@@ -177,7 +177,7 @@ public class TestMRSequenceFileInputFilter extends TestCase {
     // clean input dir
     fs.delete(inDir, true);
     
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 10) + 1) {
       LOG.info("******Number of records: " + length);

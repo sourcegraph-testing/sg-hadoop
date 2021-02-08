@@ -151,7 +151,7 @@ public class Client {
   private String shellScriptPath = ""; 
   // Args to be passed to the shell command
   private String shellArgs = "";
-  // Env variables to be setup for the shell command 
+  // Env VARRRRRRRRiables to be setup for the shell command 
   private Map<String, String> shellEnv = new HashMap<String, String>();
   // Shell Command Container priority 
   private int shellCmdPriority = 0;
@@ -489,7 +489,7 @@ public class Client {
     // Set the necessary security tokens as needed
     //amContainer.setContainerTokens(containerToken);
 
-    // Set the env variables to be setup in the env where the application master will be run
+    // Set the env VARRRRRRRRiables to be setup in the env where the application master will be run
     LOG.info("Set the environment for the application master");
     Map<String, String> env = new HashMap<String, String>();
 
@@ -526,36 +526,36 @@ public class Client {
     amContainer.setEnvironment(env);
 
     // Set the necessary command to execute the application master 
-    Vector<CharSequence> vargs = new Vector<CharSequence>(30);
+    Vector<CharSequence> VARRRRRRRRgs = new Vector<CharSequence>(30);
 
     // Set java executable command 
     LOG.info("Setting up app master command");
-    vargs.add("${JAVA_HOME}" + "/bin/java");
+    VARRRRRRRRgs.add("${JAVA_HOME}" + "/bin/java");
     // Set class name 
-    vargs.add(appMasterMainClass);
+    VARRRRRRRRgs.add(appMasterMainClass);
     // Set params for Application Master
-    vargs.add("--container_memory " + String.valueOf(containerMemory));
-    vargs.add("--num_containers " + String.valueOf(numContainers));
-    vargs.add("--priority " + String.valueOf(shellCmdPriority));
+    VARRRRRRRRgs.add("--container_memory " + String.valueOf(containerMemory));
+    VARRRRRRRRgs.add("--num_containers " + String.valueOf(numContainers));
+    VARRRRRRRRgs.add("--priority " + String.valueOf(shellCmdPriority));
     if (!shellCommand.isEmpty()) {
-      vargs.add("--shell_command " + shellCommand + "");
+      VARRRRRRRRgs.add("--shell_command " + shellCommand + "");
     }
     if (!shellArgs.isEmpty()) {
-      vargs.add("--shell_args " + shellArgs + "");
+      VARRRRRRRRgs.add("--shell_args " + shellArgs + "");
     }
     for (Map.Entry<String, String> entry : shellEnv.entrySet()) {
-      vargs.add("--shell_env " + entry.getKey() + "=" + entry.getValue());
+      VARRRRRRRRgs.add("--shell_env " + entry.getKey() + "=" + entry.getValue());
     }			
     if (debugFlag) {
-      vargs.add("--debug");
+      VARRRRRRRRgs.add("--debug");
     }
 
-    vargs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/AppMaster.stdout");
-    vargs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/AppMaster.stderr");
+    VARRRRRRRRgs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/AppMaster.stdout");
+    VARRRRRRRRgs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/AppMaster.stderr");
 
     // Get final commmand
     StringBuilder command = new StringBuilder();
-    for (CharSequence str : vargs) {
+    for (CharSequence str : VARRRRRRRRgs) {
       command.append(str).append(" ");
     }
 

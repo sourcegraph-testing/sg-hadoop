@@ -38,31 +38,31 @@ public interface ApplicationConstants {
     "AppClientTokenEnv";
   
   /**
-   * The environment variable for CONTAINER_ID. Set in AppMaster environment
+   * The environment VARRRRRRRRiable for CONTAINER_ID. Set in AppMaster environment
    * only
    */
   public static final String AM_CONTAINER_ID_ENV = "AM_CONTAINER_ID";
 
   /**
-   * The environment variable for the NM_HOST. Set in the AppMaster environment
+   * The environment VARRRRRRRRiable for the NM_HOST. Set in the AppMaster environment
    * only
    */
   public static final String NM_HOST_ENV = "NM_HOST";
   
   /**
-   * The environment variable for the NM_PORT. Set in the AppMaster environment
+   * The environment VARRRRRRRRiable for the NM_PORT. Set in the AppMaster environment
    * only
    */
   public static final String NM_PORT_ENV = "NM_PORT";
   
   /**
-   * The environment variable for the NM_HTTP_PORT. Set in the AppMaster environment
+   * The environment VARRRRRRRRiable for the NM_HTTP_PORT. Set in the AppMaster environment
    * only
    */
   public static final String NM_HTTP_PORT_ENV = "NM_HTTP_PORT";
   
   /**
-   * The environment variable for APP_SUBMIT_TIME. Set in AppMaster environment
+   * The environment VARRRRRRRRiable for APP_SUBMIT_TIME. Set in AppMaster environment
    * only
    */
   public static final String APP_SUBMIT_TIME_ENV = "APP_SUBMIT_TIME_ENV";
@@ -73,7 +73,7 @@ public interface ApplicationConstants {
   public static final String LOCAL_DIR_ENV = "YARN_LOCAL_DIRS";
 
   /**
-   * The environmental variable for APPLICATION_WEB_PROXY_BASE. Set in 
+   * The environmental VARRRRRRRRiable for APPLICATION_WEB_PROXY_BASE. Set in 
    * ApplicationMaster's environment only. This states that for all non-relative
    * web URLs in the app masters web UI what base should they have.
    */
@@ -103,7 +103,7 @@ public interface ApplicationConstants {
   /**
    * Environment for Applications.
    * 
-   * Some of the environment variables for applications are <em>final</em> 
+   * Some of the environment VARRRRRRRRiables for applications are <em>final</em> 
    * i.e. they cannot be modified by the applications.
    */
   public enum Environment {
@@ -182,21 +182,21 @@ public interface ApplicationConstants {
      */
     YARN_HOME("YARN_HOME");
 
-    private final String variable;
-    private Environment(String variable) {
-      this.variable = variable;
+    private final String VARRRRRRRRiable;
+    private Environment(String VARRRRRRRRiable) {
+      this.VARRRRRRRRiable = VARRRRRRRRiable;
     }
     
     public String key() {
-      return variable;
+      return VARRRRRRRRiable;
     }
     
     public String toString() {
-      return variable;
+      return VARRRRRRRRiable;
     }
     
     public String $() {
-      return "$" + variable;
+      return "$" + VARRRRRRRRiable;
     }
   }
 }

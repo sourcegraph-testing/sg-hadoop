@@ -230,7 +230,7 @@ public class TestInstrumentationService extends HTestCase {
   @Test
   public void sampler() throws Exception {
     final long value[] = new long[1];
-    Instrumentation.Variable<Long> var = new Instrumentation.Variable<Long>() {
+    Instrumentation.Variable<Long> VARRRRRRRR = new Instrumentation.Variable<Long>() {
       @Override
       public Long getValue() {
         return value[0];
@@ -238,7 +238,7 @@ public class TestInstrumentationService extends HTestCase {
     };
 
     InstrumentationService.Sampler sampler = new InstrumentationService.Sampler();
-    sampler.init(4, var);
+    sampler.init(4, VARRRRRRRR);
     Assert.assertEquals(sampler.getRate(), 0f, 0.0001);
     sampler.sample();
     Assert.assertEquals(sampler.getRate(), 0f, 0.0001);
@@ -270,23 +270,23 @@ public class TestInstrumentationService extends HTestCase {
   }
 
   @Test
-  public void variableHolder() throws Exception {
-    InstrumentationService.VariableHolder<String> variableHolder =
+  public void VARRRRRRRRiableHolder() throws Exception {
+    InstrumentationService.VariableHolder<String> VARRRRRRRRiableHolder =
       new InstrumentationService.VariableHolder<String>();
 
-    variableHolder.var = new Instrumentation.Variable<String>() {
+    VARRRRRRRRiableHolder.VARRRRRRRR = new Instrumentation.Variable<String>() {
       @Override
       public String getValue() {
         return "foo";
       }
     };
 
-    JSONObject json = (JSONObject) new JSONParser().parse(variableHolder.toJSONString());
+    JSONObject json = (JSONObject) new JSONParser().parse(VARRRRRRRRiableHolder.toJSONString());
     Assert.assertEquals(json.size(), 1);
     Assert.assertEquals(json.get("value"), "foo");
 
     StringWriter writer = new StringWriter();
-    variableHolder.writeJSONString(writer);
+    VARRRRRRRRiableHolder.writeJSONString(writer);
     writer.close();
     json = (JSONObject) new JSONParser().parse(writer.toString());
     Assert.assertEquals(json.size(), 1);
@@ -321,21 +321,21 @@ public class TestInstrumentationService extends HTestCase {
     cron.stop();
     instrumentation.addCron("g", "t", cron);
 
-    Instrumentation.Variable<String> var = new Instrumentation.Variable<String>() {
+    Instrumentation.Variable<String> VARRRRRRRR = new Instrumentation.Variable<String>() {
       @Override
       public String getValue() {
         return "foo";
       }
     };
-    instrumentation.addVariable("g", "v", var);
+    instrumentation.addVariable("g", "v", VARRRRRRRR);
 
-    Instrumentation.Variable<Long> varToSample = new Instrumentation.Variable<Long>() {
+    Instrumentation.Variable<Long> VARRRRRRRRToSample = new Instrumentation.Variable<Long>() {
       @Override
       public Long getValue() {
         return 1L;
       }
     };
-    instrumentation.addSampler("g", "s", 10, varToSample);
+    instrumentation.addSampler("g", "s", 10, VARRRRRRRRToSample);
 
     Map<String, ?> snapshot = instrumentation.getSnapshot();
     Assert.assertNotNull(snapshot.get("os-env"));
@@ -343,7 +343,7 @@ public class TestInstrumentationService extends HTestCase {
     Assert.assertNotNull(snapshot.get("jvm"));
     Assert.assertNotNull(snapshot.get("counters"));
     Assert.assertNotNull(snapshot.get("timers"));
-    Assert.assertNotNull(snapshot.get("variables"));
+    Assert.assertNotNull(snapshot.get("VARRRRRRRRiables"));
     Assert.assertNotNull(snapshot.get("samplers"));
     Assert.assertNotNull(((Map<String, String>) snapshot.get("os-env")).get("PATH"));
     Assert.assertNotNull(((Map<String, String>) snapshot.get("sys-props")).get("java.version"));
@@ -352,12 +352,12 @@ public class TestInstrumentationService extends HTestCase {
     Assert.assertNotNull(((Map<String, ?>) snapshot.get("jvm")).get("total.memory"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("counters")).get("g"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("timers")).get("g"));
-    Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("variables")).get("g"));
+    Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("VARRRRRRRRiables")).get("g"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("samplers")).get("g"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("counters")).get("g").get("c"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("counters")).get("g").get("c1"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("timers")).get("g").get("t"));
-    Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("variables")).get("g").get("v"));
+    Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("VARRRRRRRRiables")).get("g").get("v"));
     Assert.assertNotNull(((Map<String, Map<String, Object>>) snapshot.get("samplers")).get("g").get("s"));
 
     StringWriter writer = new StringWriter();
@@ -381,13 +381,13 @@ public class TestInstrumentationService extends HTestCase {
 
     final AtomicInteger count = new AtomicInteger();
 
-    Instrumentation.Variable<Long> varToSample = new Instrumentation.Variable<Long>() {
+    Instrumentation.Variable<Long> VARRRRRRRRToSample = new Instrumentation.Variable<Long>() {
       @Override
       public Long getValue() {
         return (long) count.incrementAndGet();
       }
     };
-    instrumentation.addSampler("g", "s", 10, varToSample);
+    instrumentation.addSampler("g", "s", 10, VARRRRRRRRToSample);
 
     sleep(2000);
     int i = count.get();

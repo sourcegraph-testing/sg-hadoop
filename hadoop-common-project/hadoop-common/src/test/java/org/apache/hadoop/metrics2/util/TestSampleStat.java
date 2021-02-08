@@ -34,7 +34,7 @@ public class TestSampleStat {
     SampleStat stat = new SampleStat();
     assertEquals("num samples", 0, stat.numSamples());
     assertEquals("mean", 0.0, stat.mean(), EPSILON);
-    assertEquals("variance", 0.0, stat.variance(), EPSILON);
+    assertEquals("VARRRRRRRRiance", 0.0, stat.VARRRRRRRRiance(), EPSILON);
     assertEquals("stddev", 0.0, stat.stddev(), EPSILON);
     assertEquals("min", Double.MAX_VALUE, stat.min(), EPSILON);
     assertEquals("max", Double.MIN_VALUE, stat.max(), EPSILON);
@@ -42,7 +42,7 @@ public class TestSampleStat {
     stat.add(3);
     assertEquals("num samples", 1L, stat.numSamples());
     assertEquals("mean", 3.0, stat.mean(), EPSILON);
-    assertEquals("variance", 0.0, stat.variance(), EPSILON);
+    assertEquals("VARRRRRRRRiance", 0.0, stat.VARRRRRRRRiance(), EPSILON);
     assertEquals("stddev", 0.0, stat.stddev(), EPSILON);
     assertEquals("min", 3.0, stat.min(), EPSILON);
     assertEquals("max", 3.0, stat.max(), EPSILON);
@@ -50,7 +50,7 @@ public class TestSampleStat {
     stat.add(2).add(1);
     assertEquals("num samples", 3L, stat.numSamples());
     assertEquals("mean", 2.0, stat.mean(), EPSILON);
-    assertEquals("variance", 1.0, stat.variance(), EPSILON);
+    assertEquals("VARRRRRRRRiance", 1.0, stat.VARRRRRRRRiance(), EPSILON);
     assertEquals("stddev", 1.0, stat.stddev(), EPSILON);
     assertEquals("min", 1.0, stat.min(), EPSILON);
     assertEquals("max", 3.0, stat.max(), EPSILON);
@@ -58,7 +58,7 @@ public class TestSampleStat {
     stat.reset();
     assertEquals("num samples", 0, stat.numSamples());
     assertEquals("mean", 0.0, stat.mean(), EPSILON);
-    assertEquals("variance", 0.0, stat.variance(), EPSILON);
+    assertEquals("VARRRRRRRRiance", 0.0, stat.VARRRRRRRRiance(), EPSILON);
     assertEquals("stddev", 0.0, stat.stddev(), EPSILON);
     assertEquals("min", Double.MAX_VALUE, stat.min(), EPSILON);
     assertEquals("max", Double.MIN_VALUE, stat.max(), EPSILON);

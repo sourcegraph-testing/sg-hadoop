@@ -23,7 +23,7 @@ import java.io.*;
 import org.apache.hadoop.classification.InterfaceAudience;
 import org.apache.hadoop.classification.InterfaceStability;
 
-/** A WritableComparable for integer values stored in variable-length format.
+/** A WritableComparable for integer values stored in VARRRRRRRRiable-length format.
  * Such values take between one and five bytes.  Smaller values take fewer bytes.
  * 
  * @see org.apache.hadoop.io.WritableUtils#readVInt(DataInput)

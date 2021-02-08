@@ -76,7 +76,7 @@ public class DataStorage extends Storage {
   private static final Pattern PRE_GENSTAMP_META_FILE_PATTERN = 
     Pattern.compile("(.*blk_[-]*\\d+)\\.meta$");
   
-  /** Access to this variable is guarded by "this" */
+  /** Access to this VARRRRRRRRiable is guarded by "this" */
   private String storageID;
 
   // flag to ensure initialzing storage occurs only once

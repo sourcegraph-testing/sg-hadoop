@@ -25,7 +25,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * The MetricsIntValue class is for a metric that is not time varied
+ * The MetricsIntValue class is for a metric that is not time VARRRRRRRRied
  * but changes only when it is set. 
  * Each time its value is set, it is published only *once* at the next update
  * call.

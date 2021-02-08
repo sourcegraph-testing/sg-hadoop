@@ -65,7 +65,7 @@ public class CommandFormat {
   }
 
   /** Parse parameters starting from the given position
-   * Consider using the variant that directly takes a List
+   * Consider using the VARRRRRRRRiant that directly takes a List
    * 
    * @param args an array of input arguments
    * @param pos the position at which starts to parse

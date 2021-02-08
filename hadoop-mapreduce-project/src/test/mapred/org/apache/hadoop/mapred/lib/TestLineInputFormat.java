@@ -56,7 +56,7 @@ public class TestLineInputFormat extends TestCase {
     int numLinesPerMap = 5;
     job.setInt("mapreduce.input.lineinputformat.linespermap", numLinesPerMap);
 
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH/10) + 1) {
       // create a file with length entries

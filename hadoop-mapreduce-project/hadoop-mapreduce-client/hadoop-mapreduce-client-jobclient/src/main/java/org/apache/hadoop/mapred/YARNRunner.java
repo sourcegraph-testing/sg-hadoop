@@ -325,32 +325,32 @@ public class YARNRunner implements ClientProtocol {
     }
 
     // Setup the command to run the AM
-    List<String> vargs = new ArrayList<String>(8);
-    vargs.add(Environment.JAVA_HOME.$() + "/bin/java");
+    List<String> VARRRRRRRRgs = new ArrayList<String>(8);
+    VARRRRRRRRgs.add(Environment.JAVA_HOME.$() + "/bin/java");
 
     // TODO: why do we use 'conf' some places and 'jobConf' others?
     long logSize = TaskLog.getTaskLogLength(new JobConf(conf));
     String logLevel = jobConf.get(
         MRJobConfig.MR_AM_LOG_LEVEL, MRJobConfig.DEFAULT_MR_AM_LOG_LEVEL);
-    MRApps.addLog4jSystemProperties(logLevel, logSize, vargs);
+    MRApps.addLog4jSystemProperties(logLevel, logSize, VARRRRRRRRgs);
 
-    vargs.add(conf.get(MRJobConfig.MR_AM_COMMAND_OPTS,
+    VARRRRRRRRgs.add(conf.get(MRJobConfig.MR_AM_COMMAND_OPTS,
         MRJobConfig.DEFAULT_MR_AM_COMMAND_OPTS));
 
-    vargs.add(MRJobConfig.APPLICATION_MASTER_CLASS);
-    vargs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR +
+    VARRRRRRRRgs.add(MRJobConfig.APPLICATION_MASTER_CLASS);
+    VARRRRRRRRgs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR +
         Path.SEPARATOR + ApplicationConstants.STDOUT);
-    vargs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR +
+    VARRRRRRRRgs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR +
         Path.SEPARATOR + ApplicationConstants.STDERR);
 
 
-    Vector<String> vargsFinal = new Vector<String>(8);
+    Vector<String> VARRRRRRRRgsFinal = new Vector<String>(8);
     // Final commmand
     StringBuilder mergedCommand = new StringBuilder();
-    for (CharSequence str : vargs) {
+    for (CharSequence str : VARRRRRRRRgs) {
       mergedCommand.append(str).append(" ");
     }
-    vargsFinal.add(mergedCommand.toString());
+    VARRRRRRRRgsFinal.add(mergedCommand.toString());
 
     LOG.debug("Command to launch container for ApplicationMaster is : "
         + mergedCommand);
@@ -375,7 +375,7 @@ public class YARNRunner implements ClientProtocol {
     ContainerLaunchContext amContainer = BuilderUtils
         .newContainerLaunchContext(null, UserGroupInformation
             .getCurrentUser().getShortUserName(), capability, localResources,
-            environment, vargsFinal, null, securityTokens, acls);
+            environment, VARRRRRRRRgsFinal, null, securityTokens, acls);
 
     // Set up the ApplicationSubmissionContext
     ApplicationSubmissionContext appContext =

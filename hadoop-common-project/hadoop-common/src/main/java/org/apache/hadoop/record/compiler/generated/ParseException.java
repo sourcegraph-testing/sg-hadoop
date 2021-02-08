@@ -83,7 +83,7 @@ public class ParseException extends Exception {
   }
 
   /**
-   * This variable determines which constructor was used to create
+   * This VARRRRRRRRiable determines which constructor was used to create
    * this object and thereby affects the semantics of the
    * "getMessage" method (see below).
    */

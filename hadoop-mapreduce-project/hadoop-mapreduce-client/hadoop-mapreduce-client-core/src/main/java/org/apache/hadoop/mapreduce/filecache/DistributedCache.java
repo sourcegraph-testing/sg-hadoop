@@ -413,7 +413,7 @@ public class DistributedCache {
    * This method checks if there is a conflict in the fragment names 
    * of the uris. Also makes sure that each uri has a fragment. It 
    * is only to be called if you want to create symlinks for 
-   * the various archives and files.  May be used by user code.
+   * the VARRRRRRRRious archives and files.  May be used by user code.
    * @param uriFiles The uri array of urifiles
    * @param uriArchives the uri array of uri archives
    */

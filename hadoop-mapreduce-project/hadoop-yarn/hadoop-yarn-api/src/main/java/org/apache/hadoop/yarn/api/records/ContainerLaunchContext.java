@@ -41,7 +41,7 @@ import org.apache.hadoop.yarn.api.ContainerManager;
  *       as binaries, jar, shared-objects, side-files etc. 
  *     </li>
  *     <li>Optional, application-specific binary service data.</li>
- *     <li>Environment variables for the launched process.</li>
+ *     <li>Environment VARRRRRRRRiables for the launched process.</li>
  *     <li>Command to launch the container.</li>
  *   </ul>
  * </p>
@@ -153,17 +153,17 @@ public interface ContainerLaunchContext {
   void setServiceData(Map<String, ByteBuffer> serviceData);
 
   /**
-   * Get <em>environment variables</em> for the container.
-   * @return <em>environment variables</em> for the container
+   * Get <em>environment VARRRRRRRRiables</em> for the container.
+   * @return <em>environment VARRRRRRRRiables</em> for the container
    */
   @Public
   @Stable
   Map<String, String> getEnvironment();
     
   /**
-   * Add <em>environment variables</em> for the container. All pre-existing Map
+   * Add <em>environment VARRRRRRRRiables</em> for the container. All pre-existing Map
    * entries are cleared before adding the new Map
-   * @param environment <em>environment variables</em> for the container
+   * @param environment <em>environment VARRRRRRRRiables</em> for the container
    */
   @Public
   @Stable

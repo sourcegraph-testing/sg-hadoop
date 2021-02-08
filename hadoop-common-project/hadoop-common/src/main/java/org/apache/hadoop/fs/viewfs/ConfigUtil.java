@@ -22,21 +22,21 @@ import java.net.URI;
 import org.apache.hadoop.conf.Configuration;
 
 /**
- * Utilities for config variables of the viewFs See {@link ViewFs}
+ * Utilities for config VARRRRRRRRiables of the viewFs See {@link ViewFs}
  */
 public class ConfigUtil {
   /**
-   * Get the config variable prefix for the specified mount table
+   * Get the config VARRRRRRRRiable prefix for the specified mount table
    * @param mountTableName - the name of the mount table
-   * @return the config variable prefix for the specified mount table
+   * @return the config VARRRRRRRRiable prefix for the specified mount table
    */
   public static String getConfigViewFsPrefix(final String mountTableName) {
     return Constants.CONFIG_VIEWFS_PREFIX + "." + mountTableName;
   }
   
   /**
-   * Get the config variable prefix for the default mount table
-   * @return the config variable prefix for the default mount table
+   * Get the config VARRRRRRRRiable prefix for the default mount table
+   * @return the config VARRRRRRRRiable prefix for the default mount table
    */
   public static String getConfigViewFsPrefix() {
     return 
@@ -69,7 +69,7 @@ public class ConfigUtil {
   }
   
   /**
-   * Add config variable for homedir for default mount table
+   * Add config VARRRRRRRRiable for homedir for default mount table
    * @param conf - add to this conf
    * @param homedir - the home dir path starting with slash
    */
@@ -80,7 +80,7 @@ public class ConfigUtil {
   }
   
   /**
-   * Add config variable for homedir the specified mount table
+   * Add config VARRRRRRRRiable for homedir the specified mount table
    * @param conf - add to this conf
    * @param homedir - the home dir path starting with slash
    */
@@ -97,7 +97,7 @@ public class ConfigUtil {
   /**
    * Get the value of the home dir conf value for default mount table
    * @param conf - from this conf
-   * @return home dir value, null if variable is not in conf
+   * @return home dir value, null if VARRRRRRRRiable is not in conf
    */
   public static String getHomeDirValue(final Configuration conf) {
     return getHomeDirValue(conf, Constants.CONFIG_VIEWFS_DEFAULT_MOUNT_TABLE);
@@ -107,7 +107,7 @@ public class ConfigUtil {
    * Get the value of the home dir conf value for specfied mount table
    * @param conf - from this conf
    * @param mountTableName - the mount table
-   * @return home dir value, null if variable is not in conf
+   * @return home dir value, null if VARRRRRRRRiable is not in conf
    */
   public static String getHomeDirValue(final Configuration conf, 
       final String mountTableName) {

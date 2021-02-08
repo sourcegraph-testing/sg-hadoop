@@ -163,8 +163,8 @@ public abstract class AbstractDaemonClient<PROXY extends DaemonProtocol> {
   }
 
   /**
-   * Abstract method to retrieve the name of a daemon specific env. var
-   * @return name of Hadoop environment variable containing a daemon options
+   * Abstract method to retrieve the name of a daemon specific env. VARRRRRRRR
+   * @return name of Hadoop environment VARRRRRRRRiable containing a daemon options
    */
   abstract public String getHadoopOptsEnvName ();
 
@@ -184,16 +184,16 @@ public abstract class AbstractDaemonClient<PROXY extends DaemonProtocol> {
    * Checks remote daemon process info to see if certain JMX sys. properties
    * are available and reckon if the JMX service is enabled on the remote side
    *
-   * @param envivar name of an evironment variable to be searched
+   * @param enviVARRRRRRRR name of an evironment VARRRRRRRRiable to be searched
    * @return <code>boolean</code> code indicating availability of remote JMX
    * @throws IOException is throws in case of communication errors
    */
-  protected boolean isJmxEnabled(String envivar) throws IOException {
+  protected boolean isJmxEnabled(String enviVARRRRRRRR) throws IOException {
     if (jmxEnabled != null) return jmxEnabled;
     boolean ret = false;
     String jmxRemoteString = "-Dcom.sun.management.jmxremote";
-    String hadoopOpts = getProcessInfo().getEnv().get(envivar);
-    LOG.debug("Looking into " + hadoopOpts + " from " + envivar);
+    String hadoopOpts = getProcessInfo().getEnv().get(enviVARRRRRRRR);
+    LOG.debug("Looking into " + hadoopOpts + " from " + enviVARRRRRRRR);
     List<String> options = Arrays.asList(hadoopOpts.split(" "));
     ret = options.contains(jmxRemoteString);
     jmxEnabled = ret;
@@ -202,7 +202,7 @@ public abstract class AbstractDaemonClient<PROXY extends DaemonProtocol> {
 
   /**
    * Checks remote daemon process info to find remote JMX server port number
-   * By default this method will look into "HADOOP_OPTS" variable only.
+   * By default this method will look into "HADOOP_OPTS" VARRRRRRRRiable only.
    * @return number of remote JMX server or -1 if it can't be found
    * @throws IOException is throws in case of communication errors
    * @throws IllegalArgumentException if non-integer port is set
@@ -216,18 +216,18 @@ public abstract class AbstractDaemonClient<PROXY extends DaemonProtocol> {
   /**
    * Checks remote daemon process info to find remote JMX server port number
    *
-   * @param envivar name of the env. var. to look for JMX specific settings
+   * @param enviVARRRRRRRR name of the env. VARRRRRRRR. to look for JMX specific settings
    * @return number of remote JMX server or -1 if it can't be found
    * @throws IOException is throws in case of communication errors
    * @throws IllegalArgumentException if non-integer port is set
    *  in the remote process info
    */
-  protected int getJmxPortNumber(final String envivar) throws
+  protected int getJmxPortNumber(final String enviVARRRRRRRR) throws
       IOException, IllegalArgumentException {
     if (jmxPortNumber != -1) return jmxPortNumber;
     String jmxPortString = "-Dcom.sun.management.jmxremote.port";
 
-    String hadoopOpts = getProcessInfo().getEnv().get(envivar);
+    String hadoopOpts = getProcessInfo().getEnv().get(enviVARRRRRRRR);
     int portNumber = -1;
     boolean found = false;
     String[] options = hadoopOpts.split(" ");

@@ -191,17 +191,17 @@ public class TestMiniMRChildTask extends TestCase {
     String envValue = System.getenv(envName).trim();
     if ("append".equals(mode)) {
       if (envValue == null || !envValue.contains(":")) {
-        throw new RuntimeException("Missing env variable");
+        throw new RuntimeException("Missing env VARRRRRRRRiable");
       } else {
         String parts[] = envValue.split(":");
         // check if the value is appended
         if (!parts[parts.length - 1].equals(expValue)) {
-          throw new RuntimeException("Wrong env variable in append mode");
+          throw new RuntimeException("Wrong env VARRRRRRRRiable in append mode");
         }
       }
     } else {
       if (envValue == null || !envValue.equals(expValue)) {
-        throw new RuntimeException("Wrong env variable in noappend mode");
+        throw new RuntimeException("Wrong env VARRRRRRRRiable in noappend mode");
       }
     }
   }
@@ -240,11 +240,11 @@ public class TestMiniMRChildTask extends TestCase {
       checkEnv("LD_LIBRARY_PATH", "/tmp", "append");
       // check if X=/tmp works for an already existing parameter
       checkEnv("HOME", "/tmp", "noappend");
-      // check if X=/tmp for a new env variable
+      // check if X=/tmp for a new env VARRRRRRRRiable
       checkEnv("MY_PATH", "/tmp", "noappend");
-      // check if X=$X:/tmp works for a new env var and results into :/tmp
+      // check if X=$X:/tmp works for a new env VARRRRRRRR and results into :/tmp
       checkEnv("NEW_PATH", ":/tmp", "noappend");
-      // check if X=$(tt's X var):/tmp for an old env variable inherited from 
+      // check if X=$(tt's X VARRRRRRRR):/tmp for an old env VARRRRRRRRiable inherited from 
       // the tt
       checkEnv("PATH",  path + ":/tmp", "noappend");
     }
@@ -290,11 +290,11 @@ public class TestMiniMRChildTask extends TestCase {
       checkEnv("LD_LIBRARY_PATH", "/tmp", "append");
       // check if X=/tmp works for an already existing parameter
       checkEnv("HOME", "/tmp", "noappend");
-      // check if X=/tmp for a new env variable
+      // check if X=/tmp for a new env VARRRRRRRRiable
       checkEnv("MY_PATH", "/tmp", "noappend");
-      // check if X=$X:/tmp works for a new env var and results into :/tmp
+      // check if X=$X:/tmp works for a new env VARRRRRRRR and results into :/tmp
       checkEnv("NEW_PATH", ":/tmp", "noappend");
-      // check if X=$(tt's X var):/tmp for an old env variable inherited from 
+      // check if X=$(tt's X VARRRRRRRR):/tmp for an old env VARRRRRRRRiable inherited from 
       // the tt
       checkEnv("PATH",  path + ":/tmp", "noappend");
 
@@ -368,9 +368,9 @@ public class TestMiniMRChildTask extends TestCase {
   }
 
   /**
-   * Test to test if the user set env variables reflect in the child
+   * Test to test if the user set env VARRRRRRRRiables reflect in the child
    * processes. Mainly
-   *   - x=y (x can be a already existing env variable or a new variable)
+   *   - x=y (x can be a already existing env VARRRRRRRRiable or a new VARRRRRRRRiable)
    *   - x=$x:y (replace $x with the current value of x)
    */
   public void testTaskEnv(){
@@ -390,9 +390,9 @@ public class TestMiniMRChildTask extends TestCase {
   }
   
   /**
-   * Test to test if the user set *old* env variables reflect in the child
+   * Test to test if the user set *old* env VARRRRRRRRiables reflect in the child
    * processes. Mainly
-   *   - x=y (x can be a already existing env variable or a new variable)
+   *   - x=y (x can be a already existing env VARRRRRRRRiable or a new VARRRRRRRRiable)
    *   - x=$x:y (replace $x with the current value of x)
    */
   public void testTaskOldEnv(){
@@ -417,11 +417,11 @@ public class TestMiniMRChildTask extends TestCase {
     configure(conf, inDir, outDir, input, 
               EnvCheckMapper.class, EnvCheckReducer.class);
     // test 
-    //  - new SET of new var (MY_PATH)
-    //  - set of old var (HOME)
-    //  - append to an old var from modified env (LD_LIBRARY_PATH)
-    //  - append to an old var from tt's env (PATH)
-    //  - append to a new var (NEW_PATH)
+    //  - new SET of new VARRRRRRRR (MY_PATH)
+    //  - set of old VARRRRRRRR (HOME)
+    //  - append to an old VARRRRRRRR from modified env (LD_LIBRARY_PATH)
+    //  - append to an old VARRRRRRRR from tt's env (PATH)
+    //  - append to a new VARRRRRRRR (NEW_PATH)
     String mapTaskEnvKey = JobConf.MAPRED_MAP_TASK_ENV;
     String reduceTaskEnvKey = JobConf.MAPRED_MAP_TASK_ENV;
     String mapTaskJavaOptsKey = JobConf.MAPRED_MAP_TASK_JAVA_OPTS;

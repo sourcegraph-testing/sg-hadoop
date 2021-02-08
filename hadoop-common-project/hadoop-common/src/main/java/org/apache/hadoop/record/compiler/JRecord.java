@@ -257,7 +257,7 @@ public class JRecord extends JCompType {
       // setupRtiFields()
       genSetupRtiFields(cb);
 
-      // getters/setters for member variables
+      // getters/setters for member VARRRRRRRRiables
       for (Iterator<JField<JavaType>> i = fields.iterator(); i.hasNext();) {
         JField<JavaType> jf = i.next();
         String name = jf.getName();
@@ -556,7 +556,7 @@ public class JRecord extends JCompType {
         type.genDecl(hb, name);
       }
       
-      // type info vars
+      // type info VARRRRRRRRs
       hb.append("static ::hadoop::RecordTypeInfo* p" + Consts.RTI_VAR + ";\n");
       hb.append("static ::hadoop::RecordTypeInfo* p" + Consts.RTI_FILTER + ";\n");
       hb.append("static int* p" + Consts.RTI_FILTER_FIELDS + ";\n");
@@ -593,7 +593,7 @@ public class JRecord extends JCompType {
       
       CodeBuffer cb = new CodeBuffer();
 
-      // initialize type info vars
+      // initialize type info VARRRRRRRRs
       cb.append("::hadoop::RecordTypeInfo* " + fullName + "::p" + 
           Consts.RTI_VAR + " = " + fullName + "::setupTypeInfo();\n");
       cb.append("::hadoop::RecordTypeInfo* " + fullName + "::p" + 

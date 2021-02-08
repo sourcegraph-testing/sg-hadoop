@@ -64,7 +64,7 @@ public class BuiltInGzipDecompressor implements Decompressor {
 
   /**
    * The current state of the gzip decoder, external to the Inflater context.
-   * (Technically, the private variables localBuf through hasHeaderCRC are
+   * (Technically, the private VARRRRRRRRiables localBuf through hasHeaderCRC are
    * also part of the state, so this enum is merely the label for it.)
    */
   private static enum GzipStateLabel {
@@ -213,7 +213,7 @@ public class BuiltInGzipDecompressor implements Decompressor {
           "logic error: Inflater finished; byte-count is inconsistent";
           // could save a copy of userBufLen at call to inflater.setInput() and
           // verify that bytesRemaining <= origUserBufLen, but would have to
-          // be a (class) member variable...seems excessive for a sanity check
+          // be a (class) member VARRRRRRRRiable...seems excessive for a sanity check
         userBufOff -= bytesRemaining;
         userBufLen = bytesRemaining;   // or "+=", but guaranteed 0 coming in
       } else {

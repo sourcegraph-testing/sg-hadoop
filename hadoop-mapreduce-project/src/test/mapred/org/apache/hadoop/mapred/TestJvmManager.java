@@ -113,8 +113,8 @@ public class TestJvmManager {
     File pidFile = new File(TEST_DIR, "pid");
     final TaskRunner taskRunner = new MapTaskRunner(tip, tt, taskConf);
     // launch a jvm which sleeps for 60 seconds
-    final Vector<String> vargs = new Vector<String>(2);
-    vargs.add(writeScript("SLEEP", "sleep 60\n", pidFile).getAbsolutePath());
+    final Vector<String> VARRRRRRRRgs = new Vector<String>(2);
+    VARRRRRRRRgs.add(writeScript("SLEEP", "sleep 60\n", pidFile).getAbsolutePath());
     final File workDir = new File(TEST_DIR, "work");
     workDir.mkdir();
     final File stdout = new File(TEST_DIR, "stdout");
@@ -124,7 +124,7 @@ public class TestJvmManager {
     Thread launcher = new Thread() {
       public void run() {
         try {
-          taskRunner.launchJvmAndWait(null, vargs, stdout, stderr, 100,
+          taskRunner.launchJvmAndWait(null, VARRRRRRRRgs, stdout, stderr, 100,
               workDir, null);
         } catch (InterruptedException e) {
           e.printStackTrace();
@@ -175,14 +175,14 @@ public class TestJvmManager {
     task.setConf(taskConf);
     tip = tt.new TaskInProgress(task, taskConf);
     TaskRunner taskRunner2 = new MapTaskRunner(tip, tt, taskConf);
-    // build dummy vargs to call ls
-    Vector<String> vargs2 = new Vector<String>(1);
-    vargs2.add(writeScript("LS", "ls", pidFile).getAbsolutePath());
+    // build dummy VARRRRRRRRgs to call ls
+    Vector<String> VARRRRRRRRgs2 = new Vector<String>(1);
+    VARRRRRRRRgs2.add(writeScript("LS", "ls", pidFile).getAbsolutePath());
     File workDir2 = new File(TEST_DIR, "work2");
     workDir.mkdir();
     File stdout2 = new File(TEST_DIR, "stdout2");
     File stderr2 = new File(TEST_DIR, "stderr2");
-    taskRunner2.launchJvmAndWait(null, vargs2, stdout2, stderr2, 100, workDir2,
+    taskRunner2.launchJvmAndWait(null, VARRRRRRRRgs2, stdout2, stderr2, 100, workDir2,
         null);
     // join all the threads
     killer.join();
@@ -193,7 +193,7 @@ public class TestJvmManager {
 
   /**
    * Create a bunch of tasks and use a special hash map to detect
-   * racy access to the various internal data structures of JvmManager.
+   * racy access to the VARRRRRRRRious internal data structures of JvmManager.
    * (Regression test for MAPREDUCE-2224)
    */
   @Test
@@ -220,8 +220,8 @@ public class TestJvmManager {
       File pidFile = new File(TEST_DIR, "pid_" + i);
       final TaskRunner taskRunner = new MapTaskRunner(tip, tt, taskConf);
       // launch a jvm which sleeps for 60 seconds
-      final Vector<String> vargs = new Vector<String>(2);
-      vargs.add(writeScript("script_" + i, "echo hi\n", pidFile).getAbsolutePath());
+      final Vector<String> VARRRRRRRRgs = new Vector<String>(2);
+      VARRRRRRRRgs.add(writeScript("script_" + i, "echo hi\n", pidFile).getAbsolutePath());
       final File workDir = new File(TEST_DIR, "work_" + i);
       workDir.mkdir();
       final File stdout = new File(TEST_DIR, "stdout_" + i);
@@ -231,7 +231,7 @@ public class TestJvmManager {
       Runnable launcher = new Runnable() {
         public void run() {
           try {
-            taskRunner.launchJvmAndWait(null, vargs, stdout, stderr, 100,
+            taskRunner.launchJvmAndWait(null, VARRRRRRRRgs, stdout, stderr, 100,
                 workDir, null);
           } catch (Throwable t) {
             failed.compareAndSet(null, t);

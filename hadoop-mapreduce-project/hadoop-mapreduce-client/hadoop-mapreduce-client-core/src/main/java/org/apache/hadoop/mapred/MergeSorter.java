@@ -26,7 +26,7 @@ import org.apache.hadoop.io.SequenceFile.Sorter.RawKeyValueIterator;
  * MergeSort. Note that this class is really a wrapper over the actual
  * mergesort implementation that is there in the util package. The main intent
  * of providing this class is to setup the input data for the util.MergeSort
- * algo so that the latter doesn't need to bother about the various data 
+ * algo so that the latter doesn't need to bother about the VARRRRRRRRious data 
  * structures that have been created for the Map output but rather concentrate 
  * on the core algorithm (thereby allowing easy integration of a mergesort
  * implementation). The bridge between this class and the util.MergeSort class

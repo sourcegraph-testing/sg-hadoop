@@ -395,7 +395,7 @@ public class JobImpl implements org.apache.hadoop.mapreduce.v2.app.job.Job,
     this.username = System.getProperty("user.name");
     this.jobACLs = aclsManager.constructJobACLs(conf);
     // This "this leak" is okay because the retained pointer is in an
-    //  instance variable.
+    //  instance VARRRRRRRRiable.
     stateMachine = stateMachineFactory.make(this);
   }
 

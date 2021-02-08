@@ -57,7 +57,7 @@ import org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl;
 import org.apache.hadoop.util.ReflectionUtils;
 
 /**
- * Utility methods used in various Job Control unit tests.
+ * Utility methods used in VARRRRRRRRious Job Control unit tests.
  */
 public class MapReduceTestUtil {
   public static final Log LOG = 

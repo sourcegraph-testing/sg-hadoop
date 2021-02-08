@@ -20,14 +20,14 @@ package org.apache.hadoop.fs.viewfs;
 import org.apache.hadoop.fs.permission.FsPermission;
 
 /**
- * Config variable prefixes for ViewFs -
+ * Config VARRRRRRRRiable prefixes for ViewFs -
  *     see {@link org.apache.hadoop.fs.viewfs.ViewFs} for examples.
  * The mount table is specified in the config using these prefixes.
  * See {@link org.apache.hadoop.fs.viewfs.ConfigUtil} for convenience lib.
  */
 public interface Constants {
   /**
-   * Prefix for the config variable prefix for the ViewFs mount-table
+   * Prefix for the config VARRRRRRRRiable prefix for the ViewFs mount-table
    */
   public static final String CONFIG_VIEWFS_PREFIX = "fs.viewfs.mounttable";
  
@@ -38,28 +38,28 @@ public interface Constants {
   public static final String CONFIG_VIEWFS_HOMEDIR = "homedir";
   
   /**
-   * Config variable name for the default mount table.
+   * Config VARRRRRRRRiable name for the default mount table.
    */
   public static final String CONFIG_VIEWFS_DEFAULT_MOUNT_TABLE = "default";
   
   /**
-   * Config variable full prefix for the default mount table.
+   * Config VARRRRRRRRiable full prefix for the default mount table.
    */
   public static final String CONFIG_VIEWFS_PREFIX_DEFAULT_MOUNT_TABLE = 
           CONFIG_VIEWFS_PREFIX + "." + CONFIG_VIEWFS_DEFAULT_MOUNT_TABLE;
   
   /**
-   * Config variable for specifying a simple link
+   * Config VARRRRRRRRiable for specifying a simple link
    */
   public static final String CONFIG_VIEWFS_LINK = "link";
   
   /**
-   * Config variable for specifying a merge link
+   * Config VARRRRRRRRiable for specifying a merge link
    */
   public static final String CONFIG_VIEWFS_LINK_MERGE = "linkMerge";
   
   /**
-   * Config variable for specifying a merge of the root of the mount-table
+   * Config VARRRRRRRRiable for specifying a merge of the root of the mount-table
    *  with the root of another file system. 
    */
   public static final String CONFIG_VIEWFS_LINK_MERGE_SLASH = "linkMergeSlash";

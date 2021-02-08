@@ -348,13 +348,13 @@ public class Merger {
     }
   }
   
-  // Boolean variable for including/considering final merge as part of sort
+  // Boolean VARRRRRRRRiable for including/considering final merge as part of sort
   // phase or not. This is true in map task, false in reduce task. It is
   // used in calculating mergeProgress.
   static boolean includeFinalMerge = false;
   
   /**
-   * Sets the boolean variable includeFinalMerge to true. Called from
+   * Sets the boolean VARRRRRRRRiable includeFinalMerge to true. Called from
    * map task before calling merge() so that final merge of map task
    * is also considered as part of sort phase.
    */

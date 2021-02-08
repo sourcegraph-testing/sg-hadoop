@@ -20,7 +20,7 @@ package org.apache.hadoop.examples.dancing;
 
 /**
  * Of the "normal" 12 pentominos, 6 of them have distinct shapes when flipped.
- * This class includes both variants of the "flippable" shapes and the
+ * This class includes both VARRRRRRRRiants of the "flippable" shapes and the
  * unflippable shapes for a total of 18 pieces. Clearly, the boards must have
  * 18*5=90 boxes to hold all of the solutions.
  */

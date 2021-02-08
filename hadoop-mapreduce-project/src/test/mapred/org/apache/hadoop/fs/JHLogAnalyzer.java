@@ -98,7 +98,7 @@ import org.apache.hadoop.util.StringUtils;
  * In addition to that pending time also includes intervals between attempts
  * of the same task if it was re-executed.
  * <p>
- * History log analyzer calculates two pending time variations. First is based
+ * History log analyzer calculates two pending time VARRRRRRRRiations. First is based
  * on job submission time as described above, second, starts the wait interval
  * when the job is launched rather than submitted.
  * 

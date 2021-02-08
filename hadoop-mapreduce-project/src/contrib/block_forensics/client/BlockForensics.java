@@ -104,7 +104,7 @@ public class BlockForensics {
            InterruptedException, IOException {
 
     if (System.getenv("HADOOP_PREFIX") == null) {
-      System.err.println("The environmental variable HADOOP_PREFIX is undefined");
+      System.err.println("The environmental VARRRRRRRRiable HADOOP_PREFIX is undefined");
       System.exit(1);
     }
 

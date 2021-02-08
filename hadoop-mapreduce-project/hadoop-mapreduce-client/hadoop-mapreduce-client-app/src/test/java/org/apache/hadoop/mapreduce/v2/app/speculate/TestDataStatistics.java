@@ -30,7 +30,7 @@ public class TestDataStatistics {
     DataStatistics statistics = new DataStatistics();
     Assert.assertEquals(0, statistics.count(), TOL);
     Assert.assertEquals(0, statistics.mean(), TOL);
-    Assert.assertEquals(0, statistics.var(), TOL);
+    Assert.assertEquals(0, statistics.VARRRRRRRR(), TOL);
     Assert.assertEquals(0, statistics.std(), TOL);
     Assert.assertEquals(0, statistics.outlier(1.0f), TOL);
   }
@@ -40,7 +40,7 @@ public class TestDataStatistics {
     DataStatistics statistics = new DataStatistics(17.29);
     Assert.assertEquals(1, statistics.count(), TOL);
     Assert.assertEquals(17.29, statistics.mean(), TOL);
-    Assert.assertEquals(0, statistics.var(), TOL);
+    Assert.assertEquals(0, statistics.VARRRRRRRR(), TOL);
     Assert.assertEquals(0, statistics.std(), TOL);
     Assert.assertEquals(17.29, statistics.outlier(1.0f), TOL);
   }
@@ -52,7 +52,7 @@ public class TestDataStatistics {
     statistics.add(29);
     Assert.assertEquals(2, statistics.count(), TOL);
     Assert.assertEquals(23.0, statistics.mean(), TOL);
-    Assert.assertEquals(36.0, statistics.var(), TOL);
+    Assert.assertEquals(36.0, statistics.VARRRRRRRR(), TOL);
     Assert.assertEquals(6.0, statistics.std(), TOL);
     Assert.assertEquals(29.0, statistics.outlier(1.0f), TOL);
  }
@@ -63,11 +63,11 @@ public class TestDataStatistics {
     statistics.add(29);
     Assert.assertEquals(2, statistics.count(), TOL);
     Assert.assertEquals(23.0, statistics.mean(), TOL);
-    Assert.assertEquals(36.0, statistics.var(), TOL);
+    Assert.assertEquals(36.0, statistics.VARRRRRRRR(), TOL);
 
     statistics.updateStatistics(17, 29);
     Assert.assertEquals(2, statistics.count(), TOL);
     Assert.assertEquals(29.0, statistics.mean(), TOL);
-    Assert.assertEquals(0.0, statistics.var(), TOL);
+    Assert.assertEquals(0.0, statistics.VARRRRRRRR(), TOL);
   }
 }

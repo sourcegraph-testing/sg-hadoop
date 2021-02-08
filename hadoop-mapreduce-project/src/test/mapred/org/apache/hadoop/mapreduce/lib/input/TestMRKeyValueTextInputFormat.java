@@ -80,7 +80,7 @@ public class TestMRKeyValueTextInputFormat {
     FileInputFormat.setInputPaths(job, workDir);
 
     final int MAX_LENGTH = 10000;
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 10) + 1) {
 
@@ -99,7 +99,7 @@ public class TestMRKeyValueTextInputFormat {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       KeyValueTextInputFormat format = new KeyValueTextInputFormat();
       for (int i = 0; i < 3; i++) {
         int numSplits = random.nextInt(MAX_LENGTH / 20) + 1;
@@ -179,7 +179,7 @@ public class TestMRKeyValueTextInputFormat {
 
     final int MAX_LENGTH = 500000;
     FileInputFormat.setMaxInputSplitSize(job, MAX_LENGTH / 20);
-    // for a variety of lengths
+    // for a VARRRRRRRRiety of lengths
     for (int length = 0; length < MAX_LENGTH;
          length += random.nextInt(MAX_LENGTH / 4) + 1) {
 
@@ -199,7 +199,7 @@ public class TestMRKeyValueTextInputFormat {
         writer.close();
       }
 
-      // try splitting the file in a variety of sizes
+      // try splitting the file in a VARRRRRRRRiety of sizes
       KeyValueTextInputFormat format = new KeyValueTextInputFormat();
       assertTrue("KVTIF claims not splittable", format.isSplitable(job, file));
       for (int i = 0; i < 3; i++) {

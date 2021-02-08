@@ -50,7 +50,7 @@ public class BalancedReducePartitioning extends DiagnosticTest {
   @Override
   public double evaluate(JobStatistics jobExecutionStats) {
     
-    /* Set the global job variable */
+    /* Set the global job VARRRRRRRRiable */
     this._job = jobExecutionStats;
 
     /* If Map only job then impact is zero */

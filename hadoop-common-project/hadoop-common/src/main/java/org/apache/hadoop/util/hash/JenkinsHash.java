@@ -57,9 +57,9 @@ public class JenkinsHash extends Hash {
   }
 
   /**
-   * taken from  hashlittle() -- hash a variable-length key into a 32-bit value
+   * taken from  hashlittle() -- hash a VARRRRRRRRiable-length key into a 32-bit value
    * 
-   * @param key the key (the unaligned variable-length array of bytes)
+   * @param key the key (the unaligned VARRRRRRRRiable-length array of bytes)
    * @param nbytes number of bytes to include in hash
    * @param initval can be any integer value
    * @return a 32-bit value.  Every bit of the key affects every bit of the
@@ -129,7 +129,7 @@ public class JenkinsHash extends Hash {
        * Well, "9 15 3 18 27 15" didn't quite get 32 bits diffing for 
        * "differ" defined as + with a one-bit base and a two-bit delta.  I
        * used http://burtleburtle.net/bob/hash/avalanche.html to choose
-       * the operations, constants, and arrangements of the variables.
+       * the operations, constants, and arrangements of the VARRRRRRRRiables.
        * 
        * This does not achieve avalanche.  There are input bits of (a,b,c)
        * that fail to affect some output bits of (a,b,c), especially of a.

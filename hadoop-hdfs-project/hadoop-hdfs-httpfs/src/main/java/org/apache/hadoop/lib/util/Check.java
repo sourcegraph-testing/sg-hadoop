@@ -30,14 +30,14 @@ import java.util.regex.Pattern;
 public class Check {
 
   /**
-   * Verifies a variable is not NULL.
+   * Verifies a VARRRRRRRRiable is not NULL.
    *
-   * @param obj the variable to check.
+   * @param obj the VARRRRRRRRiable to check.
    * @param name the name to use in the exception message.
    *
-   * @return the variable.
+   * @return the VARRRRRRRRiable.
    *
-   * @throws IllegalArgumentException if the variable is NULL.
+   * @throws IllegalArgumentException if the VARRRRRRRRiable is NULL.
    */
   public static <T> T notNull(T obj, String name) {
     if (obj == null) {
@@ -67,12 +67,12 @@ public class Check {
   /**
    * Verifies a string is not NULL and not emtpy
    *
-   * @param str the variable to check.
+   * @param str the VARRRRRRRRiable to check.
    * @param name the name to use in the exception message.
    *
-   * @return the variable.
+   * @return the VARRRRRRRRiable.
    *
-   * @throws IllegalArgumentException if the variable is NULL or empty.
+   * @throws IllegalArgumentException if the VARRRRRRRRiable is NULL or empty.
    */
   public static String notEmpty(String str, String name) {
     if (str == null) {
@@ -90,7 +90,7 @@ public class Check {
    * @param list the list to check.
    * @param name the name to use in the exception message.
    *
-   * @return the variable.
+   * @return the VARRRRRRRRiable.
    *
    * @throws IllegalArgumentException if the string list has NULL or empty
    * elements.

@@ -48,8 +48,8 @@ public class MapAttemptFinishedEvent  implements HistoryEvent {
    * @param rackName Name of the rack where the map executed
    * @param state State string for the attempt
    * @param counters Counters for the attempt
-   * @param allSplits the "splits", or a pixelated graph of various
-   *        measurable worker node state variables against progress.
+   * @param allSplits the "splits", or a pixelated graph of VARRRRRRRRious
+   *        measurable worker node state VARRRRRRRRiables against progress.
    *        Currently there are four; wallclock time, CPU time,
    *        virtual memory and physical memory. 
    *

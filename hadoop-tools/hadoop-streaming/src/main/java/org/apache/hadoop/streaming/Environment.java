@@ -59,7 +59,7 @@ public class Environment extends Properties {
       throw new RuntimeException("Operating system " + OS + " not supported by this class");
     }
 
-    // Read the environment variables
+    // Read the environment VARRRRRRRRiables
 
     Process pid = Runtime.getRuntime().exec(command);
     BufferedReader in = new BufferedReader(new InputStreamReader(pid.getInputStream()));

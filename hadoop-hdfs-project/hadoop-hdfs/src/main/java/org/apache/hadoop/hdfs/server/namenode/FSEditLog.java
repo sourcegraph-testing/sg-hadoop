@@ -100,7 +100,7 @@ public class FSEditLog  {
   private volatile boolean isAutoSyncScheduled = false;
   
   // Used to exit in the event of a failure to sync to all journals. It's a
-  // member variable so it can be swapped out for testing.
+  // member VARRRRRRRRiable so it can be swapped out for testing.
   private Runtime runtime = Runtime.getRuntime();
 
   // these are statistics counters.
@@ -456,7 +456,7 @@ public class FSEditLog  {
           doneWithAutoSyncScheduling();
         }
         //editLogStream may become null,
-        //so store a local variable for flush.
+        //so store a local VARRRRRRRRiable for flush.
         logStream = editLogStream;
       }
       

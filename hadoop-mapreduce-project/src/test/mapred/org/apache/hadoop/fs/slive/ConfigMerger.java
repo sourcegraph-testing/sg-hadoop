@@ -199,7 +199,7 @@ class ConfigMerger {
    */
   private Configuration handleOptions(ParsedOutput opts, Configuration base)
       throws ConfigException {
-    // ensure variables are overwritten and verified
+    // ensure VARRRRRRRRiables are overwritten and verified
     ConfigExtractor extractor = new ConfigExtractor(base);
     // overwrite the map amount and check to ensure > 0
     {

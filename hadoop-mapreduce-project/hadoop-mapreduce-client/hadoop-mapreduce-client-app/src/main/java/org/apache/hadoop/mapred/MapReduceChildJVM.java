@@ -82,7 +82,7 @@ public class MapReduceChildJVM {
         Environment.LD_LIBRARY_PATH.name(), 
         Environment.PWD.$());
 
-    // Add the env variables passed by the user & admin
+    // Add the env VARRRRRRRRiables passed by the user & admin
     String mapredChildEnv = getChildEnv(conf, task.isMapTask());
     Apps.setEnvFromInputString(environment, mapredChildEnv);
     Apps.setEnvFromInputString(
@@ -167,10 +167,10 @@ public class MapReduceChildJVM {
   }
 
   private static void setupLog4jProperties(Task task,
-      Vector<String> vargs,
+      Vector<String> VARRRRRRRRgs,
       long logSize) {
     String logLevel = getChildLogLevel(task.conf, task.isMapTask()); 
-    MRApps.addLog4jSystemProperties(logLevel, logSize, vargs);
+    MRApps.addLog4jSystemProperties(logLevel, logSize, VARRRRRRRRgs);
   }
 
   public static List<String> getVMCommand(
@@ -180,10 +180,10 @@ public class MapReduceChildJVM {
     TaskAttemptID attemptID = task.getTaskID();
     JobConf conf = task.conf;
 
-    Vector<String> vargs = new Vector<String>(8);
+    Vector<String> VARRRRRRRRgs = new Vector<String>(8);
 
-    vargs.add("exec");
-    vargs.add(Environment.JAVA_HOME.$() + "/bin/java");
+    VARRRRRRRRgs.add("exec");
+    VARRRRRRRRgs.add(Environment.JAVA_HOME.$() + "/bin/java");
 
     // Add child (task) java-vm options.
     //
@@ -217,20 +217,20 @@ public class MapReduceChildJVM {
     javaOpts = javaOpts.replace("@taskid@", attemptID.toString());
     String [] javaOptsSplit = javaOpts.split(" ");
     for (int i = 0; i < javaOptsSplit.length; i++) {
-      vargs.add(javaOptsSplit[i]);
+      VARRRRRRRRgs.add(javaOptsSplit[i]);
     }
 
     String childTmpDir = Environment.PWD.$() + Path.SEPARATOR + "tmp";
-    vargs.add("-Djava.io.tmpdir=" + childTmpDir);
+    VARRRRRRRRgs.add("-Djava.io.tmpdir=" + childTmpDir);
 
     // Setup the log4j prop
     long logSize = TaskLog.getTaskLogLength(conf);
-    setupLog4jProperties(task, vargs, logSize);
+    setupLog4jProperties(task, VARRRRRRRRgs, logSize);
 
     if (conf.getProfileEnabled()) {
       if (conf.getProfileTaskRange(task.isMapTask()
                                    ).isIncluded(task.getPartition())) {
-        vargs.add(
+        VARRRRRRRRgs.add(
             String.format(
                 conf.getProfileParams(), 
                 getTaskLogFile(TaskLog.LogName.PROFILE)
@@ -240,24 +240,24 @@ public class MapReduceChildJVM {
     }
 
     // Add main class and its arguments 
-    vargs.add(YarnChild.class.getName());  // main of Child
+    VARRRRRRRRgs.add(YarnChild.class.getName());  // main of Child
     // pass TaskAttemptListener's address
-    vargs.add(taskAttemptListenerAddr.getAddress().getHostAddress()); 
-    vargs.add(Integer.toString(taskAttemptListenerAddr.getPort())); 
-    vargs.add(attemptID.toString());                      // pass task identifier
+    VARRRRRRRRgs.add(taskAttemptListenerAddr.getAddress().getHostAddress()); 
+    VARRRRRRRRgs.add(Integer.toString(taskAttemptListenerAddr.getPort())); 
+    VARRRRRRRRgs.add(attemptID.toString());                      // pass task identifier
 
     // Finally add the jvmID
-    vargs.add(String.valueOf(jvmID.getId()));
-    vargs.add("1>" + getTaskLogFile(TaskLog.LogName.STDOUT));
-    vargs.add("2>" + getTaskLogFile(TaskLog.LogName.STDERR));
+    VARRRRRRRRgs.add(String.valueOf(jvmID.getId()));
+    VARRRRRRRRgs.add("1>" + getTaskLogFile(TaskLog.LogName.STDOUT));
+    VARRRRRRRRgs.add("2>" + getTaskLogFile(TaskLog.LogName.STDERR));
 
     // Final commmand
     StringBuilder mergedCommand = new StringBuilder();
-    for (CharSequence str : vargs) {
+    for (CharSequence str : VARRRRRRRRgs) {
       mergedCommand.append(str).append(" ");
     }
-    Vector<String> vargsFinal = new Vector<String>(1);
-    vargsFinal.add(mergedCommand.toString());
-    return vargsFinal;
+    Vector<String> VARRRRRRRRgsFinal = new Vector<String>(1);
+    VARRRRRRRRgsFinal.add(mergedCommand.toString());
+    return VARRRRRRRRgsFinal;
   }
 }

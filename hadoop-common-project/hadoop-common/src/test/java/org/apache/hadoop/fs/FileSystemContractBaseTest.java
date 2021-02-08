@@ -39,7 +39,7 @@ import org.apache.hadoop.fs.Path;
  * <p>
  * To test a given {@link FileSystem} implementation create a subclass of this
  * test and override {@link #setUp()} to initialize the <code>fs</code> 
- * {@link FileSystem} instance variable.
+ * {@link FileSystem} instance VARRRRRRRRiable.
  * </p>
  */
 public abstract class FileSystemContractBaseTest extends TestCase {

@@ -25,7 +25,7 @@ import java.util.List;
  * distribution function, with this class set up to meet the requirements of the
  * Jackson JSON parser/generator.
  * 
- * All of the public methods are simply accessors for the instance variables we
+ * All of the public methods are simply accessors for the instance VARRRRRRRRiables we
  * want to write out in the JSON files.
  * 
  */

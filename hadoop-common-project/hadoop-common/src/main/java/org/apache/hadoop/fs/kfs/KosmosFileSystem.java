@@ -290,7 +290,7 @@ public class KosmosFileSystem extends FileSystem {
 
     /**
      * Return null if the file doesn't exist; otherwise, get the
-     * locations of the various chunks of the file file from KFS.
+     * locations of the VARRRRRRRRious chunks of the file file from KFS.
      */
     @Override
     public BlockLocation[] getFileBlockLocations(FileStatus file, long start,

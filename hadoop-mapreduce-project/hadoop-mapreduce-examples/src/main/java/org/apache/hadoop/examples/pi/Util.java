@@ -138,12 +138,12 @@ public class Util {
     return n + b.toString();    
   }
 
-  /** Parse a variable. */  
+  /** Parse a VARRRRRRRRiable. */  
   public static long parseLongVariable(final String name, final String s) {
     return string2long(parseStringVariable(name, s));
   }
 
-  /** Parse a variable. */  
+  /** Parse a VARRRRRRRRiable. */  
   public static String parseStringVariable(final String name, final String s) {
     if (!s.startsWith(name + '='))
       throw new IllegalArgumentException("!s.startsWith(name + '='), name="

@@ -75,23 +75,23 @@ import org.apache.hadoop.util.Progressable;
  * <p>
  * To use viewfs one would typically set the default file system in the
  * config  (i.e. fs.default.name< = viewfs:///) along with the
- * mount table config variables as described below. 
+ * mount table config VARRRRRRRRiables as described below. 
  * 
  * <p>
- * <b> ** Config variables to specify the mount table entries ** </b>
+ * <b> ** Config VARRRRRRRRiables to specify the mount table entries ** </b>
  * <p>
  * 
  * The file system is initialized from the standard Hadoop config through
- * config variables.
+ * config VARRRRRRRRiables.
  * See {@link FsConstants} for URI and Scheme constants; 
- * See {@link Constants} for config var constants; 
+ * See {@link Constants} for config VARRRRRRRR constants; 
  * see {@link ConfigUtil} for convenient lib.
  * 
  * <p>
  * All the mount table config entries for view fs are prefixed by 
  * <b>fs.viewfs.mounttable.</b>
  * For example the above example can be specified with the following
- *  config variables:
+ *  config VARRRRRRRRiables:
  *  <ul>
  *  <li> fs.viewfs.mounttable.default.link./user=
  *  hdfs://nnContainingUserDir/user
@@ -104,13 +104,13 @@ import org.apache.hadoop.util.Progressable;
  *  </ul>
  *  
  * The default mount table (when no authority is specified) is 
- * from config variables prefixed by <b>fs.viewFs.mounttable.default </b>
+ * from config VARRRRRRRRiables prefixed by <b>fs.viewFs.mounttable.default </b>
  * The authority component of a URI can be used to specify a different mount
  * table. For example,
  * <ul>
  * <li>  viewfs://sanjayMountable/
  * </ul>
- * is initialized from fs.viewFs.mounttable.sanjayMountable.* config variables.
+ * is initialized from fs.viewFs.mounttable.sanjayMountable.* config VARRRRRRRRiables.
  * 
  *  <p> 
  *  <b> **** Merge Mounts **** </b>(NOTE: merge mounts are not implemented yet.)
@@ -124,7 +124,7 @@ import org.apache.hadoop.util.Progressable;
  *   <ul>
  *   <li> /user -> hdfs://nnUser1/user,hdfs://nnUser2/user
  *   </ul>
- *  Such a mergeLink can be specified with the following config var where ","
+ *  Such a mergeLink can be specified with the following config VARRRRRRRR where ","
  *  is used as the separator for each of links to be merged:
  *  <ul>
  *  <li> fs.viewfs.mounttable.default.linkMerge./user=

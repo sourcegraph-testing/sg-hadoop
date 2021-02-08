@@ -167,7 +167,7 @@ public class FSDownload implements Callable<Path> {
       try {
         files.delete(dst_work, true);
       } catch (FileNotFoundException ignore) { }
-      // clear ref to internal var
+      // clear ref to internal VARRRRRRRR
       rand = null;
       conf = null;
       resource = null;

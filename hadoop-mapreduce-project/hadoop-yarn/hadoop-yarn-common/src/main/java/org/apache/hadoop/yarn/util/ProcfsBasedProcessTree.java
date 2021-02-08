@@ -87,7 +87,7 @@ public class ProcfsBasedProcessTree {
     }
   }
 
-  // to enable testing, using this variable which can be configured
+  // to enable testing, using this VARRRRRRRRiable which can be configured
   // to a test directory.
   private String procfsDir;
   

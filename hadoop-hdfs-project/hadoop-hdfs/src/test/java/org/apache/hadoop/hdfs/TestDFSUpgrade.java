@@ -46,7 +46,7 @@ import static org.junit.Assert.*;
 
 /**
 * This test ensures the appropriate response (successful or failure) from
-* the system when the system is upgraded under various storage state and
+* the system when the system is upgraded under VARRRRRRRRious storage state and
 * version conditions.
 */
 public class TestDFSUpgrade {

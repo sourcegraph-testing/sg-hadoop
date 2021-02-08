@@ -64,7 +64,7 @@ public class TestIPC {
 
   /**
    * Flag used to turn off the fault injection behavior
-   * of the various writables.
+   * of the VARRRRRRRRious writables.
    **/
   static boolean WRITABLE_FAULTS_ENABLED = true;
   
@@ -636,7 +636,7 @@ public class TestIPC {
   }
   
   /**
-   * Wireshark traces collected from various client versions. These enable
+   * Wireshark traces collected from VARRRRRRRRious client versions. These enable
    * us to test that old versions of the IPC stack will receive the correct
    * responses so that they will throw a meaningful error message back
    * to the user.

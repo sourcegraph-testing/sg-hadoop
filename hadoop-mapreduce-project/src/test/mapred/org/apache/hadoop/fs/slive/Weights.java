@@ -21,7 +21,7 @@ package org.apache.hadoop.fs.slive;
 import org.apache.hadoop.fs.slive.WeightSelector.Weightable;
 
 /**
- * Class to isolate the various weight algorithms we use.
+ * Class to isolate the VARRRRRRRRious weight algorithms we use.
  */
 class Weights {
   private Weights() {

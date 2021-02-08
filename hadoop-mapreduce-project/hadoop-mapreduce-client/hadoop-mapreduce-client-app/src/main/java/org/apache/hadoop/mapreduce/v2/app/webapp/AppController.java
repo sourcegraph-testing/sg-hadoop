@@ -43,7 +43,7 @@ import org.apache.hadoop.yarn.webapp.View;
 import com.google.inject.Inject;
 
 /**
- * This class renders the various pages that the web app supports.
+ * This class renders the VARRRRRRRRious pages that the web app supports.
  */
 public class AppController extends Controller implements AMParams {
   protected final App app;

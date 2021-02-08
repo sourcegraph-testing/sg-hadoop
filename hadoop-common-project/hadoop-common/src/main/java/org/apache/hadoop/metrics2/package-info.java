@@ -31,7 +31,7 @@
     and publication.
   </p>
 
-  <p>The framework provides a variety of ways to implement metrics
+  <p>The framework provides a VARRRRRRRRiety of ways to implement metrics
     instrumentation easily via the simple
     {@link org.apache.hadoop.metrics2.MetricsSource} interface
     or the even simpler and more concise and declarative metrics annotations.
@@ -138,7 +138,7 @@
     <dd>The {@link org.apache.hadoop.metrics2.annotation.Metric} annotation
       identifies a particular metric, which in this case, is the
       result of the method call getMyMetric of the "gauge" (default) type,
-      which means it can vary in both directions, compared with a "counter"
+      which means it can VARRRRRRRRy in both directions, compared with a "counter"
       type, which can only increase or stay the same. The name of the metric
       is "MyMetric" (inferred from getMyMetric method name by default.) The 42
       here is the value of the metric which can be substituted with any valid

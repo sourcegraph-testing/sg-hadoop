@@ -166,7 +166,7 @@ public class ApplicationMaster {
   private String shellCommand = ""; 
   // Args to be passed to the shell command
   private String shellArgs = "";
-  // Env variables to be setup for the shell command 
+  // Env VARRRRRRRRiables to be setup for the shell command 
   private Map<String, String> shellEnv = new HashMap<String, String>();
 
   // Location of shell script ( obtained from info set in env )
@@ -677,29 +677,29 @@ public class ApplicationMaster {
       ctx.setLocalResources(localResources);			
 
       // Set the necessary command to execute on the allocated container 
-      Vector<CharSequence> vargs = new Vector<CharSequence>(5);
+      Vector<CharSequence> VARRRRRRRRgs = new Vector<CharSequence>(5);
 
       // Set executable command 
-      vargs.add(shellCommand);
+      VARRRRRRRRgs.add(shellCommand);
       // Set shell script path 
       if (!shellScriptPath.isEmpty()) {
-        vargs.add(ExecShellStringPath);
+        VARRRRRRRRgs.add(ExecShellStringPath);
       }
 
       // Set args for the shell command if any			
-      vargs.add(shellArgs);
+      VARRRRRRRRgs.add(shellArgs);
       // Add log redirect params
       // TODO
       // We should redirect the output to hdfs instead of local logs 
       // so as to be able to look at the final output after the containers 
       // have been released. 
       // Could use a path suffixed with /AppId/AppAttempId/ContainerId/std[out|err] 
-      vargs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stdout");
-      vargs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stderr");
+      VARRRRRRRRgs.add("1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stdout");
+      VARRRRRRRRgs.add("2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stderr");
 
       // Get final commmand
       StringBuilder command = new StringBuilder();
-      for (CharSequence str : vargs) {
+      for (CharSequence str : VARRRRRRRRgs) {
         command.append(str).append(" ");
       }
 

@@ -1197,19 +1197,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<TD<T>> var() {
+    public VAR<TD<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public TD<T> var(String cdata) {
-      return var()._(cdata)._();
+    public TD<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public TD<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public TD<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -2000,19 +2000,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<TH<T>> var() {
+    public VAR<TH<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public TH<T> var(String cdata) {
-      return var()._(cdata)._();
+    public TH<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public TH<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public TH<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -3250,19 +3250,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<CAPTION<T>> var() {
+    public VAR<CAPTION<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public CAPTION<T> var(String cdata) {
-      return var()._(cdata)._();
+    public CAPTION<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public CAPTION<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public CAPTION<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -4154,19 +4154,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<BUTTON<T>> var() {
+    public VAR<BUTTON<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public BUTTON<T> var(String cdata) {
-      return var()._(cdata)._();
+    public BUTTON<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public BUTTON<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public BUTTON<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -4714,19 +4714,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<LEGEND<T>> var() {
+    public VAR<LEGEND<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public LEGEND<T> var(String cdata) {
-      return var()._(cdata)._();
+    public LEGEND<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public LEGEND<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public LEGEND<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -5504,19 +5504,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<FIELDSET<T>> var() {
+    public VAR<FIELDSET<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public FIELDSET<T> var(String cdata) {
-      return var()._(cdata)._();
+    public FIELDSET<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public FIELDSET<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public FIELDSET<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -6901,19 +6901,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<LABEL<T>> var() {
+    public VAR<LABEL<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public LABEL<T> var(String cdata) {
-      return var()._(cdata)._();
+    public LABEL<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public LABEL<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public LABEL<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -8054,19 +8054,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<LI<T>> var() {
+    public VAR<LI<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public LI<T> var(String cdata) {
-      return var()._(cdata)._();
+    public LI<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public LI<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public LI<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -9062,19 +9062,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<DD<T>> var() {
+    public VAR<DD<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public DD<T> var(String cdata) {
-      return var()._(cdata)._();
+    public DD<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public DD<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public DD<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -9606,19 +9606,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<DT<T>> var() {
+    public VAR<DT<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public DT<T> var(String cdata) {
-      return var()._(cdata)._();
+    public DT<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public DT<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public DT<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -10527,19 +10527,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<DEL<T>> var() {
+    public VAR<DEL<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public DEL<T> var(String cdata) {
-      return var()._(cdata)._();
+    public DEL<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public DEL<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public DEL<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -11318,19 +11318,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<INS<T>> var() {
+    public VAR<INS<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public INS<T> var(String cdata) {
-      return var()._(cdata)._();
+    public INS<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public INS<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public INS<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -12222,19 +12222,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<Q<T>> var() {
+    public VAR<Q<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public Q<T> var(String cdata) {
-      return var()._(cdata)._();
+    public Q<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public Q<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public Q<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -12750,19 +12750,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<PRE<T>> var() {
+    public VAR<PRE<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public PRE<T> var(String cdata) {
-      return var()._(cdata)._();
+    public PRE<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public PRE<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public PRE<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -13240,19 +13240,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H6<T>> var() {
+    public VAR<H6<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H6<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H6<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H6<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H6<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -13784,19 +13784,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H5<T>> var() {
+    public VAR<H5<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H5<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H5<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H5<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H5<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -14328,19 +14328,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H4<T>> var() {
+    public VAR<H4<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H4<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H4<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H4<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H4<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -14872,19 +14872,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H3<T>> var() {
+    public VAR<H3<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H3<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H3<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H3<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H3<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -15416,19 +15416,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H2<T>> var() {
+    public VAR<H2<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H2<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H2<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H2<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H2<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -15960,19 +15960,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<H1<T>> var() {
+    public VAR<H1<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public H1<T> var(String cdata) {
-      return var()._(cdata)._();
+    public H1<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public H1<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public H1<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -16504,19 +16504,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<P<T>> var() {
+    public VAR<P<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public P<T> var(String cdata) {
-      return var()._(cdata)._();
+    public P<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public P<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public P<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -17474,19 +17474,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<OBJECT<T>> var() {
+    public VAR<OBJECT<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public OBJECT<T> var(String cdata) {
-      return var()._(cdata)._();
+    public OBJECT<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public OBJECT<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public OBJECT<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -18876,19 +18876,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<A<T>> var() {
+    public VAR<A<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public A<T> var(String cdata) {
-      return var()._(cdata)._();
+    public A<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public A<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public A<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -19634,19 +19634,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<DIV<T>> var() {
+    public VAR<DIV<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public DIV<T> var(String cdata) {
-      return var()._(cdata)._();
+    public DIV<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public DIV<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public DIV<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -20178,19 +20178,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<ADDRESS<T>> var() {
+    public VAR<ADDRESS<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public ADDRESS<T> var(String cdata) {
-      return var()._(cdata)._();
+    public ADDRESS<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public ADDRESS<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public ADDRESS<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -21104,19 +21104,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<BDO<T>> var() {
+    public VAR<BDO<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public BDO<T> var(String cdata) {
-      return var()._(cdata)._();
+    public BDO<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public BDO<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public BDO<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -21648,19 +21648,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<SPAN<T>> var() {
+    public VAR<SPAN<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public SPAN<T> var(String cdata) {
-      return var()._(cdata)._();
+    public SPAN<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public SPAN<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public SPAN<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -22192,19 +22192,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<SUP<T>> var() {
+    public VAR<SUP<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public SUP<T> var(String cdata) {
-      return var()._(cdata)._();
+    public SUP<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public SUP<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public SUP<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -22736,19 +22736,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<SUB<T>> var() {
+    public VAR<SUB<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public SUB<T> var(String cdata) {
-      return var()._(cdata)._();
+    public SUB<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public SUB<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public SUB<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -23280,19 +23280,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<ACRONYM<T>> var() {
+    public VAR<ACRONYM<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public ACRONYM<T> var(String cdata) {
-      return var()._(cdata)._();
+    public ACRONYM<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public ACRONYM<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public ACRONYM<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -23824,19 +23824,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<ABBR<T>> var() {
+    public VAR<ABBR<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public ABBR<T> var(String cdata) {
-      return var()._(cdata)._();
+    public ABBR<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public ABBR<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public ABBR<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -24368,19 +24368,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<CITE<T>> var() {
+    public VAR<CITE<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public CITE<T> var(String cdata) {
-      return var()._(cdata)._();
+    public CITE<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public CITE<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public CITE<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -24912,19 +24912,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<VAR<T>> var() {
+    public VAR<VAR<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public VAR<T> var(String cdata) {
-      return var()._(cdata)._();
+    public VAR<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public VAR<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public VAR<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -25456,19 +25456,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<KBD<T>> var() {
+    public VAR<KBD<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public KBD<T> var(String cdata) {
-      return var()._(cdata)._();
+    public KBD<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public KBD<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public KBD<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -26000,19 +26000,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<SAMP<T>> var() {
+    public VAR<SAMP<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public SAMP<T> var(String cdata) {
-      return var()._(cdata)._();
+    public SAMP<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public SAMP<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public SAMP<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -26544,19 +26544,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<CODE<T>> var() {
+    public VAR<CODE<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public CODE<T> var(String cdata) {
-      return var()._(cdata)._();
+    public CODE<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public CODE<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public CODE<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -27088,19 +27088,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<DFN<T>> var() {
+    public VAR<DFN<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public DFN<T> var(String cdata) {
-      return var()._(cdata)._();
+    public DFN<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public DFN<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public DFN<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -27632,19 +27632,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<STRONG<T>> var() {
+    public VAR<STRONG<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public STRONG<T> var(String cdata) {
-      return var()._(cdata)._();
+    public STRONG<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public STRONG<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public STRONG<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -28176,19 +28176,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<EM<T>> var() {
+    public VAR<EM<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public EM<T> var(String cdata) {
-      return var()._(cdata)._();
+    public EM<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public EM<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public EM<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -28720,19 +28720,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<SMALL<T>> var() {
+    public VAR<SMALL<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public SMALL<T> var(String cdata) {
-      return var()._(cdata)._();
+    public SMALL<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public SMALL<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public SMALL<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -29264,19 +29264,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<B<T>> var() {
+    public VAR<B<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public B<T> var(String cdata) {
-      return var()._(cdata)._();
+    public B<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public B<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public B<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -29808,19 +29808,19 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
     }
 
     @Override
-    public VAR<I<T>> var() {
+    public VAR<I<T>> VARRRRRRRR() {
       closeAttrs();
-      return var_(this, true);
+      return VARRRRRRRR_(this, true);
     }
 
     @Override
-    public I<T> var(String cdata) {
-      return var()._(cdata)._();
+    public I<T> VARRRRRRRR(String cdata) {
+      return VARRRRRRRR()._(cdata)._();
     }
 
     @Override
-    public I<T> var(String selector, String cdata) {
-      return setSelector(var(), selector)._(cdata)._();
+    public I<T> VARRRRRRRR(String selector, String cdata) {
+      return setSelector(VARRRRRRRR(), selector)._(cdata)._();
     }
 
     @Override
@@ -30160,8 +30160,8 @@ public class Hamlet extends HamletImpl implements HamletSpec._Html {
   private <T extends _> KBD<T> kbd_(T e, boolean inline) {
     return new KBD<T>("kbd", e, opt(true, inline, false)); }
 
-  private <T extends _> VAR<T> var_(T e, boolean inline) {
-    return new VAR<T>("var", e, opt(true, inline, false)); }
+  private <T extends _> VAR<T> VARRRRRRRR_(T e, boolean inline) {
+    return new VAR<T>("VARRRRRRRR", e, opt(true, inline, false)); }
 
   private <T extends _> CITE<T> cite_(T e, boolean inline) {
     return new CITE<T>("cite", e, opt(true, inline, false)); }

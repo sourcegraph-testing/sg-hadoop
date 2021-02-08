@@ -46,7 +46,7 @@ import static org.apache.hadoop.fs.FileSystemTestHelper.*;
  * <p>
  * To test a given {@link FileSystem} implementation create a subclass of this
  * test and override {@link #setUp()} to initialize the <code>fSys</code> 
- * {@link FileSystem} instance variable.
+ * {@link FileSystem} instance VARRRRRRRRiable.
  * 
  * Since this a junit 4 you can also do a single setup before 
  * the start of any tests.

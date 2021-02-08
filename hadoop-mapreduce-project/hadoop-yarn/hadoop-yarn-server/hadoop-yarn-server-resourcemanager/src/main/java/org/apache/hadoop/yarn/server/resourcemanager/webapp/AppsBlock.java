@@ -89,7 +89,7 @@ class AppsBlock extends HtmlBlock {
 
     if (list.rendering == Render.JS_ARRAY) {
       echo("<script type='text/javascript'>\n",
-           "var appsData=");
+           "VARRRRRRRR appsData=");
       list.toDataTableArrays(writer());
       echo("\n</script>\n");
     }

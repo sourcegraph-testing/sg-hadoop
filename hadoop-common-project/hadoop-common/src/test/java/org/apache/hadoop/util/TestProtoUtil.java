@@ -31,7 +31,7 @@ import com.google.protobuf.CodedOutputStream;
 public class TestProtoUtil {
   
   /**
-   * Values to test encoding as variable length integers
+   * Values to test encoding as VARRRRRRRRiable length integers
    */
   private static final int[] TEST_VINT_VALUES = new int[] {
     0, 1, -1, 127, 128, 129, 255, 256, 257,
@@ -41,7 +41,7 @@ public class TestProtoUtil {
   };
 
   /**
-   * Test that readRawVarint32 is compatible with the varints encoded
+   * Test that readRawVarint32 is compatible with the VARRRRRRRRints encoded
    * by ProtoBuf's CodedOutputStream.
    */
   @Test

@@ -36,7 +36,7 @@ import org.apache.hadoop.util.StringUtils;
 
 /**
  * The slive class which sets up the mapper to be used which itself will receive
- * a single dummy key and value and then in a loop run the various operations
+ * a single dummy key and value and then in a loop run the VARRRRRRRRious operations
  * that have been selected and upon operation completion output the collected
  * output from that operation (and repeat until finished).
  */

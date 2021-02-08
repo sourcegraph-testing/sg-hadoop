@@ -176,7 +176,7 @@ public class TestTaskCommit extends HadoopTestCase {
    * UmbilicalProtocol's implementation that fails if the commit.
    * protocol is played.
    * 
-   * The test mocks the various steps in a failed task's 
+   * The test mocks the VARRRRRRRRious steps in a failed task's 
    * life-cycle using a special OutputCommitter and UmbilicalProtocol
    * implementation.
    * 

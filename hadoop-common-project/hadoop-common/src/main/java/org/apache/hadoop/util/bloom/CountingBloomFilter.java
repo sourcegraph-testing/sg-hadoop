@@ -129,7 +129,7 @@ public final class CountingBloomFilter extends Filter {
   /**
    * Removes a specified key from <i>this</i> counting Bloom filter.
    * <p>
-   * <b>Invariant</b>: nothing happens if the specified key does not belong to <i>this</i> counter Bloom filter.
+   * <b>InVARRRRRRRRiant</b>: nothing happens if the specified key does not belong to <i>this</i> counter Bloom filter.
    * @param key The key to remove.
    */
   public void delete(Key key) {

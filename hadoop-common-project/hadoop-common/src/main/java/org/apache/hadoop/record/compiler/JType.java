@@ -85,8 +85,8 @@ abstract public class JType {
       cb.append("}\n");
     }
 
-    void genRtiNestedFieldCondition(CodeBuffer cb, String varName, int ct) {
-      cb.append("if (" + varName + ".getElementTypeID().getTypeVal() == " +
+    void genRtiNestedFieldCondition(CodeBuffer cb, String VARRRRRRRRName, int ct) {
+      cb.append("if (" + VARRRRRRRRName + ".getElementTypeID().getTypeVal() == " +
           "org.apache.hadoop.record.meta." + getTypeIDByteString() + 
           ") {\n");
       cb.append("rtiFilterFields[i] = " + ct + ";\n");

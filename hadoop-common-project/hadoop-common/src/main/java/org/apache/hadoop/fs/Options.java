@@ -29,7 +29,7 @@ import org.apache.hadoop.util.Progressable;
 @InterfaceStability.Evolving
 public final class Options {
   /**
-   * Class to support the varargs for create() options.
+   * Class to support the VARRRRRRRRargs for create() options.
    *
    */
   public static class CreateOpts {
@@ -149,7 +149,7 @@ public final class Options {
       for (int i = 0; i < opts.length; ++i) {
         if (opts[i].getClass() == theClass) {
           if (result != null) 
-            throw new IllegalArgumentException("multiple blocksize varargs");
+            throw new IllegalArgumentException("multiple blocksize VARRRRRRRRargs");
           result = opts[i];
         }
       }
@@ -168,7 +168,7 @@ public final class Options {
         for (int i = 0; i < opts.length; ++i) {
           if (opts[i].getClass() == newValue.getClass()) {
             if (alreadyInOpts) 
-              throw new IllegalArgumentException("multiple opts varargs");
+              throw new IllegalArgumentException("multiple opts VARRRRRRRRargs");
             alreadyInOpts = true;
             opts[i] = newValue;
           }
@@ -186,7 +186,7 @@ public final class Options {
   }
 
   /**
-   * Enum to support the varargs for rename() options
+   * Enum to support the VARRRRRRRRargs for rename() options
    */
   public static enum Rename {
     NONE((byte) 0), // No options

@@ -22,7 +22,7 @@ import org.apache.hadoop.metrics.MetricsRecord;
 
 
 /**
- * The MetricsLongValue class is for a metric that is not time varied
+ * The MetricsLongValue class is for a metric that is not time VARRRRRRRRied
  * but changes only when it is set. 
  * Each time its value is set, it is published only *once* at the next update
  * call.

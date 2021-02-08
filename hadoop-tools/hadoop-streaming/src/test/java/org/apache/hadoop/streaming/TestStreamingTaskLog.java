@@ -133,7 +133,7 @@ public class TestStreamingTaskLog {
     returnStatus = job.go();
     assertEquals("StreamJob failed.", 0, returnStatus);
     
-    // validate environment variables set for the child(script) of java process
+    // validate environment VARRRRRRRRiables set for the child(script) of java process
     String env = MapReduceTestUtil.readOutput(outputPath, mr.createJobConf());
     long logSize = USERLOG_LIMIT_KB * 1024;
     assertTrue("environment set for child is wrong", env.contains("INFO,CLA")

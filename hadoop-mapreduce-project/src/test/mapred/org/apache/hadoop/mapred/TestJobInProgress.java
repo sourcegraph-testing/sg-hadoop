@@ -214,7 +214,7 @@ public class TestJobInProgress extends TestCase {
   }
 
   /**
-   * Test if running tasks are correctly maintained for various types of jobs
+   * Test if running tasks are correctly maintained for VARRRRRRRRious types of jobs
    */
   static void testRunningTaskCount(boolean speculation)  throws Exception {
     LOG.info("Testing running jobs with speculation : " + speculation); 

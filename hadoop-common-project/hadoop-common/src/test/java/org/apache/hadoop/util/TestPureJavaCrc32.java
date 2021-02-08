@@ -242,7 +242,7 @@ public class TestPureJavaCrc32 {
         doBench(c, bytes, 2101, null);
       }
 
-      // Test on a variety of sizes
+      // Test on a VARRRRRRRRiety of sizes
       for (int size = 1; size < MAX_LEN; size *= 2) {
         out.printf("|");
         printCell(String.valueOf(size), title.length()+1, out);

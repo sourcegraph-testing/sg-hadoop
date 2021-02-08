@@ -785,7 +785,7 @@ public class ZombieJob implements JobStory {
 
   /**
    * Perform a weighted random selection on a list of CDFs, and produce a random
-   * variable using the selected CDF.
+   * VARRRRRRRRiable using the selected CDF.
    * 
    * @param mapAttemptCDFs
    *          A list of CDFs for the distribution of runtime for the 1st, 2nd,

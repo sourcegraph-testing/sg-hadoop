@@ -80,7 +80,7 @@ public class Apps {
             // the env key is present in the tt's env
             value = parts[1].replace("$" + parts[0], value);
           } else {
-            // check for simple variable substitution
+            // check for simple VARRRRRRRRiable substitution
             // for e.g. ROOT=$HOME
             String envValue = System.getenv(parts[1].substring(1));
             if (envValue != null) {
@@ -102,13 +102,13 @@ public class Apps {
 
   public static void addToEnvironment(
       Map<String, String> environment,
-      String variable, String value) {
-    String val = environment.get(variable);
+      String VARRRRRRRRiable, String value) {
+    String val = environment.get(VARRRRRRRRiable);
     if (val == null) {
       val = value;
     } else {
       val = val + SYSTEM_PATH_SEPARATOR + value;
     }
-    environment.put(variable, val);
+    environment.put(VARRRRRRRRiable, val);
   }
 }

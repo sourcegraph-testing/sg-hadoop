@@ -26,7 +26,7 @@ import org.codehaus.jackson.annotate.JsonAnySetter;
  * A {@link LoggedSingleRelativeRanking} represents an X-Y coordinate of a
  * single point in a discrete CDF.
  * 
- * All of the public methods are simply accessors for the instance variables we
+ * All of the public methods are simply accessors for the instance VARRRRRRRRiables we
  * want to write out in the JSON files.
  * 
  */

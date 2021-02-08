@@ -70,7 +70,7 @@ public class Key implements WritableComparable<Key> {
   /**
    * The weight associated to <i>this</i> key.
    * <p>
-   * <b>Invariant</b>: if it is not specified, each instance of 
+   * <b>InVARRRRRRRRiant</b>: if it is not specified, each instance of 
    * <code>Key</code> will have a default weight of 1.0
    */
   double weight;

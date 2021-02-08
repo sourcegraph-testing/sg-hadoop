@@ -31,7 +31,7 @@ import org.apache.hadoop.classification.InterfaceStability;
 public class TokenMgrError extends Error
 {
   /*
-   * Ordinals for various reasons why an Error of this type can be thrown.
+   * Ordinals for VARRRRRRRRious reasons why an Error of this type can be thrown.
    */
 
   /**
@@ -143,7 +143,7 @@ public class TokenMgrError extends Error
   }
 
   /*
-   * Constructors of various flavors follow.
+   * Constructors of VARRRRRRRRious flavors follow.
    */
 
   public TokenMgrError() {

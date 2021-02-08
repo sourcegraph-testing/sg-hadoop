@@ -39,9 +39,9 @@ public class Consts {
   private Consts() {
   }
   
-  // prefix to use for variables in generated classes
+  // prefix to use for VARRRRRRRRiables in generated classes
   public static final String RIO_PREFIX = "_rio_";
-  // other vars used in generated classes
+  // other VARRRRRRRRs used in generated classes
   public static final String RTI_VAR = RIO_PREFIX + "recTypeInfo";
   public static final String RTI_FILTER = RIO_PREFIX + "rtiFilter";
   public static final String RTI_FILTER_FIELDS = RIO_PREFIX + "rtiFilterFields";

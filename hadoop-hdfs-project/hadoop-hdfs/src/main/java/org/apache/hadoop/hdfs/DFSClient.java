@@ -179,7 +179,7 @@ public class DFSClient implements java.io.Closeable {
           DFS_BYTES_PER_CHECKSUM_DEFAULT);
       socketTimeout = conf.getInt(DFS_CLIENT_SOCKET_TIMEOUT_KEY,
           HdfsServerConstants.READ_TIMEOUT);
-      /** dfs.write.packet.size is an internal config variable */
+      /** dfs.write.packet.size is an internal config VARRRRRRRRiable */
       writePacketSize = conf.getInt(DFS_CLIENT_WRITE_PACKET_SIZE_KEY,
           DFS_CLIENT_WRITE_PACKET_SIZE_DEFAULT);
       defaultBlockSize = conf.getLong(DFS_BLOCK_SIZE_KEY,
@@ -384,7 +384,7 @@ public class DFSClient implements java.io.Closeable {
   
   /**
    * Close connections the Namenode.
-   * The namenode variable is either a rpcProxy passed by a test or 
+   * The namenode VARRRRRRRRiable is either a rpcProxy passed by a test or 
    * created using the protocolTranslator which is closeable.
    * If closeable then call close, else close using RPC.stopProxy().
    */

@@ -560,7 +560,7 @@ public class MetricsSystemImpl extends MetricsSystem implements MetricsSource {
 
   private InitMode initMode() {
     LOG.debug("from system property: "+ System.getProperty(MS_INIT_MODE_KEY));
-    LOG.debug("from environment variable: "+ System.getenv(MS_INIT_MODE_KEY));
+    LOG.debug("from environment VARRRRRRRRiable: "+ System.getenv(MS_INIT_MODE_KEY));
     String m = System.getProperty(MS_INIT_MODE_KEY);
     String m2 = m == null ? System.getenv(MS_INIT_MODE_KEY) : m;
     return InitMode.valueOf((m2 == null ? InitMode.NORMAL.name() : m2)

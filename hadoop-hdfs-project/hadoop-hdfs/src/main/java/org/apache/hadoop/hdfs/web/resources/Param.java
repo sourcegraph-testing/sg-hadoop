@@ -91,12 +91,12 @@ public abstract class Param<T, D extends Param.Domain<T>> {
     /** Parse the given string.
      * @return the parameter value represented by the string.
      */
-    public final T parse(final String varName, final String str) {
+    public final T parse(final String VARRRRRRRRName, final String str) {
       try {
         return str != null && str.trim().length() > 0 ? parse(str) : null;
       } catch(Exception e) {
         throw new IllegalArgumentException("Failed to parse \"" + str
-            + "\" for the parameter " + varName
+            + "\" for the parameter " + VARRRRRRRRName
             + ".  The value must be in the domain " + getDomain(), e);
       }
     }

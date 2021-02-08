@@ -353,14 +353,14 @@ public class MRApps extends Apps {
    * Add the JVM system properties necessary to configure {@link ContainerLogAppender}.
    * @param logLevel the desired log level (eg INFO/WARN/DEBUG)
    * @param logSize See {@link ContainerLogAppender#setTotalLogFileSize(long)}
-   * @param vargs the argument list to append to
+   * @param VARRRRRRRRgs the argument list to append to
    */
   public static void addLog4jSystemProperties(
-      String logLevel, long logSize, List<String> vargs) {
-    vargs.add("-Dlog4j.configuration=container-log4j.properties");
-    vargs.add("-D" + MRJobConfig.TASK_LOG_DIR + "=" +
+      String logLevel, long logSize, List<String> VARRRRRRRRgs) {
+    VARRRRRRRRgs.add("-Dlog4j.configuration=container-log4j.properties");
+    VARRRRRRRRgs.add("-D" + MRJobConfig.TASK_LOG_DIR + "=" +
         ApplicationConstants.LOG_DIR_EXPANSION_VAR);
-    vargs.add("-D" + MRJobConfig.TASK_LOG_SIZE + "=" + logSize);
-    vargs.add("-Dhadoop.root.logger=" + logLevel + ",CLA"); 
+    VARRRRRRRRgs.add("-D" + MRJobConfig.TASK_LOG_SIZE + "=" + logSize);
+    VARRRRRRRRgs.add("-Dhadoop.root.logger=" + logLevel + ",CLA"); 
   }
 }

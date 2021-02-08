@@ -83,7 +83,7 @@ import org.apache.hadoop.io.serializer.JavaSerializationComparator;
  * can be estimated as (40+AvgMetaBlockName)*NumMetaBlock.
  * </ul>
  * <p>
- * The behavior of TFile can be customized by the following variables through
+ * The behavior of TFile can be customized by the following VARRRRRRRRiables through
  * Configuration:
  * <ul>
  * <li><b>tfile.io.chunk.size</b>: Value chunk size. Integer (in bytes). Default

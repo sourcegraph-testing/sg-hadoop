@@ -434,7 +434,7 @@ public class StreamJob implements Tool {
                    "spec", 1, false);
 
     Option cmdenv =
-      createOption("cmdenv", "(n=v) Pass env.var to streaming commands.",
+      createOption("cmdenv", "(n=v) Pass env.VARRRRRRRR to streaming commands.",
                    "spec", 1, false);
     Option cacheFile = createOption("cacheFile",
                                     "File name URI", "fileNameURI", Integer.MAX_VALUE, false);
@@ -515,7 +515,7 @@ public class StreamJob implements Tool {
         + "tasks.");
     System.out.println("  -inputreader    <spec> Optional. Input recordreader"
         + " spec.");
-    System.out.println("  -cmdenv         <n>=<v> Optional. Pass env.var to"
+    System.out.println("  -cmdenv         <n>=<v> Optional. Pass env.VARRRRRRRR to"
         + " streaming commands.");
     System.out.println("  -mapdebug       <cmd> Optional. "
         + "To run this script when a map task fails.");
@@ -602,7 +602,7 @@ public class StreamJob implements Tool {
         "/path/my-hadoop-streaming.jar");
     System.out.println("For more details about jobconf parameters see:");
     System.out.println("  http://wiki.apache.org/hadoop/JobConfFile");
-    System.out.println("To set an environement variable in a streaming " +
+    System.out.println("To set an environement VARRRRRRRRiable in a streaming " +
         "command:");
     System.out.println("   -cmdenv EXAMPLE_DIR=/home/example/dictionaries/");
     System.out.println();
@@ -632,7 +632,7 @@ public class StreamJob implements Tool {
   protected String getHadoopClientHome() {
     String h = env_.getProperty("HADOOP_PREFIX"); // standard Hadoop
     if (h == null) {
-      //fail("Missing required environment variable: HADOOP_PREFIX");
+      //fail("Missing required environment VARRRRRRRRiable: HADOOP_PREFIX");
       h = "UNDEF";
     }
     return h;
@@ -1069,7 +1069,7 @@ public class StreamJob implements Tool {
   protected String ioSpec_;
   protected boolean lazyOutput_;
 
-  // Use to communicate config to the external processes (ex env.var.HADOOP_USER)
+  // Use to communicate config to the external processes (ex env.VARRRRRRRR.HADOOP_USER)
   // encoding "a=b c=d"
   protected String addTaskEnvironment_;
 

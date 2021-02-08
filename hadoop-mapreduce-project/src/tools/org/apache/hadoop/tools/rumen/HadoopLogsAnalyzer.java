@@ -66,7 +66,7 @@ import org.codehaus.jackson.map.SerializationConfig;
 /**
  * This is the main class for rumen log mining functionality.
  * 
- * It reads a directory of job tracker logs, and computes various information
+ * It reads a directory of job tracker logs, and computes VARRRRRRRRious information
  * about it. See {@code usage()}, below.
  * 
  */

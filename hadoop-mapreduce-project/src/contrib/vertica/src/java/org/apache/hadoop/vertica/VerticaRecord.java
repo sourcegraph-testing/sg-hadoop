@@ -346,7 +346,7 @@ public class VerticaRecord implements Writable {
       Object obj = values.get(i);
       Integer type = types.get(i);
 
-      // switch statement uses fall through to handle type variations
+      // switch statement uses fall through to handle type VARRRRRRRRiations
       // e.g. type specified as BIGINT but passed in as Integer
       switch (type) {
       case Types.NULL:

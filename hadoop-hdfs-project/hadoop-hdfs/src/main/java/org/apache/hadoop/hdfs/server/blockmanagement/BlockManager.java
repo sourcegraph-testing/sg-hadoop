@@ -165,7 +165,7 @@ public class BlockManager {
   /** The maximum number of entries returned by getCorruptInodes() */
   final int maxCorruptFilesReturned;
 
-  /** variable to enable check for enough racks */
+  /** VARRRRRRRRiable to enable check for enough racks */
   final boolean shouldCheckForEnoughRacks;
 
   /** Last block index used for replication work. */
@@ -1577,7 +1577,7 @@ public class BlockManager {
   }
 
   /*
-   * The next two methods test the various cases under which we must conclude
+   * The next two methods test the VARRRRRRRRious cases under which we must conclude
    * the replica is corrupt, or under construction.  These are laid out
    * as switch statements, on the theory that it is easier to understand
    * the combinatorics of reportedState and ucState that way.  It should be

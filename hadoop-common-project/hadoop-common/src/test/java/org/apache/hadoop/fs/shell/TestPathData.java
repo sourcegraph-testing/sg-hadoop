@@ -66,7 +66,7 @@ public class TestPathData {
     item = new PathData(dirString, conf);
     checkPathData();
 
-    // properly implementing symlink support in various commands will require
+    // properly implementing symlink support in VARRRRRRRRious commands will require
     // trailing slashes to be retained
     dirString = "d1/";
     item = new PathData(dirString, conf);

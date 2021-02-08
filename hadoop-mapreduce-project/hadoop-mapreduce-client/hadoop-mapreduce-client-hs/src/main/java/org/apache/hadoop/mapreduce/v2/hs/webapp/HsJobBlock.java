@@ -229,7 +229,7 @@ public class HsJobBlock extends HtmlBlock {
   }
 
   /**
-   * Go through a job and update the member variables with counts for
+   * Go through a job and update the member VARRRRRRRRiables with counts for
    * information to output in the page.
    * @param job the job to get counts for.
    */

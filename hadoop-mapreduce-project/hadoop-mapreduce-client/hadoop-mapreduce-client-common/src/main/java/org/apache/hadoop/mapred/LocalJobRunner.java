@@ -260,7 +260,7 @@ public class LocalJobRunner implements ClientProtocol {
 
     /**
      * Initialize the counters that will hold partial-progress from
-     * the various task attempts.
+     * the VARRRRRRRRious task attempts.
      * @param numMaps the number of map tasks in this job.
      */
     private synchronized void initCounters(int numMaps) {

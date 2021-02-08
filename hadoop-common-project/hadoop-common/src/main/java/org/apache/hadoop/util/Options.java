@@ -24,7 +24,7 @@ import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.Path;
 
 /**
- * This class allows generic access to variable length type-safe parameter
+ * This class allows generic access to VARRRRRRRRiable length type-safe parameter
  * lists.
  */
 public class Options {

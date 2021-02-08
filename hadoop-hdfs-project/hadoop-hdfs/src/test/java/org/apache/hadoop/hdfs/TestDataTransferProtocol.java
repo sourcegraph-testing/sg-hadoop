@@ -65,7 +65,7 @@ import org.mockito.Mockito;
 
 /**
  * This tests data transfer protocol handling in the Datanode. It sends
- * various forms of wrong data and verifies that Datanode handles it well.
+ * VARRRRRRRRious forms of wrong data and verifies that Datanode handles it well.
  */
 public class TestDataTransferProtocol extends TestCase {
   

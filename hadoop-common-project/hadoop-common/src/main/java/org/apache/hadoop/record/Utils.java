@@ -453,7 +453,7 @@ public class Utils {
   }
   
   /**
-   * Get the encoded length if an integer is stored in a variable-length format
+   * Get the encoded length if an integer is stored in a VARRRRRRRRiable-length format
    * @return the encoded length
    */
   public static int getVIntSize(long i) {

@@ -48,7 +48,7 @@ import org.apache.hadoop.io.IOUtils;
  *  5. Swaps two meta files, i.e the format of the meta files 
  *     are valid but their CRCs do not match with their corresponding 
  *     data blocks
- * The above tests are run for varied values of dfs.bytes-per-checksum 
+ * The above tests are run for VARRRRRRRRied values of dfs.bytes-per-checksum 
  * and dfs.blocksize. It tests for the case when the meta file is 
  * multiple blocks.
  *

@@ -52,7 +52,7 @@ import org.mockito.stubbing.Answer;
 import static org.mockito.Mockito.*;
 
 /**
- * This class tests various synchronization bugs in FSEditLog rolling
+ * This class tests VARRRRRRRRious synchronization bugs in FSEditLog rolling
  * and namespace saving.
  */
 public class TestEditLogRace {

@@ -239,7 +239,7 @@ public class TestAppManager{
     rmContext.getRMApps().clear();
     Assert.assertEquals("map isn't empty", 0, rmContext.getRMApps().size());
 
-    // / set with various finished states
+    // / set with VARRRRRRRRious finished states
     RMApp app = new MockRMApp(0, now - 20000, RMAppState.KILLED);
     rmContext.getRMApps().put(app.getApplicationId(), app);
     app = new MockRMApp(1, now - 200000, RMAppState.FAILED);

@@ -45,7 +45,7 @@ import org.apache.hadoop.mapred.Reporter;
  * (one set per line) as input in a control file 
  * (which is the input path to the map-reduce application,
  * where as the input dataset is specified 
- * via a config variable in JobConf.).
+ * via a config VARRRRRRRRiable in JobConf.).
  * 
  * The NLineInputFormat can be used in such applications, that splits 
  * the input file such that by default, one line is fed as

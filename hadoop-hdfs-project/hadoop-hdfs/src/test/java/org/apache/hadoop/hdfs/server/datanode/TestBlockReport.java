@@ -52,7 +52,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * This test simulates a variety of situations when blocks are being
+ * This test simulates a VARRRRRRRRiety of situations when blocks are being
  * intentionally orrupted, unexpectedly modified, and so on before a block
  * report is happening
  */

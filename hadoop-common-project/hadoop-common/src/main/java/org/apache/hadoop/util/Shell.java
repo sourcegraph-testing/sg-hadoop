@@ -167,7 +167,7 @@ abstract public class Shell {
   }
   
   /** set the environment for the command 
-   * @param env Mapping of environment variables
+   * @param env Mapping of environment VARRRRRRRRiables
    */
   protected void setEnvironment(Map<String, String> env) {
     this.environment = env;

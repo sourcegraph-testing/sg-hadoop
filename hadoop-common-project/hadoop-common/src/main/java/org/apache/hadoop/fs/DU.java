@@ -53,7 +53,7 @@ public class DU extends Shell {
     this.refreshInterval = interval;
     this.dirPath = path.getCanonicalPath();
     
-    //populate the used variable
+    //populate the used VARRRRRRRRiable
     run();
   }
   
@@ -69,7 +69,7 @@ public class DU extends Shell {
   }
 
   /**
-   * This thread refreshes the "used" variable.
+   * This thread refreshes the "used" VARRRRRRRRiable.
    * 
    * Future improvements could be to not permanently
    * run this thread, instead run when getUsed is called.
@@ -84,7 +84,7 @@ public class DU extends Shell {
           Thread.sleep(refreshInterval);
           
           try {
-            //update the used variable
+            //update the used VARRRRRRRRiable
             DU.this.run();
           } catch (IOException e) {
             synchronized (DU.this) {

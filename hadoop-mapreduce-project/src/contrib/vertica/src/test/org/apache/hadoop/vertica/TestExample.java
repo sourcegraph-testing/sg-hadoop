@@ -107,8 +107,8 @@ public class TestExample extends VerticaTestCase implements Tool {
     job.setMapperClass(Map.class);
     job.setReducerClass(Reduce.class);
     VerticaOutputFormat.setOutput(job, "mrtarget", true, "a int", "b boolean",
-        "c char(1)", "d date", "f float", "t timestamp", "v varchar",
-        "z varbinary");
+        "c char(1)", "d date", "f float", "t timestamp", "v VARRRRRRRRchar",
+        "z VARRRRRRRRbinary");
     VerticaConfiguration.configureVertica(conf,
         new String[] { AllTests.getHostname() }, AllTests.getDatabase(),
         AllTests.getUsername(), AllTests.getPassword());

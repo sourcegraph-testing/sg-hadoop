@@ -147,7 +147,7 @@ public class CombineFileRecordReader<K, V> extends RecordReader<K, V> {
     // get a record reader for the idx-th chunk
     try {
       Configuration conf = context.getConfiguration();
-      // setup some helper config variables.
+      // setup some helper config VARRRRRRRRiables.
       conf.set(MRJobConfig.MAP_INPUT_FILE, split.getPath(idx).toString());
       conf.setLong(MRJobConfig.MAP_INPUT_START, split.getOffset(idx));
       conf.setLong(MRJobConfig.MAP_INPUT_PATH, split.getLength(idx));

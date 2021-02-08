@@ -1991,7 +1991,7 @@ public abstract class FileSystem extends Configured implements Closeable {
     private final Map<Key, FileSystem> map = new HashMap<Key, FileSystem>();
     private final Set<Key> toAutoClose = new HashSet<Key>();
 
-    /** A variable that makes all objects in the cache unique */
+    /** A VARRRRRRRRiable that makes all objects in the cache unique */
     private static AtomicLong unique = new AtomicLong(1);
 
     FileSystem get(URI uri, Configuration conf) throws IOException{

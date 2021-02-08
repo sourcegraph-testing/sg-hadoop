@@ -57,7 +57,7 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
 /**
- * Test various failure scenarios during saveNamespace() operation.
+ * Test VARRRRRRRRious failure scenarios during saveNamespace() operation.
  * Cases covered:
  * <ol>
  * <li>Recover from failure while saving into the second storage directory</li>

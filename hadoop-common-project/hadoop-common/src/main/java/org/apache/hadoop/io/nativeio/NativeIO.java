@@ -26,7 +26,7 @@ import org.apache.hadoop.util.NativeCodeLoader;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 /**
- * JNI wrappers for various native IO-related calls not available in Java.
+ * JNI wrappers for VARRRRRRRRious native IO-related calls not available in Java.
  * These functions should generally be used alongside a fallback to another
  * more portable mechanism.
  */

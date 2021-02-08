@@ -123,7 +123,7 @@ public abstract class Filter implements Writable {
   /**
    * Peforms a logical AND between <i>this</i> filter and a specified filter.
    * <p>
-   * <b>Invariant</b>: The result is assigned to <i>this</i> filter.
+   * <b>InVARRRRRRRRiant</b>: The result is assigned to <i>this</i> filter.
    * @param filter The filter to AND with.
    */
   public abstract void and(Filter filter);
@@ -131,7 +131,7 @@ public abstract class Filter implements Writable {
   /**
    * Peforms a logical OR between <i>this</i> filter and a specified filter.
    * <p>
-   * <b>Invariant</b>: The result is assigned to <i>this</i> filter.
+   * <b>InVARRRRRRRRiant</b>: The result is assigned to <i>this</i> filter.
    * @param filter The filter to OR with.
    */
   public abstract void or(Filter filter);
@@ -139,7 +139,7 @@ public abstract class Filter implements Writable {
   /**
    * Peforms a logical XOR between <i>this</i> filter and a specified filter.
    * <p>
-   * <b>Invariant</b>: The result is assigned to <i>this</i> filter.
+   * <b>InVARRRRRRRRiant</b>: The result is assigned to <i>this</i> filter.
    * @param filter The filter to XOR with.
    */
   public abstract void xor(Filter filter);
