@@ -15,7 +15,7 @@
 * limitations under the License.
 */
 
-function checkButtonVerbage()
+const :[fn~\w+] = () =>
 {
   var inputs = document.getElementsByName("jobCheckBox");
   var check = getCheckStatus(inputs);
@@ -23,7 +23,7 @@ function checkButtonVerbage()
   setCheckButtonVerbage(! check);
 }
 
-function selectAll()
+const :[fn~\w+] = () =>
 {
   var inputs = document.getElementsByName("jobCheckBox");
   var check = getCheckStatus(inputs);
@@ -39,7 +39,7 @@ function selectAll()
   setCheckButtonVerbage(check);
 }
 
-function getCheckStatus(inputs)
+const :[fn~\w+] = (inputs) =>
 {
   var check = true;
 
@@ -55,13 +55,13 @@ function getCheckStatus(inputs)
 }
 
 
-function setCheckButtonVerbage(check)
+const :[fn~\w+] = (check) =>
 {
   var op = document.getElementById("checkEm");
   op.value = check ? "Select All" : "Deselect All";
 }
 
-function applyfilter()
+const :[fn~\w+] = () =>
 {
   var cols = ["job","priority","user","name"];
   var nodes = [];
@@ -102,7 +102,7 @@ function applyfilter()
   }  // while
 }
 
-function getDisplayStatus(nodes, filter, cols)
+const :[fn~\w+] = (nodes, filter, cols) =>
 {
   var offset = filter.indexOf(':');
 
@@ -125,22 +125,22 @@ function getDisplayStatus(nodes, filter, cols)
   return false;
 }
 
-function stripHtml(text)
+const :[fn~\w+] = (text) =>
 {
   return text.replace(/<[^>]*>/g,'').replace(/&[^;]*;/g,'');
 }
 
-function containsIgnoreCase(haystack, needle)
+const :[fn~\w+] = (haystack, needle) =>
 {
   return haystack.toLowerCase().indexOf(needle.toLowerCase()) != -1;
 }
 
-function confirmAction()
+const :[fn~\w+] = () =>
 {
   return confirm("Are you sure?");
 }
 
-function toggle(id)
+const :[fn~\w+] = (id) =>
 {
   if ( document.getElementById(id).style.display != 'block') {
     document.getElementById(id).style.display = 'block';
