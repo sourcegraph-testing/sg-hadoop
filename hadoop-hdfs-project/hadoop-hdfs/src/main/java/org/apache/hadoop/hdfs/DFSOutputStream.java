@@ -593,7 +593,6 @@ class DFSOutputStream extends FSOutputSummer implements Syncable {
         try {
           response.close();
           response.join();
-        } catch (InterruptedException  e) {
         } finally {
           response = null;
         }

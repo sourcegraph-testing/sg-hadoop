@@ -92,10 +92,7 @@ public class TestTFileUnsortedByteArrays extends TestCase {
           reader.createScannerByKey("aaa".getBytes(), "zzz".getBytes());
       Assert
           .fail("Failed to catch creating scanner with keys on unsorted file.");
-    }
-    catch (RuntimeException e) {
-    }
-    finally {
+    } finally {
       reader.close();
     }
   }
@@ -192,33 +189,21 @@ public class TestTFileUnsortedByteArrays extends TestCase {
       try {
         scanner.lowerBound("keyN".getBytes());
         Assert.fail("Cannot search in a unsorted TFile!");
-      }
-      catch (Exception e) {
-        // noop, expecting excetions
-      }
-      finally {
+      } finally {
       }
 
       // can't find higher
       try {
         scanner.upperBound("keyA".getBytes());
         Assert.fail("Cannot search higher in a unsorted TFile!");
-      }
-      catch (Exception e) {
-        // noop, expecting excetions
-      }
-      finally {
+      } finally {
       }
 
       // can't seek
       try {
         scanner.seekTo("keyM".getBytes());
         Assert.fail("Cannot search a unsorted TFile!");
-      }
-      catch (Exception e) {
-        // noop, expecting excetions
-      }
-      finally {
+      } finally {
       }
     }
     finally {
