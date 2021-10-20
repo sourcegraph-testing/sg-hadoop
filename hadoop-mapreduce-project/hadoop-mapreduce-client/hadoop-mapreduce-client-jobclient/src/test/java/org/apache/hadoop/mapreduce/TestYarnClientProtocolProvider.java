@@ -49,8 +49,6 @@ public class TestYarnClientProtocolProvider extends TestCase {
       cluster = new Cluster(conf);
       ClientProtocol client = cluster.getClient();
       assertTrue(client instanceof YARNRunner);
-    } catch (IOException e) {
-
     } finally {
       if (cluster != null) {
         cluster.close();

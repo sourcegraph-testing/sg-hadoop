@@ -160,7 +160,6 @@ public class TestBlockTokenWithDFS {
       if (s != null) {
         try {
           s.close();
-        } catch (IOException iex) {
         } finally {
           s = null;
         }
