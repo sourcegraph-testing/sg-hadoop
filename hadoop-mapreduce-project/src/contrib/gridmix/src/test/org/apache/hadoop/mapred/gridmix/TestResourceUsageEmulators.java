@@ -105,8 +105,6 @@ public class TestResourceUsageEmulators {
         
         touchPath = getFilePath(getIdentifier());
         fs.delete(touchPath, false);
-      } catch (Exception e) {
-        
       } finally {
         if (fs != null) {
           try {

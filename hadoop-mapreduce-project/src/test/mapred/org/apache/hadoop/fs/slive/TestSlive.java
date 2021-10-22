@@ -476,8 +476,6 @@ public class TestSlive {
     try {
       in = new DataInputStream(new FileInputStream(fn));
       vout = vf.verifyFile(byteAm, in);
-    } catch (Exception e) {
-
     } finally {
       if(in != null) in.close();
     }
